@@ -20,6 +20,12 @@ const FULL_PHOTO_LABELS = new Set([
   "BALLOON OVER THE RIVER",
 ]);
 
+const FIT_FRAME_PHOTO_LABELS = new Set([
+  "HELL'S GATE NATIONAL PARK EXCURSION",
+  "SAMBURU SHABA",
+  "NAIROBI EXCURSION",
+]);
+
 export const TONE_GRADIENTS = {
   sand: "linear-gradient(135deg, #E8DDC8 0%, #F7F3EA 65%)",
   forest: "linear-gradient(135deg, #24463A 0%, #14251F 75%)",
@@ -45,9 +51,10 @@ export function PlaceholderImage({ label, ratio = "4 / 3", tone = "sand", icon: 
 
   if (realSrc) {
     const showFullImage = FULL_PHOTO_LABELS.has(label);
+    const fitFrame = FIT_FRAME_PHOTO_LABELS.has(label);
     return (
       <div
-        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${rounded} ${className}`}
+        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${rounded} ${className}`}
         style={{ aspectRatio: ratio }}
       >
         <img

@@ -310,6 +310,9 @@ export const IMAGE_LIBRARY = {
   "VICTORIA FALLS — MAIN IMAGE": "/photos/victoria-falls-waterfall.jpg",
   "VICTORIA FALLS WATERFALL VIEW": "/photos/victoria-falls-waterfall.jpg",
   "VICTORIA FALLS NATIONAL PARK IMAGE": "/photos/victoria-falls-hero.jpg",
+  "HELL'S GATE NATIONAL PARK EXCURSION": "/photos/hells-gate-national-park.jpg",
+  "SAMBURU SHABA": "/photos/samburu-shaba.jpg",
+  "NAIROBI EXCURSION": "/photos/nairobi-excursion.jpg",
 };
 
 

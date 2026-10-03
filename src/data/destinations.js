@@ -40,7 +40,7 @@ export const DESTINATIONS = [
         icon: "Compass",
         items: [
           { name: "Mount Kenya", blurb: "Trek through high-altitude forests and alpine landscapes on routes around Africa's second-highest mountain.", activities: ["Guided trekking", "Mountain scenery"] },
-          { name: "Hell's Gate National Park", image: "HELL'S GATE GORGE", blurb: "Explore dramatic cliffs, gorges and geothermal landscapes on foot or by bicycle.", activities: ["Hiking", "Cycling", "Wildlife viewing"] },
+          { name: "Hell's Gate National Park", image: "HELL'S GATE NATIONAL PARK EXCURSION", blurb: "Explore dramatic cliffs, gorges and geothermal landscapes on foot or by bicycle.", activities: ["Hiking", "Cycling", "Wildlife viewing"] },
         ],
       },
       {
@@ -92,8 +92,11 @@ export const DESTINATIONS = [
     bestTime: "June – October",
     highlights: ["Grevy’s zebra", "Dry-country wildlife", "Rugged northern scenery"],
     quote: "Samburu’s wildlife and dry-country scenery give Kenya’s northern safari circuit its own character.",
-    categories: [{ title: "Wildlife", icon: "PawPrint", items: [{ name: "Northern Kenya Wildlife", image: "SAMBURU ANTELOPE", blurb: "Look for wildlife adapted to the reserve’s dry northern habitats." }] }],
-    gallery: ["SAMBURU ANTELOPE", "SAMBURU BIRD AND CHICK"],
+    categories: [{ title: "Wildlife", icon: "PawPrint", items: [
+      { name: "Northern Kenya Wildlife", image: "SAMBURU ANTELOPE", blurb: "Look for wildlife adapted to the reserve’s dry northern habitats." },
+      { name: "Shaba National Reserve", image: "SAMBURU SHABA", blurb: "Explore the rugged, arid landscapes of Shaba, part of Kenya's northern safari region alongside Samburu." },
+    ] }],
+    gallery: ["SAMBURU ANTELOPE", "SAMBURU BIRD AND CHICK", "SAMBURU SHABA"],
   },
   {
     id: "lake-nakuru", name: "Lake Nakuru National Park", country: "Kenya", region: "Safari",

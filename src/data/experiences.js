@@ -42,13 +42,13 @@ export const EXPERIENCES = [
     duration: "4 hours",
     groupSize: "1 – 6 guests",
     price: "From $95 / person",
-    image: "GIRAFFE CENTRE",
+    image: "NAIROBI EXCURSION",
     shortDesc: "Meet Rothschild's giraffes at the Giraffe Centre and learn about their conservation.",
     description:
       "Visit the Giraffe Centre in Nairobi to meet endangered Rothschild's giraffes and learn about the centre's conservation and breeding work. The elevated viewing platform offers a close look at these gentle animals in a leafy setting.",
     highlights: ["Meet Rothschild's giraffes", "Learn about local conservation work", "View the giraffes from the raised platform", "A relaxed stop in Nairobi's Karen area"],
     included: ["Giraffe Centre visit", "Driver-guide", "Bottled water"],
-    gallery: ["GIRAFFE CENTRE", "NAIROBI GIRAFFE CENTRE"],
+    gallery: ["NAIROBI EXCURSION", "GIRAFFE CENTRE"],
   },
   {
     id: "hells-gate-national-park",
@@ -58,13 +58,13 @@ export const EXPERIENCES = [
     duration: "Full day",
     groupSize: "2 – 8 guests",
     price: "Custom quote",
-    image: "HELL'S GATE GORGE WATERFALL",
+    image: "HELL'S GATE NATIONAL PARK EXCURSION",
     shortDesc: "Explore Hell's Gate's dramatic cliffs, gorges and geothermal scenery on foot or by bicycle.",
     description:
       "Spend a day exploring Hell's Gate National Park in Kenya's Great Rift Valley. Walk among towering cliffs and geothermal features, with the option to cycle through the park and take in its open landscapes and wildlife.",
     highlights: ["Scenic gorge and cliff landscapes", "Hiking and cycling options", "Geothermal features", "Wildlife viewing across the park"],
     included: ["Park entry information", "Guided visit", "Activity and transport details confirmed when booking"],
-    gallery: ["HELL'S GATE GORGE WATERFALL", "HELL'S GATE ROCK HYRAX"],
+    gallery: ["HELL'S GATE NATIONAL PARK EXCURSION", "HELL'S GATE ROCK HYRAX"],
   },
   {
     id: "mara-balloon-safari",
