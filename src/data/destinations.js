@@ -94,9 +94,8 @@ export const DESTINATIONS = [
     quote: "Samburu’s wildlife and dry-country scenery give Kenya’s northern safari circuit its own character.",
     categories: [{ title: "Wildlife", icon: "PawPrint", items: [
       { name: "Northern Kenya Wildlife", image: "SAMBURU ANTELOPE", blurb: "Look for wildlife adapted to the reserve’s dry northern habitats." },
-      { name: "Shaba National Reserve", image: "SAMBURU SHABA", blurb: "Explore the rugged, arid landscapes of Shaba, part of Kenya's northern safari region alongside Samburu." },
     ] }],
-    gallery: ["SAMBURU ANTELOPE", "SAMBURU BIRD AND CHICK", "SAMBURU SHABA"],
+    gallery: ["SAMBURU ANTELOPE", "SAMBURU BIRD AND CHICK"],
   },
   {
     id: "lake-nakuru", name: "Lake Nakuru National Park", country: "Kenya", region: "Safari",

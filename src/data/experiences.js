@@ -67,6 +67,23 @@ export const EXPERIENCES = [
     gallery: ["HELL'S GATE NATIONAL PARK EXCURSION", "HELL'S GATE ROCK HYRAX"],
   },
   {
+    id: "samburu-shaba-excursion",
+    title: "Samburu/Shaba Safari",
+    destinationSlug: "kenya",
+    locationLabel: "Samburu/Shaba",
+    category: "Wildlife",
+    duration: "Full day",
+    groupSize: "2 – 8 guests",
+    price: "Custom quote",
+    image: "SAMBURU SHABA",
+    shortDesc: "Explore the rugged landscapes and wildlife of Kenya's Samburu and Shaba region.",
+    description:
+      "Discover Kenya's northern safari country, where Samburu and Shaba are known for dry, rocky landscapes, striking mountain scenery and wildlife drawn to the Ewaso Ng'iro River. The itinerary can be tailored around the places and activities you want to experience.",
+    highlights: ["Samburu and Shaba landscapes", "Northern Kenya wildlife viewing", "Scenic rocky terrain", "Custom itinerary planning"],
+    included: ["Route planning", "Local guide arrangements", "Transport details confirmed when booking"],
+    gallery: ["SAMBURU SHABA"],
+  },
+  {
     id: "mara-balloon-safari",
     title: "Sunrise Balloon Safari",
     destinationSlug: "maasai-mara",
