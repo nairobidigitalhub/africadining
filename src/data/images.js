@@ -306,6 +306,10 @@ export const IMAGE_LIBRARY = {
   "ACCOMMODATION PHOTO 17": "/photos/accommodation-17.jpg",
   "ACCOMMODATION PHOTO 18": "/photos/accommodation-18.jpg",
   "ACCOMMODATION PHOTO 19": "/photos/accommodation-19.jpg",
+  "VICTORIA FALLS — HERO IMAGE": "/photos/victoria-falls-hero.jpg",
+  "VICTORIA FALLS — MAIN IMAGE": "/photos/victoria-falls-waterfall.jpg",
+  "VICTORIA FALLS WATERFALL VIEW": "/photos/victoria-falls-waterfall.jpg",
+  "VICTORIA FALLS NATIONAL PARK IMAGE": "/photos/victoria-falls-hero.jpg",
 };
 
 
