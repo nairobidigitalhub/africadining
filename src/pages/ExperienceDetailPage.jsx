@@ -23,7 +23,7 @@ export default function ExperienceDetailPage({ id, navigate, onBook }) {
             <ChevronRight size={13} />
             <span aria-current="page">{experience.title}</span>
           </nav>
-          <span className="detail-hero-country"><MapPin size={14} /> {destination?.name}, {destination?.country}</span>
+          <span className="detail-hero-country"><MapPin size={14} /> {experience.locationLabel || destination?.name}, {destination?.country}</span>
           <h1 className="detail-hero-title">{experience.title}</h1>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function ExperienceDetailPage({ id, navigate, onBook }) {
             <dl className="booking-sidebar-facts">
               <div><dt><Clock size={14} /> Duration</dt><dd>{experience.duration}</dd></div>
               <div><dt><Users size={14} /> Group size</dt><dd>{experience.groupSize}</dd></div>
-              <div><dt><MapPin size={14} /> Location</dt><dd>{destination?.name}</dd></div>
+              <div><dt><MapPin size={14} /> Location</dt><dd>{experience.locationLabel || destination?.name}</dd></div>
             </dl>
             <Button variant="primary" className="booking-sidebar-cta" onClick={() => onBook(experience)}>Book Now</Button>
             <p className="booking-sidebar-note">Free changes up to 48 hours before your date.</p>

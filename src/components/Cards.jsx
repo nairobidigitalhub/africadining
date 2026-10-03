@@ -61,7 +61,7 @@ export function ExperienceCard({ experience, navigate, onBook }) {
         <span className="exp-card-tag">{experience.category}</span>
       </button>
       <div className="exp-card-body">
-        <span className="exp-card-loc"><MapPin size={13} /> {destination?.name}</span>
+        <span className="exp-card-loc"><MapPin size={13} /> {experience.locationLabel || destination?.name}</span>
         <h3>
           <A page="experience" param={experience.id} navigate={navigate}>{experience.title}</A>
         </h3>
