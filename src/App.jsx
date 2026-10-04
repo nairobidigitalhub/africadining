@@ -8,6 +8,7 @@ import { BookingModal } from "./components/BookingModal.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import DestinationsPage from "./pages/DestinationsPage.jsx";
 import DestinationDetailPage from "./pages/DestinationDetailPage.jsx";
+import DestinationItemPage from "./pages/DestinationItemPage.jsx";
 import ExperiencesPage from "./pages/ExperiencesPage.jsx";
 import ExperienceDetailPage from "./pages/ExperienceDetailPage.jsx";
 import DiningPage from "./pages/DiningPage.jsx";
@@ -32,6 +33,7 @@ export default function App() {
     case "home": page = <HomePage navigate={navigate} onBook={handleBook} />; break;
     case "destinations": page = <DestinationsPage navigate={navigate} />; break;
     case "destination": page = <DestinationDetailPage id={route.param} navigate={navigate} onBook={handleBook} />; break;
+    case "destination-item": page = <DestinationItemPage id={route.param} navigate={navigate} onBook={handleBook} />; break;
     case "experiences": page = <ExperiencesPage navigate={navigate} onBook={handleBook} initialDestination={route.param} />; break;
     case "experience": page = <ExperienceDetailPage id={route.param} navigate={navigate} onBook={handleBook} />; break;
     case "dining": page = <DiningPage navigate={navigate} onBook={handleBook} />; break;

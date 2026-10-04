@@ -92,7 +92,7 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
           </div>
           <div className="tab-panel" role="tabpanel">
             <div className="offer-grid">
-              {destination.categories[activeCategory].items.map((item) => (
+              {destination.categories[activeCategory].items.map((item, itemIndex) => (
                 <Reveal key={item.name} className="offer-card">
                   <PlaceholderImage label={item.image || `${item.name.toUpperCase()} IMAGE`} tone={destination.accent} ratio="4 / 3" />
                   <h4>{item.name}</h4>
@@ -103,11 +103,14 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
                       {item.activities.map((a) => <li key={a} className="offer-tag">{a}</li>)}
                     </ul>
                   )}
-                  {item.linksTo && (
-                    <A page="destination" param={item.linksTo} navigate={navigate} className="card-link offer-link">
-                      Explore {item.linksToLabel || item.name} <ArrowRight size={14} />
-                    </A>
-                  )}
+                  <A
+                    page={item.linksTo ? "destination" : "destination-item"}
+                    param={item.linksTo || `${destination.id}~${activeCategory}~${itemIndex}`}
+                    navigate={navigate}
+                    className="card-link offer-link"
+                  >
+                    Explore {item.linksToLabel || item.name} <ArrowRight size={14} />
+                  </A>
                   <Button
                     variant="secondary"
                     className="btn-sm offer-book-btn"
