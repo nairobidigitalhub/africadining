@@ -56,7 +56,7 @@ export function ExperienceCard({ experience, navigate, onBook }) {
           label={experience.image}
           tone={destination?.accent || "sand"}
           ratio="4 / 3"
-          className={`exp-card-media ${["MARA BALLOON SAFARI IMAGE", "SAMBURU SHABA"].includes(experience.image) ? "exp-card-media-fill" : ""}`}
+          className={`exp-card-media ${experience.image === "MARA BALLOON SAFARI IMAGE" ? "exp-card-media-fill" : ""}`}
         />
         <span className="exp-card-tag">{experience.category}</span>
       </button>

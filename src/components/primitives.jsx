@@ -30,7 +30,6 @@ const FULL_PHOTO_LABELS = new Set([
 
 const FIT_FRAME_PHOTO_LABELS = new Set([
   "HELL'S GATE NATIONAL PARK EXCURSION",
-  "SAMBURU SHABA",
   "SAMBURU ZEBRA",
   "SAMBURU LANDSCAPE",
   "SAMBURU ANTELOPE",
@@ -68,7 +67,7 @@ export function PlaceholderImage({ label, ratio = "4 / 3", tone = "sand", icon: 
     const fitFrame = FIT_FRAME_PHOTO_LABELS.has(label);
     return (
       <div
-        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${rounded} ${className}`}
+        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${label === "SAMBURU SHABA" ? "samburu-shaba-photo-frame" : ""} ${rounded} ${className}`}
         style={{ aspectRatio: ratio }}
       >
         <img
