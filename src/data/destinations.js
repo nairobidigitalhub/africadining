@@ -107,7 +107,7 @@ export const DESTINATIONS = [
     highlights: ["Rhino sanctuary", "Lake and escarpment views", "Birdlife and antelope"],
     quote: "At Lake Nakuru, wildlife sightings and changing lake views share the same compact park.",
     categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [{ name: "Lake Nakuru Wildlife", image: "LAKE NAKURU ANTELOPE", blurb: "Explore the park’s lake, grassland and wildlife habitats." }] }],
-    gallery: ["LAKE NAKURU ANTELOPE", "LAKE NAKURU RHINO"],
+    gallery: ["LAKE NAKURU ANTELOPE", "LAKE NAKURU RHINO", "LAKE NAKURU CLIENT GIRAFFE ZEBRA"],
   },
   {
     id: "mombasa",
@@ -284,8 +284,8 @@ export const DESTINATIONS = [
     coordinates: "1.50°S, 35.14°E",
     tagline: "The grass sea where the Great Migration crosses the Mara River",
     accent: "gold",
-    heroImage: "MAASAI MARA — HERO IMAGE",
-    cardImage: "MAASAI MARA — SAVANNAH IMAGE",
+    heroImage: "MAASAI MARA CLIENT PORTRAIT",
+    cardImage: "MAASAI MARA CLIENT PORTRAIT",
     description:
       "An extension of Tanzania's Serengeti across the border, the Mara is short-grass plain to the horizon, dense with resident wildlife year-round and the stage for the wildebeest migration's most dramatic river crossings.",
     bestTime: "July – October, for the migration",
@@ -321,7 +321,7 @@ export const DESTINATIONS = [
         ],
       },
     ],
-    gallery: ["WILDEBEEST RIVER CROSSING", "HOT AIR BALLOONS AT DAWN", "LION PRIDE ON PLAIN", "MAASAI VILLAGE VISIT", "ELEPHANT ON THE PLAINS", "CHEETAHS ON THE CHASE", "LIONS RESTING BY THE TRACK", "BALLOON LAUNCH AT DAWN"],
+    gallery: ["WILDEBEEST RIVER CROSSING", "HOT AIR BALLOONS AT DAWN", "LION PRIDE ON PLAIN", "MAASAI VILLAGE VISIT", "ELEPHANT ON THE PLAINS", "CHEETAHS ON THE CHASE", "LIONS RESTING BY THE TRACK", "BALLOON LAUNCH AT DAWN", "MAASAI MARA CLIENT ZEBRA HERD"],
   },
   {
     id: "zanzibar",
@@ -487,7 +487,7 @@ export const DESTINATIONS = [
         title: "Wildlife & Safari",
         icon: "PawPrint",
         items: [
-          { name: "Serengeti National Park", region: "Northern Circuit", blurb: "Experience endless savannahs, abundant wildlife and the spectacular Great Migration.", activities: ["Game drives", "Hot-air balloon safaris"] },
+          { name: "Serengeti National Park", region: "Northern Circuit", image: "SERENGETI CLIENT BALLOON", blurb: "Experience endless savannahs, abundant wildlife and the spectacular Great Migration.", activities: ["Game drives", "Hot-air balloon safaris"] },
           { name: "Ngorongoro Conservation Area", region: "Northern Circuit", blurb: "Descend into the spectacular Ngorongoro Crater, where an extraordinary concentration of wildlife thrives within an ancient volcanic landscape.", activities: ["Crater floor game drives", "Cultural visits"] },
           { name: "Tarangire National Park", region: "Northern Circuit", blurb: "Explore a beautiful safari landscape famous for its elephants, ancient baobabs and seasonal wildlife gatherings.", activities: ["Game drives", "Walking safaris"] },
           { name: "Lake Manyara National Park", region: "Northern Circuit", blurb: "Discover diverse landscapes, abundant birdlife and the famous tree-climbing lions of Lake Manyara.", activities: ["Game drives", "Canoeing (seasonal)"] },
@@ -520,7 +520,7 @@ export const DESTINATIONS = [
         ],
       },
     ],
-    gallery: ["SERENGETI PLAINS", "NGORONGORO CRATER RIM", "KILIMANJARO SUMMIT", "TARANGIRE BAOBABS", "STONE TOWN ALLEY"],
+    gallery: ["SERENGETI PLAINS", "SERENGETI CLIENT BALLOON", "NGORONGORO CRATER RIM", "KILIMANJARO SUMMIT", "TARANGIRE BAOBABS", "STONE TOWN ALLEY"],
   },
   {
     id: "uganda",

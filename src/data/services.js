@@ -7,9 +7,9 @@ export const SERVICES = [
   },
   {
     slug: "adventure-guides",
-    name: "Adventure Guides",
-    blurb: "Guides for active, adventure-focused experiences such as hiking, trekking and outdoor activities.",
-    image: "ADVENTURE GUIDES IMAGE",
+    name: "Adventure Guide",
+    blurb: "Explore Africa's outdoor landscapes with a knowledgeable guide, from rainforest trails to rugged mountain routes.",
+    image: "ADVENTURE GUIDE CLIENT PHOTO",
   },
   {
     slug: "cultural-guides",
@@ -31,4 +31,3 @@ export const SERVICES = [
     image: "SPECIALIZED GUIDES IMAGE",
   },
 ];
-

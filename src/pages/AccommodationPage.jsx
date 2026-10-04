@@ -3,6 +3,8 @@ import { PageHero } from "../components/PageHero.jsx";
 import { PlaceholderImage, Reveal } from "../components/primitives.jsx";
 
 const ACCOMMODATION_PHOTOS = [
+  { label: "CLIENT ACCOMMODATION ROOM 1", title: "Guest Room", description: "A comfortable guest room with a seating area and natural light." },
+  { label: "CLIENT ACCOMMODATION ROOM 2", title: "Thatched Suite", description: "A spacious suite with a thatched ceiling and a calm, private feel." },
   { label: "ACCOMMODATION PHOTO 02", title: "Lodge Grounds", description: "Raised lodge buildings set across open green grounds." },
   { label: "ACCOMMODATION PHOTO 04", title: "Hilltop Cottage", description: "A thatched cottage among landscaped grounds and hills." },
   { label: "ACCOMMODATION PHOTO 05", title: "Garden Walkway", description: "A garden path leading between thatched buildings." },
