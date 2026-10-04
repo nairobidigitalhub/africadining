@@ -161,7 +161,7 @@ export const IMAGE_LIBRARY = {
   "KENYA WILD DOGS": "/photos/kenya-wild-dogs.jpg",
   "SUNRISE BALLOON SAFARI": "/photos/sunrise-balloon-safari.jpg",
   "MAASAI MARKET COMMUNITY": "/photos/maasai-market-community.jpg",
-  "AMBOSELI ELEPHANTS": "/photos/amboseli-elephants.jpg",
+  "AMBOSELI ELEPHANTS": "/photos/client-amboseli.jpg",
   "AMBOSELI KILIMANJARO": "/photos/amboseli-kilimanjaro.jpg",
   "SAMBURU ZEBRA": "/photos/samburu-grevys-zebra.jpg",
   "SAMBURU LANDSCAPE": "/photos/samburu-zebra-herd.jpg",
@@ -311,7 +311,7 @@ export const IMAGE_LIBRARY = {
   "VICTORIA FALLS WATERFALL VIEW": "/photos/victoria-falls-waterfall.jpg",
   "VICTORIA FALLS NATIONAL PARK IMAGE": "/photos/victoria-falls-hero.jpg",
   "HELL'S GATE NATIONAL PARK EXCURSION": "/photos/hells-gate-national-park.jpg",
-  "SAMBURU SHABA": "/photos/client-samburu-shaba.jpg",
+  "SAMBURU SHABA": "/photos/client-samburu-shaba-update.jpg",
   "SAMBURU SHABA GALLERY 1": "/photos/client-samburu-gallery-1.jpg",
   "SAMBURU SHABA GALLERY 2": "/photos/client-samburu-gallery-2.jpg",
   "SAMBURU SHABA GALLERY 3": "/photos/client-samburu-gallery-3.jpg",
@@ -324,6 +324,9 @@ export const IMAGE_LIBRARY = {
   "CLIENT ACCOMMODATION ROOM 1": "/photos/client-accommodation-room-1.jpg",
   "CLIENT ACCOMMODATION ROOM 2": "/photos/client-accommodation-room-2.jpg",
   "NAIROBI EXCURSION": "/photos/nairobi-excursion.jpg",
+  "KILIMANJARO SUMMIT": "/photos/client-kilimanjaro-national-park.jpg",
+  "NGORONGORO CRATER RIM": "/photos/client-ngorongoro.jpg",
+  "TARANGIRE BAOBABS": "/photos/client-tarangire.jpg",
 };
 
 

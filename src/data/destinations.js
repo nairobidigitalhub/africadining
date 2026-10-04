@@ -488,8 +488,8 @@ export const DESTINATIONS = [
         icon: "PawPrint",
         items: [
           { name: "Serengeti National Park", region: "Northern Circuit", image: "SERENGETI CLIENT BALLOON", blurb: "Experience endless savannahs, abundant wildlife and the spectacular Great Migration.", activities: ["Game drives", "Hot-air balloon safaris"] },
-          { name: "Ngorongoro Conservation Area", region: "Northern Circuit", blurb: "Descend into the spectacular Ngorongoro Crater, where an extraordinary concentration of wildlife thrives within an ancient volcanic landscape.", activities: ["Crater floor game drives", "Cultural visits"] },
-          { name: "Tarangire National Park", region: "Northern Circuit", blurb: "Explore a beautiful safari landscape famous for its elephants, ancient baobabs and seasonal wildlife gatherings.", activities: ["Game drives", "Walking safaris"] },
+          { name: "Ngorongoro Conservation Area", region: "Northern Circuit", image: "NGORONGORO CRATER RIM", blurb: "Descend into the spectacular Ngorongoro Crater, where an extraordinary concentration of wildlife thrives within an ancient volcanic landscape.", activities: ["Crater floor game drives", "Cultural visits"] },
+          { name: "Tarangire National Park", region: "Northern Circuit", image: "TARANGIRE BAOBABS", blurb: "Explore a beautiful safari landscape famous for its elephants, ancient baobabs and seasonal wildlife gatherings.", activities: ["Game drives", "Walking safaris"] },
           { name: "Lake Manyara National Park", region: "Northern Circuit", blurb: "Discover diverse landscapes, abundant birdlife and the famous tree-climbing lions of Lake Manyara.", activities: ["Game drives", "Canoeing (seasonal)"] },
           { name: "Arusha National Park", region: "Northern Circuit", blurb: "Explore Mount Meru's forested slopes, crater lakes and open grasslands, with opportunities for walking safaris and canoeing.", activities: ["Game drives", "Walking safaris", "Canoeing"] },
           { name: "Ruaha National Park", region: "Southern Circuit", blurb: "A remote, less-visited park known for large elephant populations and rugged, riverine landscapes.", activities: ["Game drives", "Walking safaris"] },
@@ -499,7 +499,7 @@ export const DESTINATIONS = [
         title: "Mountains & Adventure",
         icon: "Compass",
         items: [
-          { name: "Mount Kilimanjaro", region: "Northern Tanzania", blurb: "Africa's highest peak and the world's tallest free-standing mountain, climbed via several established routes.", activities: ["Summit trekking", "Day hikes on lower slopes"] },
+          { name: "Mount Kilimanjaro", region: "Northern Tanzania", image: "KILIMANJARO SUMMIT", blurb: "Africa's highest peak and the world's tallest free-standing mountain, climbed via several established routes.", activities: ["Summit trekking", "Day hikes on lower slopes"] },
         ],
       },
       {
