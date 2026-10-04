@@ -240,6 +240,7 @@ export function GlobalStyles() {
       .exp-card-media-btn, .dine-card-media-btn { position: relative; border: none; background: none; padding: 0; display: block; width: 100%; }
       .exp-card-media, .dine-card-media { border-radius: 0; }
       .exp-card-media-fill.ph-media-real-contain img { object-fit: fill; }
+      .ph-media-real.exp-card-media-cover img { object-fit: cover; }
       .accommodation-card { transition: box-shadow .3s ease; }
       .accommodation-card:hover { transform: none; }
       .accommodation-grid { align-items: stretch; }
