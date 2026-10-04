@@ -491,7 +491,6 @@ export const DESTINATIONS = [
           { name: "Ngorongoro Conservation Area", region: "Northern Circuit", blurb: "Descend into the spectacular Ngorongoro Crater, where an extraordinary concentration of wildlife thrives within an ancient volcanic landscape.", activities: ["Crater floor game drives", "Cultural visits"] },
           { name: "Tarangire National Park", region: "Northern Circuit", blurb: "Explore a beautiful safari landscape famous for its elephants, ancient baobabs and seasonal wildlife gatherings.", activities: ["Game drives", "Walking safaris"] },
           { name: "Lake Manyara National Park", region: "Northern Circuit", blurb: "Discover diverse landscapes, abundant birdlife and the famous tree-climbing lions of Lake Manyara.", activities: ["Game drives", "Canoeing (seasonal)"] },
-          { name: "Nyerere National Park", region: "Southern Circuit", blurb: "Tanzania's largest protected area, centred on the Rufiji River, with a quieter, more remote safari feel.", activities: ["Boat safaris", "Walking safaris"] },
           { name: "Ruaha National Park", region: "Southern Circuit", blurb: "A remote, less-visited park known for large elephant populations and rugged, riverine landscapes.", activities: ["Game drives", "Walking safaris"] },
         ],
       },
