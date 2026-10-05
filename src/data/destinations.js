@@ -670,7 +670,10 @@ export const DESTINATIONS = [
 // its experiences/dining, and the "Explore Cape Town" cross-link from the
 // South Africa page all keep resolving correctly by id.
 
-export const VISIBLE_DESTINATIONS = DESTINATIONS.filter((d) => !d.hidden);
+const VISIBLE_DESTINATION_ORDER = ["Kenya", "Uganda", "Tanzania", "South Africa", "Botswana", "Zimbabwe"];
+export const VISIBLE_DESTINATIONS = DESTINATIONS
+  .filter((d) => !d.hidden)
+  .sort((a, b) => VISIBLE_DESTINATION_ORDER.indexOf(a.name) - VISIBLE_DESTINATION_ORDER.indexOf(b.name));
 
 // ── BOOKING DATA LAYER ──────────────────────────────────────────────────
 // Single source of truth for "what can be booked": derived live from
