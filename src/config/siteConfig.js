@@ -44,7 +44,7 @@ export const PAGE_META = {
   home: { title: "Africa Dining & Travel Guide — African Travel, Safaris & Dining", desc: "Curated African journeys across Mombasa, Nairobi, the Maasai Mara, Zanzibar and Cape Town — destinations, experiences and dining, planned by people who've been there." },
   destinations: { title: "Destinations — Africa Dining & Travel Guide", desc: "Explore our African destinations: Mombasa, Nairobi, Diani, Maasai Mara, Zanzibar, Tanzania, Victoria Falls, Botswana and South Africa." },
   experiences: { title: "Experiences — Africa Dining & Travel Guide", desc: "Book curated safaris, dhow cruises, balloon flights and cultural experiences across East and Southern Africa." },
-  dining: { title: "Dining — Africa Dining & Travel Guide", desc: "Swahili seafood, chef-led tasting rooms and farm lunches — dining experiences across our destinations." },
+  dining: { title: "Dining — Africa Dining & Travel Guide", desc: "Swahili seafood, tasting rooms guided by chefs and farm lunches — dining experiences across our destinations." },
   guide: { title: "Travel Guide — Africa Dining & Travel Guide", desc: "Destination notes, seasonal advice and dining recommendations from our travel guide." },
   services: { title: "Our Services — Africa Dining & Travel Guide", desc: "Historical, adventure, cultural, professional and specialised guide services for your trip." },
   service: { title: "Our Services — Africa Dining & Travel Guide", desc: "Guide services for how you like to explore." },

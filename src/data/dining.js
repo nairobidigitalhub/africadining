@@ -7,7 +7,7 @@ export const DINING = [
     priceRange: "$$$",
     image: "TAMARIND DHOW DINNER IMAGE",
     description: "A restored dhow moored at sunset, seafood platters served course by course on deck as the harbour lights come on.",
-    menuHighlights: ["Coconut crab curry", "Charcoal-grilled kingfish", "Tamarind-glazed prawns", "Spiced chai and dates"],
+    menuHighlights: ["Coconut crab curry", "Kingfish grilled over charcoal", "Prawns glazed with tamarind", "Spiced chai and dates"],
   },
   {
     id: "swahili-kitchen-table",
@@ -16,7 +16,7 @@ export const DINING = [
     type: "Cooking Experience",
     priceRange: "$$",
     image: "SWAHILI KITCHEN TABLE IMAGE",
-    description: "A hands-on cooking session in a family kitchen in Old Town, ending with the meal you've made, shared at the family table.",
+    description: "An interactive cooking session in a family kitchen in Old Town, ending with the meal you've made, shared at the family table.",
     menuHighlights: ["Biryani ya samaki", "Mahamri (spiced doughnuts)", "Coconut bean stew", "Fresh mango and tamarind juice"],
   },
   {
@@ -26,8 +26,8 @@ export const DINING = [
     type: "Local Food Tour",
     priceRange: "$$",
     image: "NYAMA CHOMA GARDEN IMAGE",
-    description: "Open-fire grilling in a Nairobi garden setting — communal, unhurried, and best eaten with your hands late into the evening.",
-    menuHighlights: ["Charcoal-grilled nyama choma", "Kachumbari salad", "Ugali and sukuma wiki", "Local craft beer pairing"],
+    description: "Grilling over open fires in a Nairobi garden setting — communal, unhurried, and best eaten with your hands late into the evening.",
+    menuHighlights: ["Nyama choma grilled over charcoal", "Kachumbari salad", "Ugali and sukuma wiki", "Local craft beer pairing"],
   },
   {
     id: "chefs-tasting-room",
@@ -37,17 +37,17 @@ export const DINING = [
     priceRange: "$$$$",
     image: "CHEFS TASTING ROOM IMAGE",
     description: "A tasting menu from a new generation of Nairobi chefs, reworking Kenyan staples with modern technique and local provenance.",
-    menuHighlights: ["Tasting menu, 7 courses", "Wine pairing available", "Kenyan-grown produce focus", "Open kitchen seating"],
+    menuHighlights: ["Tasting menu, 7 courses", "Wine pairing available", "Produce grown in Kenya", "Open kitchen seating"],
   },
   {
     id: "spice-route-lunch",
     name: "Spice Route Farm Lunch",
     destinationSlug: "zanzibar",
-    type: "Farm-to-Table",
+    type: "Farm to Table",
     priceRange: "$$",
     image: "SPICE ROUTE FARM LUNCH IMAGE",
     description: "A long table lunch set among clove and cardamom trees, cooked with produce harvested that same morning.",
-    menuHighlights: ["Clove-spiced pilau rice", "Coconut fish curry", "Cardamom-infused desserts", "Fresh spice teas"],
+    menuHighlights: ["Pilau rice spiced with clove", "Coconut fish curry", "Cardamom desserts", "Fresh spice teas"],
   },
   {
     id: "winelands-estate-lunch",
@@ -57,7 +57,6 @@ export const DINING = [
     priceRange: "$$$",
     image: "WINELANDS ESTATE LUNCH IMAGE",
     description: "A seated lunch on a Stellenbosch estate terrace, paired course by course with the estate's own wines.",
-    menuHighlights: ["Seasonal tasting plates", "Estate wine pairing", "Cape Malay-influenced dishes", "Vineyard terrace seating"],
+    menuHighlights: ["Seasonal tasting plates", "Estate wine pairing", "Dishes inspired by Cape Malay cooking", "Vineyard terrace seating"],
   },
 ];
-

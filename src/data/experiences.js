@@ -11,9 +11,9 @@ export const EXPERIENCES = [
     image: "DHOW SUNSET CRUISE IMAGE",
     shortDesc: "Sail a traditional dhow out past Tudor Creek as the sky turns over the harbour.",
     description:
-      "A restored wooden dhow, hand-sailed the traditional way, carries you out past the harbour mouth as Mombasa's light turns gold. Grilled seafood and cold drinks are served on deck, with a resident crew who've sailed this water for decades.",
-    highlights: ["Traditional hand-sailed dhow", "Grilled seafood & drinks on board", "Harbour and Old Town views from the water", "Small-group departure"],
-    included: ["Return transfer from Nyali/Bamburi hotels", "Welcome drink and grilled seafood platter", "Life jackets and safety briefing", "English/Swahili-speaking crew"],
+      "A restored wooden dhow, sailed by hand in the traditional way, carries you out past the harbour mouth as Mombasa's light turns gold. Grilled seafood and cold drinks are served on deck, with a resident crew who've sailed this water for decades.",
+    highlights: ["Traditional dhow sailing", "Grilled seafood & drinks on board", "Harbour and Old Town views from the water", "Small group departure"],
+    included: ["Return transfer from Nyali/Bamburi hotels", "Welcome drink and grilled seafood platter", "Life jackets and safety briefing", "Crew who speak English and Swahili"],
     gallery: ["DHOW UNDER SAIL", "SUNSET OVER HARBOUR", "GRILLED SEAFOOD ON DECK"],
   },
   {
@@ -26,10 +26,10 @@ export const EXPERIENCES = [
     groupSize: "2 – 10 guests",
     price: "From $40 / person",
     image: "OLD TOWN WALKING TOUR IMAGE",
-    shortDesc: "A guided walk through Mombasa's coral-stone lanes, carved doors and Fort Jesus ramparts.",
+    shortDesc: "A guided walk through Mombasa's coral stone lanes, carved doors and Fort Jesus ramparts.",
     description:
       "A local historian leads you through the lanes of Old Town, reading the layered Swahili, Omani and Portuguese history in doorframes, spice stalls and rooftop lines, finishing on the ramparts of Fort Jesus at the harbour mouth.",
-    highlights: ["Licensed local historian guide", "Fort Jesus entry included", "Spice-market tasting stop", "Shaded, slow-paced walking route"],
+    highlights: ["Licensed local historian guide", "Fort Jesus entry included", "Spice market tasting stop", "Shaded, unhurried walking route"],
     included: ["Fort Jesus entry ticket", "Guide fee", "Bottled water", "Spice tasting"],
     gallery: ["CARVED DOOR DETAIL", "FORT JESUS RAMPARTS", "SPICE MARKET STALL"],
   },
@@ -47,7 +47,7 @@ export const EXPERIENCES = [
     description:
       "Visit the Giraffe Centre in Nairobi to meet endangered Rothschild's giraffes and learn about the centre's conservation and breeding work. The elevated viewing platform offers a close look at these gentle animals in a leafy setting.",
     highlights: ["Meet Rothschild's giraffes", "Learn about local conservation work", "View the giraffes from the raised platform", "A relaxed stop in Nairobi's Karen area"],
-    included: ["Giraffe Centre visit", "Driver-guide", "Bottled water"],
+    included: ["Giraffe Centre visit", "Driver and guide", "Bottled water"],
     gallery: ["NAIROBI EXCURSION", "GIRAFFE CENTRE"],
   },
   {
@@ -112,7 +112,7 @@ export const EXPERIENCES = [
     shortDesc: "Drift over the plains at first light, then land to a champagne bush breakfast.",
     description:
       "Lift off before sunrise and drift silently over herds that stretch to the horizon, the pilot reading thermals to bring you low over rivers and ridgelines. Landing is followed by a full bush breakfast laid on the plain, with sparkling wine.",
-    highlights: ["Sunrise flight over the migration plains", "FAI-licensed balloon pilot", "Champagne bush breakfast on landing", "Flight certificate included"],
+    highlights: ["Sunrise flight over the migration plains", "Balloon pilot licensed by FAI", "Champagne bush breakfast on landing", "Flight certificate included"],
     included: ["Hotel/camp transfers", "Balloon flight", "Bush breakfast with sparkling wine", "Flight certificate"],
     gallery: ["BALLOONS AT DAWN", "PLAINS FROM ABOVE", "BUSH BREAKFAST TABLE", "RIVER VIEW FROM THE BALLOON"],
   },
@@ -127,8 +127,8 @@ export const EXPERIENCES = [
     image: "STONE TOWN SPICE TOUR IMAGE",
     shortDesc: "Morning in Stone Town's alleys, afternoon among clove and cardamom groves.",
     description:
-      "Begin in Stone Town's dense old quarter, tracing its carved doors and spice-market stalls with a local guide, before heading inland to a working spice farm for a tasting walk through clove, cardamom, vanilla and pepper.",
-    highlights: ["Stone Town guided walking tour", "Working spice-farm visit with tastings", "Traditional Swahili lunch included", "Small-group, air-conditioned transport"],
+      "Begin in Stone Town's dense old quarter, tracing its carved doors and spice market stalls with a local guide, before heading inland to a working spice farm for a tasting walk through clove, cardamom, vanilla and pepper.",
+    highlights: ["Stone Town guided walking tour", "Working spice farm visit with tastings", "Traditional Swahili lunch included", "Small group transport with air conditioning"],
     included: ["Guide fee", "Spice farm entry & tastings", "Swahili lunch", "Hotel transfers"],
     gallery: ["STONE TOWN DOORWAY", "CLOVE HARVEST", "SWAHILI LUNCH SPREAD"],
   },
@@ -144,7 +144,7 @@ export const EXPERIENCES = [
     shortDesc: "A cable car to the summit, followed by an estate lunch in Stellenbosch.",
     description:
       "Ride the rotating cable car to Table Mountain's summit for views over both oceans, then drive inland to Stellenbosch for a seated lunch paired with estate wines, finishing with a walk through the vines before sunset.",
-    highlights: ["Cable car tickets included", "Stellenbosch estate lunch", "Guided wine pairing", "Small-group vehicle"],
+    highlights: ["Cable car tickets included", "Stellenbosch estate lunch", "Guided wine pairing", "Small group vehicle"],
     included: ["Cable car return ticket", "Estate lunch", "Wine tasting/pairing", "Private transport"],
     gallery: ["CABLE CAR ASCENT", "VINEYARD ROWS", "ESTATE LUNCH TABLE"],
   },

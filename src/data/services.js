@@ -21,7 +21,7 @@ export const SERVICES = [
     slug: "professional-guides",
     name: "Professional Guides",
     heading: "Our Professional Guide Service",
-    blurb: "Experienced guides for structured, professionally-run itineraries.",
+    blurb: "Experienced guides for structured, professionally run itineraries.",
     image: "PROFESSIONAL GUIDES IMAGE",
   },
   {

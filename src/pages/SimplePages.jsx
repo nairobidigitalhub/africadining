@@ -13,14 +13,14 @@ export function TermsPage({ navigate }) {
           <h2 className="section-title">Terms for Safari Planning and Travel Services</h2>
           <p>
             <strong>Africa Dining & Travel Guide</strong> is a safari logistics and planning company offering both
-            off-the-shelf safari and travel programs and tailor-made safari programs.
+            safari and travel programs selected from available options and safari programs planned around your interests.
           </p>
 
           <h3>Our Safari &amp; Travel Services</h3>
           <p>We offer:</p>
           <ul>
-            <li><strong>Off-the-shelf safari and travel programs</strong> — for visitors who wish to choose from available programs and are open to suggestions.</li>
-            <li><strong>Tailor-made safari programs</strong> — for visitors with specific interests and family parties.</li>
+            <li><strong>Safari and travel programs</strong> — for visitors who wish to choose from available options and are open to suggestions.</li>
+            <li><strong>Safari programs planned around your interests</strong> — for visitors with specific interests and family parties.</li>
           </ul>
           <p>Our booking agents are conversant with safari seasons and have helpful information to assist clients in making appropriate choices when planning their trips.</p>
           <p>It is our priority to help travellers make informed choices based on their preferred destinations, travel requirements, and the applicable safari season.</p>
@@ -65,17 +65,17 @@ export function TermsPage({ navigate }) {
           <p>For quality services with every booking, accommodation and service availability is checked before a tour is confirmed.</p>
           <p>Where the client's preferred accommodation or service is unavailable, alternative options will be sought with the traveller's consent and consideration.</p>
           <p>Any alternative accommodation or service arrangements will be communicated as part of the booking and travel planning process.</p>
-          <p>During low and peak seasons, as applicable in most African destinations, last-minute bookings are handled with concern, consideration, and transparency.</p>
+          <p>During low and peak seasons, as applicable in most African destinations, late bookings are handled with concern, consideration, and transparency.</p>
           <p>Nothing is too much trouble when you choose Africa Dining &amp; Travel Guide as your travel partner.</p>
 
           <h3>5. Meet &amp; Greet Services</h3>
-          <p>Airport meet-and-greet, hotel check-in, hotel check-out, and safari departure are a priority to ensure smooth operation.</p>
+          <p>Airport welcomes, hotel arrival, hotel departure, and safari departure are a priority to ensure smooth operation.</p>
           <p>These services are handled by trained customer service personnel positioned at entry points in Africa as indicated in the traveller's itinerary.</p>
           <p>This helps facilitate the smooth commencement of the planned itinerary.</p>
 
-          <h3>6. Pre-Safari Briefing</h3>
-          <p>A pre-safari briefing is provided before the safari commences, depending on the country being visited and the itinerary arranged.</p>
-          <p>While on safari, the guide provides a pre-dinner briefing for the next activity, including the relevant do's and don'ts.</p>
+          <h3>6. Safari Briefing</h3>
+          <p>A safari briefing is provided before the safari commences, depending on the country being visited and the itinerary arranged.</p>
+          <p>While on safari, the guide provides a briefing before dinner about the next activity, including the relevant do's and don'ts.</p>
 
           <h3>7. Transportation</h3>
           <p>
@@ -94,11 +94,11 @@ export function TermsPage({ navigate }) {
           <h3>8. Branding &amp; Identification</h3>
           <p>Our service vehicles are consistently branded with the <strong>Africa Dining &amp; Travel Guide</strong> logo.</p>
           <p>Our team members in branded gear are ready to assist whenever travellers require information or assistance.</p>
-          <p>Our airport representatives and driver-guides also wear branded company attire to make them easily identifiable to our guests.</p>
+          <p>Our airport representatives, drivers and guides also wear branded company attire to make them easily identifiable to our guests.</p>
 
           <h3>9. Booking Confirmation &amp; Monitoring</h3>
           <p>Once safari services have been confirmed by Africa Dining &amp; Travel Guide, our company booking agent will provide the relevant monitoring details to assist with the smooth operation of the trip.</p>
-          <p>Guests will receive the necessary information and updates relating to their confirmed arrangements and itinerary through well-maintained and monitored platforms.</p>
+          <p>Guests will receive the necessary information and updates relating to their confirmed arrangements and itinerary through carefully maintained and monitored platforms.</p>
           <p>Travellers will be issued with the <strong>final safari itinerary and accommodation service vouchers</strong> once the safari deposit or full payment has been made.</p>
           <p>Guidelines on deposits will be provided upon receipt of the invoice from our booking agent, together with an invitation visa letter showing all confirmed accommodation.</p>
         </div>
@@ -151,4 +151,3 @@ export function NotFoundPage({ navigate, backPage = "home", label = "page" }) {
 /* ----------------------------------------------------------------------------
    17. GLOBAL STYLES
 ---------------------------------------------------------------------------- */
-

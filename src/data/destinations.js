@@ -11,12 +11,12 @@ export const DESTINATIONS = [
     heroImage: "HOT AIR BALLOONS AT DAWN",
     cardImage: "KENYA WILD DOGS",
     description:
-      "Kenya pairs the classic safari circuit — the Maasai Mara, Amboseli, Samburu and beyond — with a working coastline of dhow harbours and reef-sheltered beaches, and a capital city where wildlife and skyline share a fence line.",
-    bestTime: "June – October (dry season) for most parks; the coast is a year-round destination",
+      "Kenya pairs the classic safari circuit — the Maasai Mara, Amboseli, Samburu and beyond — with a working coastline of dhow harbours and beaches protected by reefs, and a capital city where wildlife and skyline share a fence line.",
+    bestTime: "June – October (dry season) for most parks; the coast is a destination throughout the year",
     highlights: [
       "The Maasai Mara's Great Migration and big cat sightings",
       "Amboseli's elephant herds beneath Mount Kilimanjaro",
-      "Mombasa's Old Town and dhow-lined coastline",
+      "Mombasa's Old Town and coastline lined with dhows",
       "Nairobi, the only capital with a national park at its edge",
     ],
     quote: "Kenya was never just one trip — it's a coastline, a capital and half a dozen distinct safari ecosystems, each worth its own itinerary.",
@@ -25,7 +25,7 @@ export const DESTINATIONS = [
         title: "Wildlife & Safari",
         icon: "PawPrint",
         items: [
-          { name: "Maasai Mara", blurb: "Kenya's best-known safari reserve, home to the Great Migration — covered in full on its own page.", linksTo: "maasai-mara", linksToLabel: "Maasai Mara" },
+          { name: "Maasai Mara", blurb: "Kenya's best known safari reserve, home to the Great Migration — covered in full on its own page.", linksTo: "maasai-mara", linksToLabel: "Maasai Mara" },
           { name: "Amboseli National Park", image: "AMBOSELI ELEPHANTS", blurb: "Famous for its large elephant herds and spectacular views of Mount Kilimanjaro.", linksTo: "amboseli", linksToLabel: "Amboseli" },
           { name: "Samburu Game Reserve", image: "SAMBURU ZEBRA", blurb: "Discover rugged northern landscapes and unique wildlife, including species rarely found elsewhere in Kenya.", linksTo: "samburu", linksToLabel: "Samburu" },
           { name: "Lake Nakuru National Park", image: "LAKE NAKURU RHINO", blurb: "Explore a scenic Rift Valley park known for rhinos, flamingos, diverse birdlife and beautiful lake views.", linksTo: "lake-nakuru", linksToLabel: "Lake Nakuru" },
@@ -39,7 +39,7 @@ export const DESTINATIONS = [
         title: "Mountains & Adventure",
         icon: "Compass",
         items: [
-          { name: "Mount Kenya", blurb: "Trek through high-altitude forests and alpine landscapes on routes around Africa's second-highest mountain.", activities: ["Guided trekking", "Mountain scenery"] },
+          { name: "Mount Kenya", blurb: "Trek through high altitude forests and alpine landscapes on routes around Africa's second highest mountain.", activities: ["Guided trekking", "Mountain scenery"] },
           { name: "Hell's Gate National Park", image: "HELL'S GATE NATIONAL PARK EXCURSION", blurb: "Explore dramatic cliffs, gorges and geothermal landscapes on foot or by bicycle.", activities: ["Hiking", "Cycling", "Wildlife viewing"] },
         ],
       },
@@ -47,7 +47,7 @@ export const DESTINATIONS = [
         title: "Coast & Islands",
         icon: "Waves",
         items: [
-          { name: "Mombasa", blurb: "Kenya's historic harbour city, with dhow-lined beaches — covered in full on its own page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
+          { name: "Mombasa", blurb: "Kenya's historic harbour city, with beaches lined by dhows — covered in full on its own page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
           { name: "Diani Beach", blurb: "Ten kilometres of white sand on the south coast — covered in full on its own page.", linksTo: "diani", linksToLabel: "Diani" },
           { name: "Malindi", blurb: "A historic coastal town north of Mombasa, known for its beaches and marine park." },
           { name: "Watamu", blurb: "A quiet beach town near Malindi, known for its marine national park and reef diving." },
@@ -55,16 +55,16 @@ export const DESTINATIONS = [
           { name: "Kilifi", blurb: "A coastal town on Kilifi Creek, known for its beaches and historic ruins nearby." },
           { name: "Wasini Island", blurb: "An island off Shimoni on Kenya's south coast, known for dolphin tours and marine park excursions." },
           { name: "Chale Island", blurb: "A small island off Diani, ringed by coral reef and beach." },
-          { name: "Shimoni", blurb: "A coastal village near Wasini Island and a departure point for dolphin-watching and reef excursions." },
+          { name: "Shimoni", blurb: "A coastal village near Wasini Island and a departure point for dolphin watching and reef excursions." },
         ],
       },
       {
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Fort Jesus & Mombasa Old Town", blurb: "Visit the 16th-century Portuguese fort and explore the surrounding coral-stone lanes and carved Swahili doors." },
+          { name: "Fort Jesus & Mombasa Old Town", blurb: "Visit the 16th century Portuguese fort and explore the surrounding coral stone lanes and carved Swahili doors." },
           { name: "Maasai Cultural Visits", blurb: "Meet local hosts and learn about Maasai beadwork, traditions and community life through respectful, hosted visits." },
-          { name: "Maasai Market, Nairobi", blurb: "Browse beadwork, textiles and carvings sold by makers at Nairobi's rotating open-air market." },
+          { name: "Maasai Market, Nairobi", blurb: "Browse beadwork, textiles and carvings sold by makers at Nairobi's rotating open air market." },
           { name: "Nairobi National Museum", blurb: "Explore Kenya's natural and cultural history, from hominid fossils to contemporary art." },
         ],
       },
@@ -90,8 +90,8 @@ export const DESTINATIONS = [
     heroImage: "SAMBURU LANDSCAPE", cardImage: "SAMBURU ZEBRA",
     description: "Samburu’s dry northern landscape is home to distinctive wildlife and the Ewaso Ng’iro River, which draws animals through the reserve.",
     bestTime: "June – October",
-    highlights: ["Grevy’s zebra", "Dry-country wildlife", "Rugged northern scenery"],
-    quote: "Samburu’s wildlife and dry-country scenery give Kenya’s northern safari circuit its own character.",
+    highlights: ["Grevy’s zebra", "Wildlife of the dry country", "Rugged northern scenery"],
+    quote: "Samburu’s wildlife and dry country scenery give Kenya’s northern safari circuit its own character.",
     categories: [{ title: "Wildlife", icon: "PawPrint", items: [
       { name: "Northern Kenya Wildlife", image: "SAMBURU ANTELOPE", blurb: "Look for wildlife adapted to the reserve’s dry northern habitats." },
     ] }],
@@ -103,7 +103,7 @@ export const DESTINATIONS = [
     tagline: "Rift Valley lake scenery and a sanctuary for rhinos", accent: "teal",
     heroImage: "LAKE NAKURU SCENIC LAKE", cardImage: "LAKE NAKURU RHINO",
     description: "Lake Nakuru National Park combines Rift Valley lake scenery with woodland and grassland habitats that support rhinos, antelope and abundant birdlife.",
-    bestTime: "Year-round; June – February is generally drier",
+    bestTime: "Throughout the year; June – February is generally drier",
     highlights: ["Rhino sanctuary", "Lake and escarpment views", "Birdlife and antelope"],
     quote: "At Lake Nakuru, wildlife sightings and changing lake views share the same compact park.",
     categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [{ name: "Lake Nakuru Wildlife", image: "LAKE NAKURU ANTELOPE", blurb: "Explore the park’s lake, grassland and wildlife habitats." }] }],
@@ -124,12 +124,12 @@ export const DESTINATIONS = [
     heroImage: "MOMBASA — HERO IMAGE",
     cardImage: "MOMBASA — COASTLINE IMAGE",
     description:
-      "Kenya's old harbour city layers Swahili, Portuguese and Omani history along a coastline of warm, reef-sheltered water. Spend your mornings in the coral-stone lanes of Old Town and your afternoons on sand the colour of bone china — Mombasa rewards a slow itinerary.",
+      "Kenya's old harbour city layers Swahili, Portuguese and Omani history along a coastline of warm water protected by reefs. Spend your mornings in the coral stone lanes of Old Town and your afternoons on sand the colour of bone china — Mombasa rewards a slow itinerary.",
     bestTime: "June – March",
     highlights: [
-      "Old Town's carved doors and coral-stone alleys",
-      "Fort Jesus, a 16th-century Portuguese garrison",
-      "Reef-sheltered beaches from Nyali to Diani",
+      "Old Town's carved doors and coral stone alleys",
+      "Fort Jesus, a 16th century Portuguese garrison",
+      "Beaches protected by reefs from Nyali to Diani",
       "Dhow sails at sunset off Tudor Creek",
     ],
     quote: "Mombasa doesn't perform for visitors — it simply continues, and lets you in.",
@@ -138,7 +138,7 @@ export const DESTINATIONS = [
         title: "Beaches",
         icon: "Waves",
         items: [
-          { name: "Nyali Beach", blurb: "Wide, reef-protected sand a short drive from the city centre — calm water, good for families." },
+          { name: "Nyali Beach", blurb: "Wide sandy beach protected by reefs, a short drive from the city centre — calm water, good for families." },
           { name: "Bamburi Beach", blurb: "The liveliest stretch of coast, with beach bars, camel rides at dusk and watersports operators." },
         ],
       },
@@ -147,14 +147,14 @@ export const DESTINATIONS = [
         icon: "Landmark",
         items: [
           { name: "Fort Jesus", blurb: "A UNESCO World Heritage garrison built by the Portuguese in 1593, guarding the old harbour mouth." },
-          { name: "Old Town", blurb: "Narrow coral-stone streets lined with intricately carved Swahili and Omani doors." },
+          { name: "Old Town", blurb: "Narrow coral stone streets lined with intricately carved Swahili and Omani doors." },
         ],
       },
       {
         title: "Dining",
         icon: "UtensilsCrossed",
         items: [
-          { name: "Swahili Seafood Kitchens", blurb: "Coconut-and-tamarind curries, grilled kingfish and biryani rooted in centuries of trade." },
+          { name: "Swahili Seafood Kitchens", blurb: "Curries with coconut and tamarind, grilled kingfish and biryani rooted in centuries of trade." },
           { name: "Tamarind Dhow Dinner", blurb: "A restored dhow moored at sunset, seafood platters served on deck." },
         ],
       },
@@ -163,7 +163,7 @@ export const DESTINATIONS = [
         icon: "Compass",
         items: [
           { name: "Dhow Sunset Cruise", blurb: "Traditional sail out past the harbour, drinks and grilled snacks included." },
-          { name: "Mombasa Marine Park", blurb: "Glass-bottom boat snorkelling over shallow coral gardens." },
+          { name: "Mombasa Marine Park", blurb: "Snorkelling over shallow coral gardens from a boat with a glass bottom." },
         ],
       },
     ],
@@ -184,12 +184,12 @@ export const DESTINATIONS = [
     heroImage: "NAIROBI — SKYLINE HERO IMAGE",
     cardImage: "NAIROBI — SKYLINE IMAGE",
     description:
-      "Nairobi moves between two identities without friction — a fast, design-forward East African capital, and a city where giraffes graze against a backdrop of glass towers. It's the natural first and last stop on an East African itinerary.",
-    bestTime: "Year-round; driest Jun–Oct",
+      "Nairobi moves between two identities without friction — a fast, design led East African capital, and a city where giraffes graze against a backdrop of glass towers. It's the natural first and last stop on an East African itinerary.",
+    bestTime: "Throughout the year; driest Jun–Oct",
     highlights: [
       "Nairobi National Park, wildlife within city limits",
       "The Nairobi Gallery and Maasai Market for design and craft",
-      "A fast-growing, chef-led restaurant scene",
+      "A growing restaurant scene led by talented chefs",
       "Giraffe Centre and the David Sheldrick elephant nursery",
     ],
     quote: "Nairobi is proof that a capital city and a savannah can share a fence line.",
@@ -198,15 +198,15 @@ export const DESTINATIONS = [
         title: "Wildlife",
         icon: "PawPrint",
         items: [
-          { name: "Nairobi National Park", blurb: "Lion, rhino and giraffe roam within sight of the skyline — a half-day safari from breakfast." },
-          { name: "Sheldrick Wildlife Trust", blurb: "Orphaned elephant calves, hand-raised and readied for release into the wild." },
+          { name: "Nairobi National Park", blurb: "Lion, rhino and giraffe roam within sight of the skyline — a half day safari from breakfast." },
+          { name: "Sheldrick Wildlife Trust", blurb: "Orphaned elephant calves, raised by hand and readied for release into the wild." },
         ],
       },
       {
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Maasai Market", blurb: "A rotating open-air market for beadwork, textiles and carvings, sold directly by makers." },
+          { name: "Maasai Market", blurb: "A rotating open air market for beadwork, textiles and carvings, sold directly by makers." },
           { name: "Nairobi National Museum", blurb: "Kenya's natural and cultural history, from hominid fossils to contemporary art." },
         ],
       },
@@ -214,8 +214,8 @@ export const DESTINATIONS = [
         title: "Dining",
         icon: "UtensilsCrossed",
         items: [
-          { name: "Chef-Led Tasting Rooms", blurb: "A new generation of Nairobi kitchens reworking Kenyan staples with technique and provenance." },
-          { name: "Nyama Choma Gardens", blurb: "Open-fire grilling done communally, best eaten outdoors, late into the evening." },
+          { name: "Chef Led Tasting Rooms", blurb: "A new generation of Nairobi kitchens reworking Kenyan staples with technique and provenance." },
+          { name: "Nyama Choma Gardens", blurb: "Grilling over open fires, best eaten outdoors and shared late into the evening." },
         ],
       },
     ],
@@ -236,11 +236,11 @@ export const DESTINATIONS = [
     heroImage: "DIANI BEACH — HERO IMAGE",
     cardImage: "DIANI BEACH — SHORELINE IMAGE",
     description:
-      "South of Mombasa, Diani trades city history for pure coastline — a long, palm-lined beach with some of the clearest water on the East African coast, backed by remnant forest that still holds colobus monkeys.",
+      "South of Mombasa, Diani trades city history for pure coastline — a long beach lined with palms and some of the clearest water on the East African coast, backed by remnant forest that still holds colobus monkeys.",
     bestTime: "December – March",
     highlights: [
       "Ten uninterrupted kilometres of white sand",
-      "Kite-surfing conditions among East Africa's best",
+      "Kite surfing conditions among East Africa's best",
       "Colobus Conservation forest walks",
       "Kaya Kinondo, a sacred Mijikenda forest",
     ],
@@ -250,7 +250,7 @@ export const DESTINATIONS = [
         title: "Beaches",
         icon: "Waves",
         items: [
-          { name: "Diani Main Beach", blurb: "Powder-soft sand, calm reef-protected shallows, sun loungers under makuti-thatch shade." },
+          { name: "Diani Main Beach", blurb: "Soft sand, calm shallows protected by reefs, and sun loungers under makuti thatch shade." },
           { name: "Galu Beach", blurb: "The quieter southern stretch, favoured for long, uninterrupted morning walks." },
         ],
       },
@@ -258,7 +258,7 @@ export const DESTINATIONS = [
         title: "Activities",
         icon: "Compass",
         items: [
-          { name: "Kite-Surfing Diani", blurb: "Reliable cross-shore wind and a wide, shallow lagoon make this a training-ground favourite." },
+          { name: "Kite Surfing Diani", blurb: "Reliable winds and a wide, shallow lagoon make this a favourite place to learn." },
           { name: "Colobus Forest Walk", blurb: "Guided walks through remnant coastal forest, home to the endangered Angolan colobus." },
         ],
       },
@@ -287,12 +287,12 @@ export const DESTINATIONS = [
     heroImage: "MAASAI MARA CLIENT PORTRAIT",
     cardImage: "MAASAI MARA CLIENT PORTRAIT",
     description:
-      "An extension of Tanzania's Serengeti across the border, the Mara is short-grass plain to the horizon, dense with resident wildlife year-round and the stage for the wildebeest migration's most dramatic river crossings.",
+      "An extension of Tanzania's Serengeti across the border, the Mara is a plain of short grass stretching to the horizon, dense with resident wildlife throughout the year and the stage for the wildebeest migration's most dramatic river crossings.",
     bestTime: "July – October, for the migration",
     highlights: [
       "Wildebeest and zebra river crossings, Jul–Oct",
       "Dense, resident lion and cheetah populations",
-      "Sunrise hot-air balloon flights over the plains",
+      "Sunrise balloon flights over the plains",
       "Maasai cultural visits with local communities",
     ],
     quote: "There is a particular quiet to the Mara at first light, just before the plain wakes up.",
@@ -301,15 +301,15 @@ export const DESTINATIONS = [
         title: "Wildlife",
         icon: "PawPrint",
         items: [
-          { name: "Great Migration Crossings", blurb: "Watch a million wildebeest and zebra cross the crocodile-filled Mara River, Jul–Oct." },
-          { name: "Big Cat Territories", image: "BIG CAT TERRITORIES", blurb: "Some of Africa's most-studied lion prides and a healthy resident cheetah population." },
+          { name: "Great Migration Crossings", blurb: "Watch a million wildebeest and zebra cross the Mara River, home to crocodiles, from July to October." },
+          { name: "Big Cat Territories", image: "BIG CAT TERRITORIES", blurb: "Some of Africa's best studied lion prides and a healthy resident cheetah population." },
         ],
       },
       {
         title: "Activities",
         icon: "Compass",
         items: [
-          { name: "Hot-Air Balloon Safari", blurb: "A sunrise flight over the plains, followed by a champagne bush breakfast on landing." },
+          { name: "Hot Air Balloon Safari", blurb: "A sunrise flight over the plains, followed by a champagne bush breakfast on landing." },
           { name: "Guided Game Drives", blurb: "Dawn and dusk drives with trackers who read the plain like a shared language." },
         ],
       },
@@ -317,7 +317,7 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Maasai Village Visit", blurb: "A hosted visit to a local manyatta, with beadwork, song and grazing-economy insight." },
+          { name: "Maasai Village Visit", blurb: "A hosted visit to a local manyatta, with beadwork, song and insight into a pastoral way of life." },
         ],
       },
     ],
@@ -333,16 +333,16 @@ export const DESTINATIONS = [
     hidden: true,
     tags: ["Islands", "Coastal", "Culture"],
     coordinates: "6.16°S, 39.20°E",
-    tagline: "Spice-island shores off the Tanzanian coast",
+    tagline: "Spice island shores off the Tanzanian coast",
     accent: "teal",
     heroImage: "ZANZIBAR — HERO IMAGE",
     cardImage: "ZANZIBAR — TURQUOISE WATER IMAGE",
     description:
-      "Zanzibar pairs Stone Town's dense, UNESCO-listed old quarter with a ring of turquoise coastline. Clove and cardamom farms sit inland; further out, sandbanks appear and vanish with the tide.",
+      "Zanzibar pairs Stone Town's dense old quarter, recognized by UNESCO, with a ring of turquoise coastline. Clove and cardamom farms sit inland; further out, sandbanks appear and vanish with the tide.",
     bestTime: "June – October",
     highlights: [
       "Stone Town's alleyways, markets and rooftop cafés",
-      "Spice-farm tours through clove and cardamom groves",
+      "Spice farm tours through clove and cardamom groves",
       "Sandbank swimming trips at low tide",
       "Jozani Forest, home to the red colobus monkey",
     ],
@@ -360,7 +360,7 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Stone Town", blurb: "A dense UNESCO old quarter of coral-stone buildings, carved doors and spice markets." },
+          { name: "Stone Town", blurb: "A dense UNESCO old quarter of coral stone buildings, carved doors and spice markets." },
           { name: "Spice Farm Tours", blurb: "Guided walks through clove, cardamom and vanilla plantations, with tastings." },
         ],
       },
@@ -385,7 +385,7 @@ export const DESTINATIONS = [
     hidden: true,
     tags: ["City", "Coastal", "Culture", "Adventure"],
     coordinates: "33.92°S, 18.42°E",
-    tagline: "A city held between a flat-topped mountain and two oceans",
+    tagline: "A city held between a mountain with a level summit and two oceans",
     accent: "gold",
     heroImage: "CAPE TOWN — HERO IMAGE",
     cardImage: "CAPE TOWN — TABLE MOUNTAIN IMAGE",
@@ -404,7 +404,7 @@ export const DESTINATIONS = [
         title: "Nature",
         icon: "TreePine",
         items: [
-          { name: "Table Mountain", blurb: "A cable car or a half-day hike to a flat summit with views over both oceans." },
+          { name: "Table Mountain", blurb: "A cable car or a half day hike to a flat summit with views over both oceans." },
           { name: "Boulders Beach", blurb: "A sheltered cove shared with a resident colony of African penguins." },
         ],
       },
@@ -412,8 +412,8 @@ export const DESTINATIONS = [
         title: "Dining",
         icon: "UtensilsCrossed",
         items: [
-          { name: "Winelands Tasting Rooms", blurb: "Estate lunches paired with Stellenbosch and Franschhoek's award-winning wines." },
-          { name: "Bo-Kaap Cape Malay Kitchens", blurb: "Slow-cooked bredies and bright spice pastes rooted in Cape Malay history." },
+          { name: "Winelands Tasting Rooms", blurb: "Estate lunches paired with acclaimed wines from Stellenbosch and Franschhoek." },
+          { name: "Bo-Kaap Cape Malay Kitchens", blurb: "Bredies simmered slowly and bright spice pastes rooted in Cape Malay history." },
         ],
       },
       {
@@ -434,12 +434,12 @@ export const DESTINATIONS = [
     region: "Safari & City",
     tags: ["Safari", "Wildlife", "City", "Coastal", "Culture"],
     coordinates: "26.20°S, 28.05°E",
-    tagline: "From Kruger's bushveld to Cape Town's mountain-and-ocean skyline",
+    tagline: "From Kruger's bushveld to Cape Town's mountain and ocean skyline",
     accent: "gold",
     heroImage: "CAPE TOWN — HERO IMAGE",
     cardImage: "CAPE TOWN — TABLE MOUNTAIN IMAGE",
     description:
-      "South Africa pairs one of the continent's most storied safari parks with a city framed by an iconic flat-topped mountain and two oceans. Kruger National Park anchors the wildlife side of an itinerary here; Cape Town anchors the food, wine and coastline side.",
+      "South Africa pairs one of the continent's most storied safari parks with a city framed by an iconic mountain with a level summit and two oceans. Kruger National Park anchors the wildlife side of an itinerary here; Cape Town anchors the food, wine and coastline side.",
     bestTime: "May – September (dry season) for Kruger's best game viewing; November – March for Cape Town",
     highlights: [
       "Kruger National Park's reliable Big Five sightings",
@@ -448,14 +448,14 @@ export const DESTINATIONS = [
       "Boulders Beach's resident African penguin colony",
       "Bo-Kaap's coloured houses and Cape Malay cuisine",
     ],
-    quote: "Few countries put a Big Five reserve and a mountain-ringed, ocean-fronted city on the same itinerary without a long flight in between.",
+    quote: "Few countries put a Big Five reserve and a city framed by mountains and ocean on the same itinerary without a long flight in between.",
     categories: [
       {
         title: "Locations",
         icon: "Compass",
         items: [
           { name: "Kruger National Park", region: "Mpumalanga & Limpopo", blurb: "Experience one of Africa's premier safari destinations, home to the Big Five and an incredible diversity of wildlife.", activities: ["Game drives", "Walking safaris"] },
-          { name: "Cape Town", blurb: "Discover a vibrant coastal city combining Table Mountain, beautiful beaches, world-class dining and unforgettable scenery.", linksTo: "cape-town", linksToLabel: "Cape Town" },
+          { name: "Cape Town", blurb: "Discover a vibrant coastal city combining Table Mountain, beautiful beaches, outstanding dining and unforgettable scenery.", linksTo: "cape-town", linksToLabel: "Cape Town" },
         ],
       },
     ],
@@ -468,18 +468,18 @@ export const DESTINATIONS = [
     region: "Safari & Islands",
     tags: ["Safari", "Wildlife", "Islands", "Culture"],
     coordinates: "3.37°S, 36.68°E",
-    tagline: "Serengeti plains, crater highlands and spice-island coastline in one country",
+    tagline: "Serengeti plains, crater highlands and spice island coastline in one country",
     accent: "teal",
     heroImage: "TANZANIA — HERO IMAGE",
     cardImage: "TANZANIA — SERENGETI IMAGE",
     description:
-      "Tanzania spans the classic northern safari circuit of the Serengeti and Ngorongoro Crater, the peak of Mount Kilimanjaro, and — across the channel — the spice-scented lanes of Zanzibar. Few countries hold this much variety together without feeling stretched thin.",
+      "Tanzania spans the classic northern safari circuit of the Serengeti and Ngorongoro Crater, the peak of Mount Kilimanjaro, and — across the channel — the lanes of Zanzibar, fragrant with spices. Few countries hold this much variety together without feeling stretched thin.",
     bestTime: "June – October (dry season); late January – March for the calving season",
     highlights: [
       "The Great Migration crossing the Serengeti's plains",
-      "Ngorongoro Crater's dense, self-contained ecosystem",
+      "Ngorongoro Crater's dense and distinctive ecosystem",
       "Mount Kilimanjaro, Africa's highest peak",
-      "Stone Town and the spice-scented shores of Zanzibar",
+      "Stone Town and the spice scented shores of Zanzibar",
     ],
     quote: "Tanzania doesn't ask you to choose between mountain, plain and coastline — it hands you all three.",
     categories: [
@@ -487,34 +487,34 @@ export const DESTINATIONS = [
         title: "Wildlife & Safari",
         icon: "PawPrint",
         items: [
-          { name: "Serengeti National Park", region: "Northern Circuit", image: "SERENGETI CLIENT BALLOON", blurb: "Experience endless savannahs, abundant wildlife and the spectacular Great Migration.", activities: ["Game drives", "Hot-air balloon safaris"] },
+          { name: "Serengeti National Park", region: "Northern Circuit", image: "SERENGETI CLIENT BALLOON", blurb: "Experience endless savannahs, abundant wildlife and the spectacular Great Migration.", activities: ["Game drives", "Hot air balloon safaris"] },
           { name: "Ngorongoro Conservation Area", region: "Northern Circuit", image: "NGORONGORO CRATER RIM", blurb: "Descend into the spectacular Ngorongoro Crater, where an extraordinary concentration of wildlife thrives within an ancient volcanic landscape.", activities: ["Crater floor game drives", "Cultural visits"] },
           { name: "Tarangire National Park", region: "Northern Circuit", image: "TARANGIRE BAOBABS", blurb: "Explore a beautiful safari landscape famous for its elephants, ancient baobabs and seasonal wildlife gatherings.", activities: ["Game drives", "Walking safaris"] },
-          { name: "Lake Manyara National Park", region: "Northern Circuit", blurb: "Discover diverse landscapes, abundant birdlife and the famous tree-climbing lions of Lake Manyara.", activities: ["Game drives", "Canoeing (seasonal)"] },
+          { name: "Lake Manyara National Park", region: "Northern Circuit", blurb: "Discover diverse landscapes, abundant birdlife and the famous lions that climb trees at Lake Manyara.", activities: ["Game drives", "Canoeing (seasonal)"] },
           { name: "Arusha National Park", region: "Northern Circuit", blurb: "Explore Mount Meru's forested slopes, crater lakes and open grasslands, with opportunities for walking safaris and canoeing.", activities: ["Game drives", "Walking safaris", "Canoeing"] },
-          { name: "Ruaha National Park", region: "Southern Circuit", blurb: "A remote, less-visited park known for large elephant populations and rugged, riverine landscapes.", activities: ["Game drives", "Walking safaris"] },
+          { name: "Ruaha National Park", region: "Southern Circuit", blurb: "A remote, less visited park known for large elephant populations and rugged, riverine landscapes.", activities: ["Game drives", "Walking safaris"] },
         ],
       },
       {
         title: "Mountains & Adventure",
         icon: "Compass",
         items: [
-          { name: "Mount Kilimanjaro", region: "Northern Tanzania", image: "KILIMANJARO SUMMIT", blurb: "Africa's highest peak and the world's tallest free-standing mountain, climbed via several established routes.", activities: ["Summit trekking", "Day hikes on lower slopes"] },
+          { name: "Mount Kilimanjaro", region: "Northern Tanzania", image: "KILIMANJARO SUMMIT", blurb: "Africa's highest peak and the world's tallest mountain that stands on its own, climbed via several established routes.", activities: ["Summit trekking", "Day hikes on lower slopes"] },
         ],
       },
       {
         title: "Coast & Islands",
         icon: "Waves",
         items: [
-          { name: "Zanzibar & Stone Town", blurb: "Tanzania's spice island and its UNESCO-listed old quarter — already covered on this site as its own destination.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
-          { name: "Pemba Island", region: "Zanzibar Archipelago", blurb: "A quieter, less-visited island north of Zanzibar known for clove plantations and pristine reef diving.", activities: ["Diving", "Snorkelling"] },
+          { name: "Zanzibar & Stone Town", blurb: "Tanzania's spice island and its old quarter, recognized by UNESCO — already covered on this site as its own destination.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
+          { name: "Pemba Island", region: "Zanzibar Archipelago", blurb: "A quieter, less visited island north of Zanzibar known for clove plantations and pristine reef diving.", activities: ["Diving", "Snorkelling"] },
         ],
       },
       {
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Maasai Cultural Experiences", blurb: "Community-hosted visits with Maasai communities near several northern parks, offered where local hosts make them available.", activities: ["Village visits", "Beadwork demonstrations"] },
+          { name: "Maasai Cultural Experiences", blurb: "Visits hosted by Maasai communities near several northern parks, offered where local hosts make them available.", activities: ["Village visits", "Beadwork demonstrations"] },
           { name: "Local Cultural Experiences", blurb: "Markets, craft workshops and coastal Swahili culture round out a Tanzania itinerary beyond the parks." },
         ],
       },
@@ -537,7 +537,7 @@ export const DESTINATIONS = [
     bestTime: "June – August and December – February (drier, more comfortable trekking conditions)",
     highlights: [
       "Mountain gorilla trekking in Bwindi Impenetrable National Park",
-      "Ranger-guided treks through dense, ancient rainforest",
+      "Treks led by rangers through dense, ancient rainforest",
     ],
     quote: "Bwindi doesn't reveal its gorillas easily — the trek there is part of what makes finding them feel earned.",
     categories: [
@@ -546,7 +546,7 @@ export const DESTINATIONS = [
         icon: "PawPrint",
         items: [
           { name: "Bwindi Impenetrable National Park", image: "MOUNTAIN GORILLA IN THE FOREST", blurb: "Journey into Uganda's ancient rainforest for an unforgettable mountain gorilla trekking experience.", activities: ["Mountain gorilla trekking"] },
-          { name: "Mountain Gorilla Trekking", image: "MOUNTAIN GORILLA CLOSE-UP", blurb: "A permitted, ranger-guided trek to a habituated gorilla family — Bwindi's signature experience." },
+          { name: "Mountain Gorilla Trekking", image: "MOUNTAIN GORILLA CLOSE-UP", blurb: "A permitted trek led by a ranger to a habituated gorilla family — Bwindi's signature experience." },
         ],
       },
     ],
@@ -570,7 +570,7 @@ export const DESTINATIONS = [
       "Victoria Falls, one of the largest waterfalls in the world",
       "Sunset cruises and whitewater rafting on the Zambezi",
       "Hwange National Park's large elephant herds",
-      "Great Zimbabwe's centuries-old stone ruins",
+      "Great Zimbabwe's stone ruins, dating back centuries",
     ],
     quote: "You hear Victoria Falls before you see it — locally, Mosi-oa-Tunya, \"the smoke that thunders.\"",
     categories: [
@@ -597,7 +597,7 @@ export const DESTINATIONS = [
         title: "Heritage & Culture",
         icon: "Landmark",
         items: [
-          { name: "Great Zimbabwe", blurb: "The stone ruins of a medieval city and the country's namesake — one of Sub-Saharan Africa's most significant archaeological sites." },
+          { name: "Great Zimbabwe", blurb: "The stone ruins of a medieval city and the country's namesake — one of the most significant archaeological sites in Africa south of the Sahara." },
         ],
       },
     ],
@@ -615,7 +615,7 @@ export const DESTINATIONS = [
     heroImage: "BOTSWANA — HERO IMAGE",
     cardImage: "BOTSWANA — OKAVANGO IMAGE",
     description:
-      "Botswana trades the classic vehicle-based safari for something slower — a mokoro gliding through the Okavango Delta's channels, or a boat easing along the Chobe River past elephant herds. Beyond the delta, the country opens into vast salt pans and one of the world's largest protected wilderness areas in the Central Kalahari.",
+      "Botswana trades the classic safari by vehicle for something slower — a mokoro gliding through the Okavango Delta's channels, or a boat easing along the Chobe River past elephant herds. Beyond the delta, the country opens into vast salt pans and one of the world's largest protected wilderness areas in the Central Kalahari.",
     bestTime: "May – October (dry season, the most reliable stretch for wildlife viewing)",
     highlights: [
       "Mokoro (canoe) safaris through the Okavango Delta",
@@ -629,7 +629,7 @@ export const DESTINATIONS = [
         title: "Wilderness & Safari",
         icon: "PawPrint",
         items: [
-          { name: "Okavango Delta", blurb: "A UNESCO-listed inland delta where the Okavango River fans into channels and lagoons, explored by mokoro canoe as much as by vehicle.", activities: ["Mokoro (canoe) safaris", "Game drives"] },
+          { name: "Okavango Delta", blurb: "An inland delta recognized by UNESCO, where the Okavango River fans into channels and lagoons, explored by mokoro canoe as much as by vehicle.", activities: ["Mokoro (canoe) safaris", "Game drives"] },
           { name: "Moremi Game Reserve", blurb: "Part of the Okavango system, known for a dense concentration of predators alongside the delta's wetlands.", activities: ["Game drives", "Boat safaris"] },
           { name: "Chobe National Park", blurb: "Home to one of Africa's largest elephant populations, especially along the Chobe River during the dry season.", activities: ["Boat safaris", "Game drives"] },
           { name: "Savuti", blurb: "A remote area of the Chobe region known for predator sightings and the unpredictable Savuti Channel." },
@@ -642,7 +642,7 @@ export const DESTINATIONS = [
         items: [
           { name: "Makgadikgadi Pans", blurb: "Among the largest salt pan systems in the world, hosting a seasonal zebra migration across otherwise stark, open terrain.", activities: ["Quad biking", "Zebra migration viewing (seasonal)"] },
           { name: "Nxai Pan National Park", blurb: "Known for its ancient baobabs and a resident zebra population that grows during the wet season.", activities: ["Game drives"] },
-          { name: "Central Kalahari Game Reserve", blurb: "One of the world's largest protected wildlife reserves, with desert-adapted wildlife and San Bushmen heritage.", activities: ["Game drives", "Cultural walks"] },
+          { name: "Central Kalahari Game Reserve", blurb: "One of the world's largest protected wildlife reserves, with wildlife adapted to the desert and San Bushmen heritage.", activities: ["Game drives", "Cultural walks"] },
         ],
       },
       {
@@ -656,7 +656,7 @@ export const DESTINATIONS = [
         title: "Conservation",
         icon: "Compass",
         items: [
-          { name: "Khama Rhino Sanctuary", blurb: "A community-run sanctuary near Serowe dedicated to protecting and reintroducing white and black rhino." },
+          { name: "Khama Rhino Sanctuary", blurb: "A sanctuary run by the community near Serowe, dedicated to protecting and reintroducing white and black rhino." },
         ],
       },
     ],

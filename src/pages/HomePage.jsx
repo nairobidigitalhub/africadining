@@ -162,9 +162,9 @@ export default function HomePage({ navigate, onBook }) {
           />
           <div className="value-grid">
             {[
-              { icon: Compass, title: "On-the-ground expertise", body: "Every itinerary is built by people who've walked the routes, not assembled from a catalogue." },
+              { icon: Compass, title: "Local expertise", body: "Every itinerary is built by people who've walked the routes, not assembled from a catalogue." },
               { icon: UtensilsCrossed, title: "Dining, not an afterthought", body: "Food is treated as a destination in its own right — from street stalls to chef's tables." },
-              { icon: Users, title: "Small-group care", body: "Most experiences run in small groups, with guides who adjust the day to the people in it." },
+              { icon: Users, title: "Small group care", body: "Most experiences run in small groups, with guides who adjust the day to the people in it." },
               { icon: Sparkles, title: "Seamless from enquiry to return", body: "One point of contact from your first question to your ride home from the airport." },
             ].map((v, i) => (
               <Reveal key={v.title} delay={i * 80} className="value-card">

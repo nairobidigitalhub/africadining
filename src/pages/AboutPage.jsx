@@ -39,7 +39,7 @@ export default function AboutPage({ navigate }) {
             <Reveal className="value-card">
               <span className="value-icon"><Compass size={22} strokeWidth={1.5} /></span>
               <h3>Mission</h3>
-              <p>To make Africa's destinations, culture and food accessible through itineraries built on real, first-hand expertise.</p>
+              <p>To make Africa's destinations, culture and food accessible through itineraries built on real, firsthand expertise.</p>
             </Reveal>
             <Reveal delay={80} className="value-card">
               <span className="value-icon"><Globe size={22} strokeWidth={1.5} /></span>
