@@ -192,14 +192,15 @@ export function GlobalStyles() {
       .dest-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
       @media (min-width: 760px) { .dest-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
       @media (min-width: 1080px) { .dest-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-      .dest-card { display: flex; flex-direction: column; }
+      .dest-card { display: flex; flex-direction: column; height: 100%; }
       .dest-card-media-btn { position: relative; border: none; background: none; padding: 0; display: block; width: 100%; border-radius: var(--radius-lg); overflow: hidden; }
       .dest-card-stamp { position: absolute; left: 16px; bottom: 16px; }
-      .dest-card-body { padding-top: 18px; }
+      .dest-card-body { padding-top: 18px; display: flex; flex: 1; flex-direction: column; }
       .dest-card-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
       .dest-card-heading h3 { font-size: 1.3rem; }
       .dest-card-country { display: flex; align-items: center; gap: 4px; font-size: 0.78rem; color: var(--teal); font-weight: 600; white-space: nowrap; }
       .dest-card-body p { margin-top: 8px; font-size: 0.94rem; }
+      .dest-card-body .card-link { margin-top: auto; padding-top: 14px; align-self: flex-start; }
       .card-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-weight: 600; font-size: 0.88rem; color: var(--forest); border-bottom: 1.5px solid var(--gold); padding-bottom: 2px; }
       .card-link svg { transition: transform .25s ease; }
       .card-link:hover svg { transform: translateX(3px); }
