@@ -14,7 +14,6 @@ import ExperienceDetailPage from "./pages/ExperienceDetailPage.jsx";
 import DiningPage from "./pages/DiningPage.jsx";
 import DishDetailPage from "./pages/DishDetailPage.jsx";
 import TravelGuidePage from "./pages/TravelGuidePage.jsx";
-import ServicesPage from "./pages/ServicesPage.jsx";
 import ServiceDetailPage from "./pages/ServiceDetailPage.jsx";
 import GalleryPage from "./pages/GalleryPage.jsx";
 import AccommodationPage from "./pages/AccommodationPage.jsx";
@@ -39,7 +38,7 @@ export default function App() {
     case "dining": page = <DiningPage navigate={navigate} onBook={handleBook} />; break;
     case "dish": page = <DishDetailPage id={route.param} navigate={navigate} onBook={handleBook} />; break;
     case "guide": page = <TravelGuidePage navigate={navigate} />; break;
-    case "services": page = <ServicesPage navigate={navigate} />; break;
+    case "services": page = <TravelGuidePage navigate={navigate} />; break;
     case "service": page = <ServiceDetailPage id={route.param} navigate={navigate} />; break;
     case "gallery": page = <GalleryPage />; break;
     case "accommodation": page = <AccommodationPage />; break;

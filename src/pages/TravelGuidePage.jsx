@@ -34,34 +34,27 @@ export default function TravelGuidePage({ navigate }) {
         </div>
       </section>
 
-      <section className="section section-earth">
+      <div id="guide-services">
+        <PageHero eyebrow="Travel Guide" title="Our Services" sub="Guide services for how you like to explore — pick the style that fits your trip." tone="forest" />
+      </div>
+      <section className="section section-sand">
         <div className="container">
-          <SectionIntro eyebrow="From the Guide" title="Recent entries" tone="gold" />
-          <div className="listing-grid listing-grid-2">
-            {TRAVEL_GUIDES.map((g) => (
-              <Reveal key={g.id} className="guide-article">
-                <PlaceholderImage label={`${g.title.toUpperCase()} — COVER IMAGE`} tone="teal" ratio="16 / 10" />
-                <span className="eyebrow eyebrow-gold">{g.category}</span>
-                <h3>{g.title}</h3>
-                <p>{g.excerpt}</p>
+          <div className="listing-grid listing-grid-3">
+            {SERVICES.map((service) => (
+              <Reveal key={service.slug} className="exp-card">
+                <button className="exp-card-media-btn" onClick={() => navigate("service", service.slug)} aria-label={`View ${service.name}`}>
+                  <PlaceholderImage label={service.image} tone="gold" ratio="4 / 5" className="exp-card-media" />
+                </button>
+                <div className="exp-card-body">
+                  <h3><A page="service" param={service.slug} navigate={navigate}>{service.name}</A></h3>
+                  <p>{service.blurb}</p>
+                  <div className="exp-card-footer">
+                    <A page="service" param={service.slug} navigate={navigate} className="card-link">Learn More <ArrowRight size={15} /></A>
+                  </div>
+                </div>
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section section-sand">
-        <div className="container container-narrow" style={{ textAlign: "center" }}>
-          <Reveal>
-            <Eyebrow tone="teal">Guided Travel</Eyebrow>
-            <h2 className="section-title">Prefer to travel with a guide?</h2>
-            <p className="section-lede" style={{ margin: "14px auto 0" }}>
-              From historical context to hands-on adventure, our guide services are built around how you like to explore.
-            </p>
-            <div className="hero-ctas" style={{ justifyContent: "center", marginTop: 28 }}>
-              <Button variant="primary" icon={ArrowRight} onClick={() => navigate("services")}>Our Services</Button>
-            </div>
-          </Reveal>
         </div>
       </section>
 

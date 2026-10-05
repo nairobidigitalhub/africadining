@@ -5,7 +5,12 @@ import { Reveal, PlaceholderImage, CoordStamp, Eyebrow, ContourDivider, Button, 
 
 export default function ServiceDetailPage({ id, navigate }) {
   const service = SERVICES.find((s) => s.slug === id);
-  if (!service) return <NotFoundPage navigate={navigate} backPage="services" label="service" />;
+  if (!service) return <NotFoundPage navigate={navigate} backPage="guide" label="service" />;
+
+  const backToServices = () => {
+    navigate("guide");
+    window.setTimeout(() => document.getElementById("guide-services")?.scrollIntoView({ behavior: "smooth" }), 100);
+  };
 
   return (
     <div className="page-shell">
@@ -16,7 +21,7 @@ export default function ServiceDetailPage({ id, navigate }) {
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <A page="home" navigate={navigate}>Home</A>
             <ChevronRight size={13} />
-            <A page="services" navigate={navigate}>Our Services</A>
+            <A page="guide" navigate={backToServices}>Our Services</A>
             <ChevronRight size={13} />
             <span aria-current="page">{service.name}</span>
           </nav>
@@ -29,7 +34,7 @@ export default function ServiceDetailPage({ id, navigate }) {
           {service.heading && <h2 className="section-title">{service.heading}</h2>}
           <p className="detail-intro-text">{service.blurb}</p>
           <Reveal className="section-cta" style={{ textAlign: "left", marginTop: 32 }}>
-            <Button variant="secondary" onClick={() => navigate("services")}>
+            <Button variant="secondary" onClick={backToServices}>
               <ChevronLeft size={16} style={{ marginRight: 6 }} /> Back to Services
             </Button>
           </Reveal>
