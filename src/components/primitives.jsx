@@ -47,6 +47,12 @@ const FIT_FRAME_PHOTO_LABELS = new Set([
   "CLIENT ACCOMMODATION ROOM 2",
 ]);
 
+const IMAGE_FOCAL_POSITIONS = {
+  "HISTORICAL GUIDES IMAGE": "center 40%",
+  "ADVENTURE GUIDES IMAGE": "center 70%",
+  "CULTURAL GUIDES IMAGE": "center 35%",
+};
+
 export const TONE_GRADIENTS = {
   sand: "linear-gradient(135deg, #E8DDC8 0%, #F7F3EA 65%)",
   forest: "linear-gradient(135deg, #24463A 0%, #14251F 75%)",
@@ -82,7 +88,7 @@ export function PlaceholderImage({ label, ratio = "4 / 3", tone = "sand", icon: 
           src={realSrc}
           alt={label.replace(/—/g, "-")}
           loading="lazy"
-          style={label === "HISTORICAL GUIDES IMAGE" ? { objectPosition: "center 40%" } : undefined}
+          style={IMAGE_FOCAL_POSITIONS[label] ? { objectPosition: IMAGE_FOCAL_POSITIONS[label] } : undefined}
         />
       </div>
     );
