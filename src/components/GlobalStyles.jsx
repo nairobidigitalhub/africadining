@@ -279,8 +279,8 @@ export function GlobalStyles() {
       .offer-card p { margin-top: 6px; font-size: 0.88rem; }
       .offer-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; list-style: none; padding: 0; }
       .offer-tag { font-size: 0.72rem; font-weight: 600; color: var(--forest); background: var(--sand); border: 1px solid rgba(20,37,31,0.12); padding: 4px 10px; border-radius: 999px; }
-      .offer-link { margin-top: 14px; }
-      .offer-book-btn { display: flex; width: 100%; justify-content: center; margin: auto 0 0; }
+      .offer-link { margin-top: auto; padding-top: 14px; align-self: flex-start; }
+      .offer-book-btn { display: flex; width: 100%; justify-content: center; margin: 14px 0 0; }
       .section-note { text-align: center; color: #6b7268; font-size: 0.94rem; max-width: 520px; margin: 0 auto; }
 
       /* ---------- Page hero (interior pages) ---------- */
