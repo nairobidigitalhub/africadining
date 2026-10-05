@@ -179,6 +179,7 @@ export const IMAGE_LIBRARY = {
   "BOTSWANA — HERO IMAGE": "/photos/botswana.jpg",
   "BOTSWANA — OKAVANGO IMAGE": "/photos/botswana.jpg",
   "TANZANIA — SERENGETI IMAGE": "/photos/serengeti.jpg",
+  "TANZANIA — HERO IMAGE": "/photos/tanzania-buffalo-hero.jpg",
 
   "DIANI BEACH — SHORELINE IMAGE": PHOTO_DIANI_SHORELINE,
   "DIANI SHORELINE": PHOTO_DIANI_SHORELINE,

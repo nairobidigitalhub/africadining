@@ -48,6 +48,7 @@ const IMAGE_FOCAL_POSITIONS = {
   "ADVENTURE GUIDE CLIENT PHOTO": "center 38%",
   "CULTURAL GUIDES IMAGE": "center 35%",
   "TARANGIRE BAOBABS": "center top",
+  "TANZANIA — HERO IMAGE": "center 38%",
 };
 
 export const TONE_GRADIENTS = {
