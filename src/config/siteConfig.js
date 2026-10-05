@@ -30,12 +30,12 @@ export function waHref(number) { return number ? `https://wa.me/${number}` : nul
 // a sticker). Rendered with no card/box — see .brand-logo-wrap below.
 export const NAV_LINKS = [
   { label: "Home", page: "home" },
+  { label: "About Us", page: "about" },
   { label: "Destinations", page: "destinations" },
   { label: "Experiences", page: "experiences" },
   { label: "Dining", page: "dining" },
   { label: "Travel Guide", page: "guide" },
   { label: "Accommodation", page: "accommodation" },
-  { label: "About", page: "about" },
   { label: "Contact", page: "contact" },
 ];
 
