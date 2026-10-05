@@ -10,7 +10,6 @@ import { IMAGE_LIBRARY } from "../data/images.js";
 
 const FULL_PHOTO_LABELS = new Set([
   "SAMBURU ZEBRA",
-  "SAMBURU SHABA",
   "SUNRISE BALLOON SAFARI",
   "MARA BALLOON SAFARI IMAGE",
   "BALLOONS AT DAWN",
@@ -30,7 +29,6 @@ const FULL_PHOTO_LABELS = new Set([
 
 const FIT_FRAME_PHOTO_LABELS = new Set([
   "HELL'S GATE NATIONAL PARK EXCURSION",
-  "SAMBURU SHABA",
   "AMBOSELI ELEPHANTS",
   "KILIMANJARO SUMMIT",
   "SAMBURU ZEBRA",
@@ -49,6 +47,7 @@ const IMAGE_FOCAL_POSITIONS = {
   "CULTURAL GUIDES IMAGE": "center 35%",
   "TARANGIRE BAOBABS": "center top",
   "TANZANIA — HERO IMAGE": "center 38%",
+  "SAMBURU SHABA": "center 60%",
 };
 
 export const TONE_GRADIENTS = {
