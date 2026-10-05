@@ -221,7 +221,7 @@ export const IMAGE_LIBRARY = {
   "NYAMA CHOMA GARDEN IMAGE": "/photos/nyama-choma-garden.jpg",
   "TAMARIND DHOW DINNER IMAGE": "/photos/dhow.jpg",
   "WINELANDS ESTATE LUNCH IMAGE": PHOTO_WINELANDS_ESTATE_LUNCH,
-  "CHEFS TASTING ROOM IMAGE": "/photos/chef-tasting-room.jpg",
+  "CHEFS TASTING ROOM IMAGE": "/photos/chef-tasting-room-horizontal.jpg",
   "BLACK RHINO SIGHTING": PHOTO_NAIROBI_RHINO,
   "LAKE NAKURU RHINO SIGHTING": PHOTO_NAIROBI_RHINO,
 
