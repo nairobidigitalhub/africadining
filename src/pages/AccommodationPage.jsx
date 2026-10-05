@@ -13,10 +13,8 @@ const ACCOMMODATION_PHOTOS = [
   { label: "ACCOMMODATION PHOTO 10", title: "Lodge in the Garden", description: "A lodge surrounded by hedges and landscaped grounds." },
   { label: "ACCOMMODATION PHOTO 11", title: "Lakeside Lounge", description: "An indoor lounge opening toward a lake view." },
   { label: "ACCOMMODATION PHOTO 12", title: "Lake View", description: "Open water and a distant shore beside the property." },
-  { label: "ACCOMMODATION PHOTO 14", title: "Cottage Veranda", description: "A cottage doorway and veranda beside a stone path." },
   { label: "ACCOMMODATION PHOTO 16", title: "Lodge Buildings", description: "Several lodge buildings arranged around a shared lawn." },
   { label: "ACCOMMODATION PHOTO 17", title: "Thatched Guest House", description: "A long thatched building surrounded by trees and gardens." },
-  { label: "ACCOMMODATION PHOTO 19", title: "Thatched Exterior", description: "A thatched building with a front path and garden." },
 ];
 
 export default function AccommodationPage() {
