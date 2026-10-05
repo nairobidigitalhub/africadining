@@ -3,7 +3,7 @@ import { DESTINATIONS, VISIBLE_DESTINATIONS } from "../data/destinations.js";
 import { DestinationCard } from "../components/Cards.jsx";
 import { PageHero } from "../components/PageHero.jsx";
 
-const COUNTRY_ORDER = ["Kenya", "Uganda", "Tanzania", "South Africa", "Botswana", "Zimbabwe"];
+const COUNTRY_ORDER = ["Kenya", "Uganda", "Tanzania", "South Africa", "Zimbabwe", "Botswana"];
 const FILTERS = ["All", "Safari", "Coastal", "City", "Culture", "Islands", "Adventure", "Birdlife"];
 
 const COUNTRY_DESTINATIONS = COUNTRY_ORDER
