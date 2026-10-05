@@ -82,6 +82,7 @@ export function PlaceholderImage({ label, ratio = "4 / 3", tone = "sand", icon: 
           src={realSrc}
           alt={label.replace(/—/g, "-")}
           loading="lazy"
+          style={label === "HISTORICAL GUIDES IMAGE" ? { objectPosition: "center 40%" } : undefined}
         />
       </div>
     );
