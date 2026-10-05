@@ -40,7 +40,7 @@ export default function TravelGuidePage({ navigate }) {
       <section className="section section-sand">
         <div className="container">
           <div className="listing-grid listing-grid-3">
-            {SERVICES.map((service) => (
+            {SERVICES.filter((service) => !["professional-guides", "specialized-guides"].includes(service.slug)).map((service) => (
               <Reveal key={service.slug} className="exp-card">
                 <button className="exp-card-media-btn" onClick={() => navigate("service", service.slug)} aria-label={`View ${service.name}`}>
                   <PlaceholderImage label={service.image} tone="gold" ratio="4 / 5" className="exp-card-media" />
