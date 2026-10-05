@@ -73,14 +73,17 @@ export const DESTINATIONS = [
   },
   {
     id: "amboseli", name: "Amboseli National Park", country: "Kenya", region: "Safari",
-    hidden: true, tags: ["Wildlife", "Safari"], coordinates: "2.65°S, 37.26°E",
+    hidden: true, tags: ["Wildlife", "Safari", "Birdlife"], coordinates: "2.65°S, 37.26°E",
     tagline: "Elephants beneath the wide skies of Mount Kilimanjaro", accent: "gold",
     heroImage: "AMBOSELI KILIMANJARO", cardImage: "AMBOSELI ELEPHANTS",
     description: "Amboseli is known for its large elephant herds and open views toward Mount Kilimanjaro. Its swamps, plains and acacia woodland support a rich variety of wildlife.",
     bestTime: "June – October and January – February",
     highlights: ["Elephant herds", "Views of Mount Kilimanjaro", "Swamps and open plains"],
     quote: "In Amboseli, elephants move across the plain beneath one of Africa’s most recognisable mountain silhouettes.",
-    categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [{ name: "Elephants of Amboseli", image: "AMBOSELI ELEPHANTS", blurb: "See Amboseli’s elephant herds moving beneath Kilimanjaro." }] }],
+    categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [
+      { name: "Elephants of Amboseli", image: "AMBOSELI ELEPHANTS", blurb: "See Amboseli’s elephant herds moving beneath Kilimanjaro." },
+      { name: "Amboseli Birdlife", image: "BIRD IN TREE", blurb: "Look for birds across Amboseli’s wetlands, open plains and acacia woodland, from waterbirds to colorful savannah species." },
+    ] }],
     gallery: ["AMBOSELI ELEPHANTS"],
   },
   {
@@ -99,14 +102,13 @@ export const DESTINATIONS = [
   },
   {
     id: "lake-nakuru", name: "Lake Nakuru National Park", country: "Kenya", region: "Safari",
-    hidden: true, tags: ["Wildlife", "Safari", "Birdlife"], coordinates: "0.37°S, 36.09°E",
+    hidden: true, tags: ["Wildlife", "Safari"], coordinates: "0.37°S, 36.09°E",
     tagline: "Rift Valley lake scenery and a sanctuary for rhinos", accent: "teal",
     heroImage: "LAKE NAKURU SCENIC LAKE", cardImage: "LAKE NAKURU RHINO",
     description: "Lake Nakuru National Park combines Rift Valley lake scenery with woodland and grassland habitats that support rhinos, antelope and abundant birdlife.",
     bestTime: "Throughout the year; June – February is generally drier",
     highlights: ["Rhino sanctuary", "Lake and escarpment views", "Birdlife and antelope"],
     quote: "At Lake Nakuru, wildlife sightings and changing lake views share the same compact park.",
-    categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [{ name: "Lake Nakuru Wildlife", image: "LAKE NAKURU ANTELOPE", blurb: "Explore the park’s lake, grassland and wildlife habitats." }] }],
     gallery: ["LAKE NAKURU ANTELOPE", "LAKE NAKURU RHINO", "LAKE NAKURU CLIENT GIRAFFE ZEBRA"],
   },
   {
