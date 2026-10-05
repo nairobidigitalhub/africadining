@@ -9,13 +9,13 @@ import {
   CoordStamp,
 } from "./primitives.jsx";
 
-export function DestinationCard({ destination, navigate, featured = false, linkToDetails = true }) {
+export function DestinationCard({ destination, navigate, featured = false, linkToDetails = true, compact = false }) {
   const media = (
     <>
       <PlaceholderImage
         label={destination.cardImage}
         tone={destination.accent}
-        ratio="4 / 5"
+        ratio={compact ? "4 / 3" : "4 / 5"}
         className="dest-card-media"
       />
       <CoordStamp label={destination.coordinates} className="dest-card-stamp" />

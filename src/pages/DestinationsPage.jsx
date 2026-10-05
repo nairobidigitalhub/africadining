@@ -124,9 +124,9 @@ export default function DestinationsPage({ navigate }) {
               ? "Showing all six destinations"
               : `Showing ${filtered.length} ${filter.toLowerCase()} destinations across all countries`}
           </p>
-          <div className="listing-grid" aria-live="polite">
+          <div className="listing-grid listing-grid-3" aria-live="polite">
             {filtered.map((destination) => (
-              <DestinationCard key={destination.listingKey || destination.id} destination={destination} navigate={navigate} />
+              <DestinationCard key={destination.listingKey || destination.id} destination={destination} navigate={navigate} compact />
             ))}
           </div>
           {filtered.length === 0 && <p className="empty-state">No destinations match that category yet.</p>}
