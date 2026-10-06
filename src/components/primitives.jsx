@@ -46,6 +46,7 @@ const IMAGE_FOCAL_POSITIONS = {
   "ADVENTURE GUIDE CLIENT PHOTO": "center 38%",
   "CULTURAL GUIDES IMAGE": "center 35%",
   "TARANGIRE BAOBABS": "center top",
+  "NAMIBIA ORYX IN DUNES": "center bottom",
   "TANZANIA — HERO IMAGE": "center 38%",
   "SAMBURU SHABA": "center 60%",
   "KENYA HERO CLIENT BALLOONS": "center 60%",
