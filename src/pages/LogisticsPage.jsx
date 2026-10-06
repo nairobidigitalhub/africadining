@@ -10,7 +10,7 @@ const LOGISTICS_SECTIONS = [
       {
         image: "LOGISTICS FLIGHT AIRCRAFT",
         title: "Flights to Remote Airstrips",
-        description: "Dash, Cessna and Caravan aircraft help guests reach safari destinations across the region.",
+        description: "Dash, Cessna and Caravan aircraft help guests reach safari destinations across the region upon request.",
       },
     ],
   },
