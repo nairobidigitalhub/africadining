@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ArrowRight, Compass, Globe, Sparkles, X } from "lucide-react";
-import { Reveal, PlaceholderImage, Eyebrow, Button, SectionIntro, PageHero } from "../components/index.js";
+import { Reveal, PlaceholderImage, Eyebrow, Button, SectionIntro, DemoContentNote, PageHero } from "../components/index.js";
 
 const TEAM_ROLES = [
   {
