@@ -1,26 +1,85 @@
 import React from "react";
-import { Plane, CarFront, Truck } from "lucide-react";
 import { PageHero } from "../components/PageHero.jsx";
 import { PlaceholderImage, Reveal } from "../components/primitives.jsx";
 
-const TRANSPORT_OPTIONS = [
+const LOGISTICS_SECTIONS = [
   {
-    title: "Hotel Transfers and Excursions",
-    description: "Vans and saloon vehicles provide comfortable transport for hotel transfers and local excursions.",
-    image: "LOGISTICS HOTEL TRANSFERS",
-    icon: CarFront,
+    title: "Domestic Flights",
+    introduction: "Small aircraft connect local airports with airstrips near parks, reserves and conservancies.",
+    photos: [
+      {
+        image: "LOGISTICS FLIGHT AIRCRAFT",
+        title: "Flights to Remote Airstrips",
+        description: "Dash, Cessna and Caravan aircraft help guests reach safari destinations across the region.",
+      },
+      {
+        image: "LOGISTICS FLIGHT CABIN",
+        title: "Comfortable Cabin Travel",
+        description: "A look inside the cabin guests use on domestic flights between destinations.",
+      },
+    ],
   },
   {
     title: "Safari and Game Viewing",
-    description: "Four by four safari vehicles take guests across the terrain for safari drives and wildlife viewing.",
-    image: "LOGISTICS SAFARI VEHICLES",
-    icon: Truck,
+    introduction: "Four by four vehicles take guests along safari routes and across varied terrain for wildlife viewing.",
+    photos: [
+      {
+        image: "LOGISTICS SAFARI VEHICLE WILDLIFE",
+        title: "Game Viewing in the Reserve",
+        description: "Safari vehicles bring guests close to wildlife while exploring the reserve.",
+      },
+      {
+        image: "LOGISTICS SAFARI VEHICLE UGANDA",
+        title: "Safari Vehicle in Uganda",
+        description: "A four by four ready to explore Uganda’s landscapes and wildlife areas.",
+      },
+      {
+        image: "LOGISTICS SAFARI VEHICLE 02",
+        title: "Safari Vehicle for the Journey",
+        description: "A rugged vehicle suited to travel on rural roads and safari routes.",
+      },
+      {
+        image: "LOGISTICS SAFARI VEHICLE LIONS",
+        title: "A Close View of the Wildlife",
+        description: "An open safari vehicle offers guests a clear view during a game drive.",
+      },
+      {
+        image: "LOGISTICS SAFARI VEHICLE TOWN",
+        title: "Four by Four Transfers",
+        description: "Safari vehicles are ready to carry guests between towns, lodges and wildlife areas.",
+      },
+      {
+        image: "LOGISTICS SAFARI VEHICLE GUIDE",
+        title: "Guided Safari Travel",
+        description: "Guests travel with local support as they set out to explore the region.",
+      },
+      {
+        image: "LOGISTICS SAFARI VEHICLE FLEET",
+        title: "A Fleet Ready for Safari",
+        description: "A line of four by four vehicles prepared for safari departures and game viewing.",
+      },
+    ],
   },
   {
-    title: "Domestic and Internal Flights",
-    description: "Comfortable, reliable flights on Dash aircraft, Cessna planes and Caravans connect local airports with airstrips in parks, reserves and conservancies.",
-    image: "LOGISTICS DOMESTIC FLIGHTS",
-    icon: Plane,
+    title: "Hotel Transfers and Excursions",
+    introduction: "Vans and saloon vehicles provide comfortable transport for hotel transfers and local excursions.",
+    photos: [
+      {
+        image: "LOGISTICS TRANSFER CABIN 01",
+        title: "Passenger Comfort",
+        description: "Comfortable seating for hotel transfers and excursions around the destination.",
+      },
+      {
+        image: "LOGISTICS TRANSFER CABIN 02",
+        title: "Room to Settle In",
+        description: "A spacious vehicle interior for a relaxed ride between stops.",
+      },
+      {
+        image: "LOGISTICS TRANSFER MINIBUS",
+        title: "Group Transfers",
+        description: "A minibus helps guests travel together between the airport, hotel and excursions.",
+      },
+    ],
   },
 ];
 
@@ -33,21 +92,27 @@ export default function LogisticsPage() {
         sub="From hotel transfers to remote airstrips, we help guests travel comfortably between each part of their journey."
         tone="forest"
       />
-      <section className="section section-sand">
-        <div className="container">
-          <div className="listing-grid listing-grid-3">
-            {TRANSPORT_OPTIONS.map(({ title, description, image, icon: Icon }, index) => (
-              <Reveal key={title} className="exp-card" delay={index * 70}>
-                <PlaceholderImage label={image} tone="sand" ratio="4 / 3" className="exp-card-media" icon={Icon} />
-                <div className="exp-card-body">
-                  <h3>{title}</h3>
-                  <p>{description}</p>
-                </div>
-              </Reveal>
-            ))}
+      {LOGISTICS_SECTIONS.map((section) => (
+        <section className="section section-sand" key={section.title}>
+          <div className="container">
+            <div className="section-intro">
+              <h2 className="section-title">{section.title}</h2>
+              <p className="section-note">{section.introduction}</p>
+            </div>
+            <div className="listing-grid listing-grid-3">
+              {section.photos.map((photo, index) => (
+                <Reveal key={photo.image} className="exp-card" delay={(index % 3) * 70}>
+                  <PlaceholderImage label={photo.image} tone="sand" ratio="4 / 3" className="exp-card-media logistics-photo-frame" />
+                  <div className="exp-card-body">
+                    <h3>{photo.title}</h3>
+                    <p>{photo.description}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
     </div>
   );
 }
