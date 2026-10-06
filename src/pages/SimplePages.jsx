@@ -113,18 +113,96 @@ export function LegalPage({ title }) {
       <PageHero eyebrow="Legal" title={title} tone="forest" />
       <section className="section section-sand">
         <div className="container container-narrow legal-copy">
+          <p><strong>Last updated: October 6, 2026</strong></p>
           <p>
-            This is placeholder legal copy for the {title.toLowerCase()} page. Replace this
-            section with your finalised policy text before launch — structure (headings,
-            spacing, typography) is already in place and will hold real content without
-            further design work.
+            At <strong>{SITE_CONFIG.business.name}</strong>, we treat your personal information with care. This policy
+            explains what information we receive when you use this website, why we use it, and the choices and rights
+            you have. We collect only what we need to respond to travel requests and arrange the services you ask us to plan.
           </p>
-          <h3>1. Overview</h3>
-          <p>Describe what this policy covers and who it applies to.</p>
-          <h3>2. Details</h3>
-          <p>Add the specific clauses relevant to {SITE_CONFIG.business.name}'s operations here.</p>
-          <h3>3. Contact</h3>
-          <p>Questions about this policy can be sent to {SITE_CONFIG.contact.email || "[email pending]"}.</p>
+
+          <h3>Information you choose to share</h3>
+          <p>
+            If you send a booking request, we receive the details in that form: your name, email address, phone or
+            WhatsApp number, country and destination, preferred travel date, party size, selected experience, and any
+            special requests you choose to include. Special requests may reveal dietary or health information, so please
+            share only what is needed to help us plan your trip.
+          </p>
+          <p>
+            The booking form is a request for information, not a payment or confirmed reservation. It does not ask for
+            card details, and the website does not take payment. Please do not enter payment card numbers, passwords, or
+            passport or visa document numbers in the form. If documents are needed later to arrange a confirmed trip,
+            our team will explain why and agree on an appropriate way to provide them.
+          </p>
+          <p>
+            The contact form and newsletter box currently shown on this website are demonstrations: they do not send
+            your message or subscribe your email address. If you contact us by email, phone, or WhatsApp, we receive the
+            information you include in that conversation.
+          </p>
+
+          <h3>How we use your information</h3>
+          <p>We use information you provide to:</p>
+          <ul>
+            <li>reply to your enquiry and prepare or follow up on a booking request;</li>
+            <li>coordinate an itinerary or services you ask us to arrange, including with relevant travel providers when needed;</li>
+            <li>support you before, during, or after a trip and meet applicable legal obligations; and</li>
+            <li>protect and maintain the website and prevent misuse.</li>
+          </ul>
+          <p>We do not use booking details to send marketing messages without your permission, and we do not sell your personal information.</p>
+
+          <h3>Who may receive information</h3>
+          <p>
+            Booking requests submitted through the website are transmitted to EmailJS, the service used to deliver the
+            request to our business inbox at {SITE_CONFIG.contact.email}. Our website hosting and service providers may
+            also process limited technical information needed to operate and protect the site. These providers are expected
+            to use information only to provide their services to us.
+          </p>
+          <p>
+            If you ask us to arrange travel, we may share relevant details with a lodge, transport provider, guide, or
+            another supplier involved in your itinerary. We limit those details to what is reasonably needed for the
+            arrangement and share them as part of responding to your request or carrying out the trip you ask us to plan.
+            We may also disclose information where required by law or needed to protect people, rights, or safety.
+          </p>
+          <p>
+            Some online service providers may process information outside Kenya. Where a transfer is required, we will
+            use the safeguards required by applicable data protection law.
+          </p>
+
+          <h3>How long we keep information</h3>
+          <p>
+            We keep booking and enquiry information only for as long as it is needed to respond, plan or administer the
+            requested travel, resolve related questions, and meet applicable legal or record-keeping requirements. We
+            review information and delete or de-identify it when it is no longer needed for those purposes.
+          </p>
+
+          <h3>How we protect it</h3>
+          <p>
+            We use reasonable administrative and technical safeguards to protect information from loss, misuse, or
+            unauthorised access. Booking requests are sent to the delivery service over HTTPS. No website or online
+            transmission can be guaranteed completely secure, so please share only the details needed for your request
+            and contact us promptly if you have a concern.
+          </p>
+
+          <h3>Your choices and privacy rights</h3>
+          <p>
+            Subject to applicable law, you may ask us to explain how we use your personal information, request access to
+            it, ask us to correct inaccurate details, object to certain processing, or request deletion where we are
+            permitted to delete it. If processing relies on your consent, you may withdraw that consent. We may need to
+            confirm your identity before responding. To make a request, email us using the address below.
+          </p>
+          <p>
+            This policy is intended to reflect the principles and data subject rights in Kenya's Data Protection Act,
+            2019. You can also read the{" "}
+            <a href="https://www.odpc.go.ke/rights-of-a-data-subject/" target="_blank" rel="noreferrer noopener">
+              Office of the Data Protection Commissioner's summary of data subject rights
+            </a>.
+          </p>
+
+          <h3>Contact us</h3>
+          <p>
+            For a privacy question or request, contact <strong>{SITE_CONFIG.business.name}</strong> at{" "}
+            <a href={"mailto:" + SITE_CONFIG.contact.email}>{SITE_CONFIG.contact.email}</a>. If you are not satisfied
+            with our response, you may contact Kenya's Office of the Data Protection Commissioner.
+          </p>
         </div>
       </section>
     </div>
