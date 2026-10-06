@@ -48,7 +48,7 @@ export default function ExperiencesPage({ navigate, onBook, initialDestination }
 
       <section className="section section-earth">
         <div className="container">
-          <SectionIntro eyebrow="How You Travel" title="Group or private safaris" tone="teal" />
+          <SectionIntro eyebrow="How You Travel" title="Group or Private Safaris" tone="teal" />
           <div className="value-grid value-grid-3">
             <Reveal className="value-card">
               <span className="value-icon"><Users size={22} strokeWidth={1.5} /></span>
