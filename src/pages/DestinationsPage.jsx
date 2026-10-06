@@ -51,6 +51,48 @@ function matchesPageTag(page, category) {
 }
 
 function makeCategoryCards(category) {
+  if (category === "Birdlife") {
+    const birdlifeDestinations = [
+      {
+        id: "lake-nakuru",
+        name: "Lake Nakuru",
+        cardImage: "LAKE NAKURU FLAMINGOS",
+        tagline: "Explore a scenic Rift Valley park known for rhinos, flamingos, diverse birdlife and beautiful lake views.",
+      },
+      {
+        id: "lake-naivasha",
+        name: "Lake Naivasha",
+        cardImage: "LAKE NAIVASHA BIRD",
+        tagline: "Enjoy a peaceful freshwater lake surrounded by wildlife and birdlife, with opportunities for boat rides and nature experiences.",
+      },
+      {
+        id: "amboseli",
+        name: "Amboseli National Park",
+        cardImage: "AMBOSELI WETLAND BIRD CLIENT",
+        tagline: "Look for birds across Amboseli’s wetlands and open plains, from waterbirds among the reeds to ground birds in the grasslands.",
+      },
+    ];
+
+    return birdlifeDestinations.flatMap((birdlifeDestination) => {
+      const page = DESTINATIONS.find((destination) => destination.id === birdlifeDestination.id);
+      const country = COUNTRY_DESTINATIONS.find((destination) => destination.name === page?.country);
+      if (!page || !country) return [];
+
+      return [{
+        id: page.id,
+        targetPage: "destination",
+        targetParam: page.id,
+        listingKey: `birdlife:${page.id}`,
+        name: birdlifeDestination.name,
+        country: country.name,
+        coordinates: page.coordinates || country.coordinates,
+        accent: page.accent || country.accent,
+        cardImage: birdlifeDestination.cardImage,
+        tagline: birdlifeDestination.tagline,
+      }];
+    });
+  }
+
   const seen = new Set();
   const cards = [];
 
