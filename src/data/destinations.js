@@ -182,7 +182,7 @@ export const DESTINATIONS = [
         title: "Activities",
         icon: "Compass",
         items: [
-          { name: "Dhow Sunset Cruise", blurb: "Traditional sail out past the harbour, drinks and grilled snacks included." },
+          { name: "Dhow Sunset Cruise", image: "GUESTS BOARDING BOAT", blurb: "Traditional sail out past the harbour, drinks and grilled snacks included." },
           { name: "Mombasa Marine Park", blurb: "Snorkelling over shallow coral gardens from a boat with a glass bottom." },
         ],
       },
