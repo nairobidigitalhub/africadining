@@ -197,6 +197,8 @@ export const GALLERY = [
   { id: "g198", label: "MAASAI MARA BALLOON SUNSET 273236", destinationSlug: "maasai-mara", tall: true },
   { id: "g199", label: "MOUNT KENYA ANTELOPE IMAGE 266834", destinationSlug: "kenya" },
   { id: "g200", label: "NAMIB DUNE WALK 286864", destinationSlug: "namibia", tall: true },
+  { id: "g201", label: "SWAHILI KITCHEN TABLE IMAGE", destinationSlug: "mombasa" },
+  { id: "g202", label: "SPICE ROUTE FARM LUNCH IMAGE", destinationSlug: "zanzibar" },
 ];
 
 // ── DEMO CONTENT ─────────────────────────────────────────────────────────

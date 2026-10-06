@@ -253,7 +253,9 @@ export const IMAGE_LIBRARY = {
   "NYAMA CHOMA GARDEN IMAGE": "/photos/nyama-choma-garden.jpg",
   "TAMARIND DHOW DINNER IMAGE": "/photos/dhow.jpg",
   "WINELANDS ESTATE LUNCH IMAGE": PHOTO_WINELANDS_ESTATE_LUNCH,
-  "CHEFS TASTING ROOM IMAGE": "/photos/chef-tasting-room-horizontal.jpg",
+  "CHEFS TASTING ROOM IMAGE": "/photos/dining-chefs-tasting-room-20261006.jpg",
+  "SWAHILI KITCHEN TABLE IMAGE": "/photos/dining-swahili-kitchen-20261005.jpg",
+  "SPICE ROUTE FARM LUNCH IMAGE": "/photos/dining-spice-route-lunch-20261006.jpg",
   "BLACK RHINO SIGHTING": PHOTO_NAIROBI_RHINO,
   "LAKE NAKURU RHINO SIGHTING": PHOTO_NAIROBI_RHINO,
 
