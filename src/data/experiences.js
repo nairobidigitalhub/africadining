@@ -148,20 +148,4 @@ export const EXPERIENCES = [
     included: ["Cable car return ticket", "Estate lunch", "Wine tasting/pairing", "Private transport"],
     gallery: ["CABLE CAR ASCENT", "VINEYARD ROWS", "ESTATE LUNCH TABLE"],
   },
-  {
-    id: "boulders-penguin-walk",
-    title: "Boulders Beach Penguin Walk",
-    destinationSlug: "cape-town",
-    category: "Wildlife",
-    duration: "2 hours",
-    groupSize: "1 – 8 guests",
-    price: "From $35 / person",
-    image: "BOULDERS PENGUIN WALK IMAGE",
-    shortDesc: "A boardwalk visit to a sheltered cove shared with African penguins.",
-    description:
-      "A short boardwalk trail brings you level with a resident colony of African penguins nesting among the granite boulders, with a marine guide on hand to explain the colony's conservation and breeding patterns.",
-    highlights: ["Boardwalk access to the colony", "Marine conservation guide", "Optional swim in the adjoining cove", "Good for all ages"],
-    included: ["Reserve entry fee", "Marine guide", "Transfers from central Cape Town"],
-    gallery: ["PENGUIN COLONY", "BOARDWALK TRAIL", "GRANITE BOULDER COVE"],
-  },
 ];
