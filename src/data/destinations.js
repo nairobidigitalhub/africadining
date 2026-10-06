@@ -109,6 +109,10 @@ export const DESTINATIONS = [
     bestTime: "Throughout the year; June – February is generally drier",
     highlights: ["Rhino sanctuary", "Lake and escarpment views", "Birdlife and antelope"],
     quote: "At Lake Nakuru, wildlife sightings and changing lake views share the same compact park.",
+    categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [
+      { name: "Rhino Sanctuary", image: "LAKE NAKURU RHINO", blurb: "Look for black and white rhinos among the park’s woodlands and open grasslands." },
+      { name: "Lake & Birdlife", image: "LAKE NAKURU SCENIC LAKE", blurb: "Enjoy Rift Valley lake views and watch for flamingos and other birdlife along the shore." },
+    ] }],
     gallery: ["LAKE NAKURU ANTELOPE", "LAKE NAKURU RHINO", "LAKE NAKURU CLIENT GIRAFFE ZEBRA"],
   },
   {
