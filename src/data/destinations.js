@@ -328,7 +328,7 @@ export const DESTINATIONS = [
         title: "Activities",
         icon: "Compass",
         items: [
-          { name: "Hot Air Balloon Safari", blurb: "A sunrise flight over the plains, followed by a champagne bush breakfast on landing." },
+          { name: "Hot Air Balloon Safari", image: "SERENGETI CLIENT BALLOON", blurb: "A sunrise flight over the plains, followed by a champagne bush breakfast on landing." },
           { name: "Guided Game Drives", blurb: "Dawn and dusk drives with trackers who read the plain like a shared language." },
         ],
       },
