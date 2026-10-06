@@ -599,7 +599,6 @@ export const DESTINATIONS = [
         items: [
           { name: "Victoria Falls", image: "VICTORIA FALLS WATERFALL VIEW", blurb: "Witness one of the world's most spectacular waterfalls, surrounded by breathtaking scenery and unforgettable adventure experiences.", activities: ["Falls viewing walks", "Scenic helicopter flights (visibility is seasonal)"] },
           { name: "Victoria Falls National Park", image: "VICTORIA FALLS NATIONAL PARK IMAGE", blurb: "The Zimbabwean park protecting the falls themselves, with a network of viewpoints along the rainforest edge." },
-          { name: "Zambezi National Park", blurb: "Upstream of the falls, a riverside park known for elephant, buffalo and birdlife along the Zambezi.", activities: ["Game drives", "River safaris"] },
         ],
       },
       {
