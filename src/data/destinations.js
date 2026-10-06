@@ -278,7 +278,6 @@ export const DESTINATIONS = [
         title: "Activities",
         icon: "Compass",
         items: [
-          { name: "Kite Surfing Diani", blurb: "Reliable winds and a wide, shallow lagoon make this a favourite place to learn." },
           { name: "Colobus Forest Walk", blurb: "Guided walks through remnant coastal forest, home to the endangered Angolan colobus." },
         ],
       },
