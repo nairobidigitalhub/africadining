@@ -56,7 +56,7 @@ export function ExperienceCard({ experience, navigate, onBook }) {
           label={experience.image}
           tone={destination?.accent || "sand"}
           ratio="4 / 3"
-          className={`exp-card-media ${experience.image === "MARA BALLOON SAFARI IMAGE" ? "exp-card-media-fill" : ""} ${experience.image === "BWINDI GORILLA TREKKING" || experience.image === "NAMIBIA ADVENTURE DOCK VISIT" ? "exp-card-media-cover" : ""}`}
+          className={`exp-card-media ${experience.image === "MARA BALLOON SAFARI IMAGE" ? "exp-card-media-fill" : ""} ${experience.image === "BWINDI GORILLA TREKKING" ? "exp-card-media-cover" : ""}`}
         />
         <span className="exp-card-tag">{experience.category}</span>
       </button>

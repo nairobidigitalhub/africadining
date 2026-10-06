@@ -8,7 +8,7 @@ export const EXPERIENCES = [
     duration: "3 hours",
     groupSize: "2 – 14 guests",
     price: "From $65 / person",
-    image: "NAMIBIA ADVENTURE DOCK VISIT",
+    image: "GUESTS BOARDING BOAT",
     shortDesc: "Sail a traditional dhow out past Tudor Creek as the sky turns over the harbour.",
     description:
       "A restored wooden dhow, sailed by hand in the traditional way, carries you out past the harbour mouth as Mombasa's light turns gold. Grilled seafood and cold drinks are served on deck, with a resident crew who've sailed this water for decades.",
