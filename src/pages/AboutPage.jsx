@@ -20,7 +20,7 @@ const TEAM_ROLES = [
   },
   {
     title: "SAFARI / ADVENTURE GUIDES",
-    signature: "Safari guides team",
+    signature: "Safari Guides Team",
     message: "Our guides bring local knowledge, care and experience to each outing. They help guests explore wildlife, landscapes and culture safely, while making room for meaningful discoveries.",
   },
 ];
