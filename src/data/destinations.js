@@ -39,7 +39,7 @@ export const DESTINATIONS = [
         title: "Mountains & Adventure",
         icon: "Compass",
         items: [
-          { name: "Mount Kenya", blurb: "Trek through high altitude forests and alpine landscapes on routes around Africa's second highest mountain.", activities: ["Guided trekking", "Mountain scenery"] },
+          { name: "Mount Kenya", image: "MOUNT KENYA ANTELOPE IMAGE 266834", blurb: "Trek through high altitude forests and alpine landscapes on routes around Africa's second highest mountain.", activities: ["Guided trekking", "Mountain scenery"] },
           { name: "Hell's Gate National Park", image: "HELL'S GATE NATIONAL PARK EXCURSION", blurb: "Explore dramatic cliffs, gorges and geothermal landscapes on foot or by bicycle.", activities: ["Hiking", "Cycling", "Wildlife viewing"] },
         ],
       },

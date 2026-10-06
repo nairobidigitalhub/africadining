@@ -195,6 +195,7 @@ export const GALLERY = [
   { id: "g196", label: "NAMIBIA DEADVLEI TREE 2", destinationSlug: "namibia" },
   { id: "g197", label: "CHOBE HIPPOS IN WATER", destinationSlug: "botswana" },
   { id: "g198", label: "MAASAI MARA BALLOON SUNSET 273236", destinationSlug: "maasai-mara", tall: true },
+  { id: "g199", label: "MOUNT KENYA ANTELOPE IMAGE 266834", destinationSlug: "kenya" },
 ];
 
 // ── DEMO CONTENT ─────────────────────────────────────────────────────────
