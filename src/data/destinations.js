@@ -680,7 +680,7 @@ export const DESTINATIONS = [
     id: "namibia", name: "Namibia", country: "Namibia", region: "Adventure",
     hidden: true, tags: ["Adventure", "Wildlife"], coordinates: "22.56°S, 17.09°E",
     tagline: "Desert landscapes, open plains and wildlife encounters",
-    accent: "gold", heroImage: "NAMIBIA DEADVLEI TREE 1", cardImage: "NAMIBIA ADVENTURE DOCK VISIT",
+    accent: "gold", heroImage: "NAMIBIA DEADVLEI TREE 1", cardImage: "NAMIBIA DEADVLEI TREE 1",
     description: "Explore Namibia’s striking desert landscapes and open country, with wildlife sightings across its dry plains.",
     bestTime: "May – October",
     highlights: ["Namib Desert scenery", "Wildlife across open plains", "Deadvlei’s distinctive trees and dunes"],
@@ -692,7 +692,7 @@ export const DESTINATIONS = [
       { name: "Oryx in the Desert", image: "NAMIBIA ORYX IN DUNES", blurb: "An oryx moves through the sandy Namib landscape." },
       { name: "Deadvlei Tree and Dune", image: "NAMIBIA DEADVLEI TREE 2", blurb: "A lone dead tree stands against the pale pan and red dunes." },
     ] }],
-    gallery: ["NAMIBIA ADVENTURE DOCK VISIT", "NAMIBIA ELEPHANT AND ANTELOPE", "NAMIBIA ANTELOPE PAIR", "NAMIBIA DEADVLEI TREE 1", "NAMIBIA ORYX IN DUNES", "NAMIBIA DEADVLEI TREE 2"],
+    gallery: ["NAMIBIA ELEPHANT AND ANTELOPE", "NAMIBIA ANTELOPE PAIR", "NAMIBIA DEADVLEI TREE 1", "NAMIBIA ORYX IN DUNES", "NAMIBIA DEADVLEI TREE 2"],
   },
   {
     id: "chobe-national-park", name: "Chobe National Park", country: "Botswana", region: "Northern Botswana",
