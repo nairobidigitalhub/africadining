@@ -135,7 +135,6 @@ export const IMAGE_LIBRARY = {
   "KENYA ANTELOPE PAIR": "/photos/attachment24-266815.jpg",
   "KENYA KUDU FROM BEHIND": "/photos/attachment24-266824.jpg",
   "KENYA GAZELLE": "/photos/attachment24-266836.jpg",
-  "WETLAND BOAT DOCK": "/photos/attachment24-273245.jpg",
   "GUESTS BOARDING BOAT": "/photos/attachment24-273249.jpg",
   "WOODLAND BOARDWALK VISITORS": "/photos/attachment24-285821.jpg",
   "BOAT DOCK GUESTS": "/photos/attachment24-286455.jpg",

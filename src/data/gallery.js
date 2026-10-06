@@ -171,7 +171,6 @@ export const GALLERY = [
   { id: "g171", label: "KENYA ANTELOPE PAIR", destinationSlug: "kenya" },
   { id: "g172", label: "KENYA KUDU FROM BEHIND", destinationSlug: "kenya" },
   { id: "g173", label: "KENYA GAZELLE", destinationSlug: "kenya", tall: true },
-  { id: "g174", label: "WETLAND BOAT DOCK" },
   { id: "g175", label: "GUESTS BOARDING BOAT" },
   { id: "g176", label: "WOODLAND BOARDWALK VISITORS", tall: true },
   { id: "g177", label: "BOAT DOCK GUESTS", tall: true },
