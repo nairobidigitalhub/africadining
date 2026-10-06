@@ -9,7 +9,6 @@ import { useReveal } from "../hooks/useReveal.js";
 import { IMAGE_LIBRARY } from "../data/images.js";
 
 const FULL_PHOTO_LABELS = new Set([
-  "NAMIBIA ADVENTURE DOCK VISIT",
   "SAMBURU ZEBRA",
   "SUNRISE BALLOON SAFARI",
   "MARA BALLOON SAFARI IMAGE",
