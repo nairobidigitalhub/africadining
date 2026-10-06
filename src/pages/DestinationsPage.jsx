@@ -100,7 +100,7 @@ function makeCategoryCards(category) {
   const cards = [];
 
   for (const country of COUNTRY_DESTINATIONS) {
-    const countryPages = DESTINATIONS.filter((page) => page.id === country.id || page.country === country.name);
+    const countryPages = DESTINATIONS.filter((page) => page.id === country.id || (page.country === country.name && !page.excludeFromCategoryFilters));
     for (const page of countryPages) {
       if (page.id !== country.id && matchesPageTag(page, category)) {
         const pageKey = `${country.name}:${page.id}`;
@@ -143,6 +143,24 @@ function makeCategoryCards(category) {
           });
         }
       }
+    }
+  }
+
+  if (category === "Adventure") {
+    const namibia = DESTINATIONS.find((destination) => destination.id === "namibia");
+    if (namibia) {
+      cards.push({
+        id: namibia.id,
+        targetPage: "destination",
+        targetParam: namibia.id,
+        listingKey: `adventure:${namibia.id}`,
+        name: namibia.name,
+        country: namibia.country,
+        coordinates: namibia.coordinates,
+        accent: namibia.accent,
+        cardImage: namibia.cardImage,
+        tagline: namibia.tagline,
+      });
     }
   }
 
