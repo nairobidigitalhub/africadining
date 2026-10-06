@@ -32,7 +32,7 @@ function matchesCategory(entry, category) {
     case "Islands":
       return /island|zanzibar|pemba|wasini|chale/i.test(allText);
     case "Adventure":
-      return !/island|beach|coast|coastal|shoreline|shore|seaside/i.test(itemText)
+      return !/island|beach|coast|coastal|shoreline|shore|seaside|marine|reef|coral/i.test(itemText)
         && /adventure|trek|hiking|hike|canoe|mokoro|rafting|climb|diving|snorkel|balloon|kite.?surf|cycling|horseback|cruise|helicopter|zip.?line|walking safari|game drive/i.test(allText);
     case "Birdlife":
       return /bird|flamingo|wetland|marsh|swamp|waterfowl|penguin|pelican|avian|lake nakuru|lake naivasha|lake manyara|mabamba/i.test(allText);
