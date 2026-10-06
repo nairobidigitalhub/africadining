@@ -133,7 +133,7 @@ export function GlobalStyles() {
       .brand-mark { width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--gold); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.1rem; }
       .brand-word { color: var(--sand); font-family: 'Playfair Display', serif; font-size: 1.15rem; letter-spacing: 0.06em; line-height: 1.1; display: flex; flex-direction: column; }
       .brand-sub { font-family: 'Inter', sans-serif; font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); font-weight: 600; }
-      .nav-desktop { display: none; align-items: center; justify-content: flex-end; flex: 1 1 auto; gap: clamp(12px, 1.25vw, 18px); }
+      .nav-desktop { display: none; align-items: center; justify-content: space-between; flex: 1 1 auto; gap: clamp(12px, 1.25vw, 18px); }
       .nav-link { color: var(--sand); flex: 0 0 auto; white-space: nowrap; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.025em; padding-bottom: 3px; border-bottom: 1.5px solid transparent; opacity: 0.88; transition: opacity .2s ease, border-color .2s ease; }
       .nav-link:hover { opacity: 1; }
       .nav-link.is-active { opacity: 1; border-color: var(--gold); }
