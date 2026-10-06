@@ -8,7 +8,7 @@ export const GALLERY = [
   { id: "g7", label: "FORT JESUS RAMPARTS", destinationSlug: "mombasa" },
   { id: "g8", label: "WILDEBEEST RIVER CROSSING", destinationSlug: "maasai-mara", tall: true },
   { id: "g9", label: "STONE TOWN SPICE MARKET", destinationSlug: "zanzibar" },
-  { id: "g10", label: "BOULDERS BEACH PENGUINS", destinationSlug: "cape-town" },
+  { id: "g10", label: "OSTRICH CHICK HATCHING" },
   { id: "g11", label: "SWAHILI SEAFOOD PLATTER", destinationSlug: "mombasa" },
   { id: "g12", label: "WINELANDS VINEYARD ROWS", destinationSlug: "cape-town" },
   { id: "g13", label: "LAKE NAKURU RHINO SIGHTING", destinationSlug: "kenya" },

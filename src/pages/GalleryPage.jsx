@@ -9,7 +9,7 @@ export default function GalleryPage({ initialFilter }) {
   const [filter, setFilter] = useState(normalizedInitialFilter);
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
-  const isBirdlifePhoto = (label) => /bird|flamingo|heron|jacana|pelican|shorebird|waterfowl|eagle|penguin/i.test(label);
+  const isBirdlifePhoto = (label) => /bird|flamingo|heron|jacana|pelican|shorebird|waterfowl|eagle|penguin|ostrich/i.test(label);
   const filtered = GALLERY.filter((g) => filter === "All"
     || (filter === "Birdlife" ? isBirdlifePhoto(g.label) : DESTINATIONS.find((d) => d.id === g.destinationSlug)?.name === filter));
 
