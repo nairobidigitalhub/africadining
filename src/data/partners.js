@@ -5,24 +5,10 @@ export function placeholderPartnerLogo(label) {
   return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
 }
 
-// TODO: replace placeholder entries with real partner name / logo / url.
-// - "logo": swap the placeholderPartnerLogo(...) call for a real
-//   PARTNER_LOGO_* constant (same pattern as the first entry above).
-// - "url": replace with the partner's real website.
 export const PARTNERS = [
   {
     name: "Positive Impact Tourism",
     logo: PARTNER_LOGO_POSITIVE_IMPACT_TOURISM,
-    url: "https://example.com", // TODO: replace with this partner's real website
-  },
-  {
-    name: "Partner 2",
-    logo: placeholderPartnerLogo("Partner 2 Logo"),
-    url: "https://example.com", // TODO: replace with this partner's real website
-  },
-  {
-    name: "Partner 3",
-    logo: placeholderPartnerLogo("Partner 3 Logo"),
     url: "https://example.com", // TODO: replace with this partner's real website
   },
 ];
