@@ -93,6 +93,7 @@ export function GlobalStyles() {
       .ph-media { position: relative; overflow: hidden; width: 100%; display: flex; align-items: center; justify-content: center; }
       .ph-media-real { background: var(--earth); }
       .ph-media-real img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+      .ph-media-real.about-team-photo img { object-position: 58% center; filter: brightness(1.28) contrast(1.08); }
       .ph-media-real.ph-media-real-contain img { object-fit: contain; }
       .ph-media-real.ph-media-real-fill img { object-fit: fill; }
       .ph-media-real.samburu-shaba-photo-frame { background-color: #f4f4f4; }

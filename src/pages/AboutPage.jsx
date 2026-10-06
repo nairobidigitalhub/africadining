@@ -28,7 +28,7 @@ export default function AboutPage({ navigate }) {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <PlaceholderImage label="FOUNDING TEAM ON LOCATION" tone="gold" ratio="4 / 5" />
+            <PlaceholderImage label="FOUNDING TEAM ON LOCATION" tone="gold" ratio="1 / 1" rounded="rounded-full" className="about-team-photo" />
           </Reveal>
         </div>
       </section>
