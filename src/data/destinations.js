@@ -690,8 +690,9 @@ export const DESTINATIONS = [
       { name: "Deadvlei Dunes", image: "NAMIBIA DEADVLEI TREE 1", blurb: "A stark desert pan, ancient dead trees and red dunes create a striking landscape." },
       { name: "Oryx in the Desert", image: "NAMIBIA ORYX IN DUNES", blurb: "An oryx moves through the sandy Namib landscape." },
       { name: "Deadvlei Tree and Dune", image: "NAMIBIA DEADVLEI TREE 2", blurb: "A lone dead tree stands against the pale pan and red dunes." },
+      { name: "Namib Dune Walk", image: "NAMIB DUNE WALK 286864", blurb: "A walk along the dunes opens up sweeping views across the Namib Desert." },
     ] }],
-    gallery: ["NAMIBIA ELEPHANT AND ANTELOPE", "NAMIBIA ANTELOPE PAIR", "NAMIBIA DEADVLEI TREE 1", "NAMIBIA ORYX IN DUNES", "NAMIBIA DEADVLEI TREE 2"],
+    gallery: ["NAMIBIA ELEPHANT AND ANTELOPE", "NAMIBIA ANTELOPE PAIR", "NAMIBIA DEADVLEI TREE 1", "NAMIBIA ORYX IN DUNES", "NAMIBIA DEADVLEI TREE 2", "NAMIB DUNE WALK 286864"],
   },
   {
     id: "chobe-national-park", name: "Chobe National Park", country: "Botswana", region: "Northern Botswana",

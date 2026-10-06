@@ -47,6 +47,7 @@ const IMAGE_FOCAL_POSITIONS = {
   "CULTURAL GUIDES IMAGE": "center 35%",
   "TARANGIRE BAOBABS": "center top",
   "NAMIBIA ORYX IN DUNES": "center bottom",
+  "NAMIB DUNE WALK 286864": "center 20%",
   "TANZANIA — HERO IMAGE": "center 38%",
   "SAMBURU SHABA": "center 60%",
   "KENYA HERO CLIENT BALLOONS": "center 60%",

@@ -155,6 +155,7 @@ export const IMAGE_LIBRARY = {
   "WETLAND NATURE WALK": "/photos/attachment24-286607.jpg",
   "NAMIBIA DEADVLEI TREE 1": "/photos/attachment24-286609.jpg",
   "NAMIBIA ORYX IN DUNES": "/photos/attachment24-286612.jpg",
+  "NAMIB DUNE WALK 286864": "/photos/namib-dune-walk-286864.jpg",
   "CHOBE LIONESS FEEDING": "/photos/attachment24-286615.jpg",
   "CHOBE ANTELOPE PAIR": "/photos/attachment24-286618.jpg",
   "NAMIBIA DEADVLEI TREE 2": "/photos/attachment24-286621.jpg",
