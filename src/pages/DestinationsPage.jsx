@@ -74,8 +74,8 @@ function makeCategoryCards(category) {
         }
       }
 
-      for (const group of page.categories || []) {
-        for (const item of group.items || []) {
+      for (const [categoryIndex, group] of (page.categories || []).entries()) {
+        for (const [itemIndex, item] of (group.items || []).entries()) {
           const entry = { country, page, category: group, item };
           if (!item.name || !matchesCategory(entry, category)) continue;
 
@@ -85,7 +85,9 @@ function makeCategoryCards(category) {
           seen.add(uniqueKey);
 
           cards.push({
-            id: item.linksTo || (page.id !== country.id ? page.id : country.id),
+            id: item.linksTo || `${page.id}~${categoryIndex}~${itemIndex}`,
+            targetPage: item.linksTo ? "destination" : "destination-item",
+            targetParam: item.linksTo || `${page.id}~${categoryIndex}~${itemIndex}`,
             listingKey: uniqueKey,
             name: item.linksToLabel || item.name,
             country: country.name,

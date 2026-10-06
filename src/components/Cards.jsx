@@ -25,7 +25,7 @@ export function DestinationCard({ destination, navigate, featured = false, linkT
   return (
     <Reveal className={`dest-card ${featured ? "dest-card-featured" : ""}`}>
       {linkToDetails ? (
-        <button className="dest-card-media-btn" onClick={() => navigate("destination", destination.id)} aria-label={`Explore ${destination.name}`}>
+        <button className="dest-card-media-btn" onClick={() => navigate(destination.targetPage || "destination", destination.targetParam || destination.id)} aria-label={`Explore ${destination.name}`}>
           {media}
         </button>
       ) : (
@@ -38,7 +38,7 @@ export function DestinationCard({ destination, navigate, featured = false, linkT
         </div>
         <p>{destination.tagline}</p>
         {linkToDetails && (
-          <A page="destination" param={destination.id} navigate={navigate} className="card-link">
+          <A page={destination.targetPage || "destination"} param={destination.targetParam || destination.id} navigate={navigate} className="card-link">
             Explore {destination.name} <ArrowRight size={15} />
           </A>
         )}
