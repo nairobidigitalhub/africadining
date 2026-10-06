@@ -41,7 +41,7 @@ export default function App() {
     case "guide": page = <TravelGuidePage navigate={navigate} />; break;
     case "services": page = <TravelGuidePage navigate={navigate} />; break;
     case "service": page = <ServiceDetailPage id={route.param} navigate={navigate} />; break;
-    case "gallery": page = <GalleryPage />; break;
+    case "gallery": page = <GalleryPage initialFilter={route.param} />; break;
     case "accommodation": page = <AccommodationPage />; break;
     case "logistics": page = <LogisticsPage />; break;
     case "about": page = <AboutPage navigate={navigate} />; break;

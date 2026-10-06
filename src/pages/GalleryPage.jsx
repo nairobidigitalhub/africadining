@@ -3,12 +3,15 @@ import { Menu, X, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, MapPin, Co
 import { DESTINATIONS, VISIBLE_DESTINATIONS, BOOKABLE_COUNTRIES, BOOKABLE_DESTINATIONS, findBookableByName, EXPERIENCES, DINING, GALLERY, TESTIMONIALS_IS_DEMO, TESTIMONIALS, TRAVEL_GUIDES, SERVICES, TEAM_IS_DEMO, TEAM, PARTNERS, placeholderPartnerLogo, IMAGE_LIBRARY } from "../data/index.js";
 import { Reveal, PlaceholderImage, CoordStamp, Eyebrow, ContourDivider, Button, A, SectionIntro, DemoContentNote, DestinationCard, ExperienceCard, DiningCard, Navbar, Footer, WhatsAppFloat, BookingModal, PageHero, Lightbox } from "../components/index.js";
 
-export default function GalleryPage() {
-  const filters = ["All", ...VISIBLE_DESTINATIONS.map((d) => d.name)];
-  const [filter, setFilter] = useState("All");
+export default function GalleryPage({ initialFilter }) {
+  const filters = ["All", "Birdlife", ...VISIBLE_DESTINATIONS.map((d) => d.name)];
+  const normalizedInitialFilter = initialFilter?.toLowerCase() === "birdlife" ? "Birdlife" : "All";
+  const [filter, setFilter] = useState(normalizedInitialFilter);
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
-  const filtered = GALLERY.filter((g) => filter === "All" || DESTINATIONS.find((d) => d.id === g.destinationSlug)?.name === filter);
+  const isBirdlifePhoto = (label) => /bird|flamingo|heron|jacana|pelican|shorebird|waterfowl|eagle|penguin/i.test(label);
+  const filtered = GALLERY.filter((g) => filter === "All"
+    || (filter === "Birdlife" ? isBirdlifePhoto(g.label) : DESTINATIONS.find((d) => d.id === g.destinationSlug)?.name === filter));
 
   const openAt = (i) => setLightboxIndex(i);
   const close = () => setLightboxIndex(null);

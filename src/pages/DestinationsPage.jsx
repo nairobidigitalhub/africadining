@@ -1,7 +1,9 @@
 import React, { useMemo, useState } from "react";
+import { ArrowRight } from "lucide-react";
 import { DESTINATIONS, VISIBLE_DESTINATIONS } from "../data/destinations.js";
 import { DestinationCard } from "../components/Cards.jsx";
 import { PageHero } from "../components/PageHero.jsx";
+import { Button } from "../components/primitives.jsx";
 
 const COUNTRY_ORDER = ["Kenya", "Uganda", "Tanzania", "South Africa", "Zimbabwe", "Botswana"];
 const FILTERS = ["All", "Safari", "Coastal", "City", "Culture", "Islands", "Adventure", "Birdlife"];
@@ -173,6 +175,13 @@ export default function DestinationsPage({ navigate }) {
               <DestinationCard key={destination.listingKey || destination.id} destination={destination} navigate={navigate} compact />
             ))}
           </div>
+          {filter === "Birdlife" && filtered.length > 0 && (
+            <div className="section-cta">
+              <Button variant="secondary" icon={ArrowRight} onClick={() => navigate("gallery", "birdlife")}>
+                More birdlife photos
+              </Button>
+            </div>
+          )}
           {filtered.length === 0 && <p className="empty-state">No destinations match that category yet.</p>}
         </div>
       </section>
