@@ -48,11 +48,6 @@ const LOGISTICS_SECTIONS = [
         title: "Guided Safari Travel",
         description: "Guests travel with local support as they set out to explore the region.",
       },
-      {
-        image: "LOGISTICS SAFARI VEHICLE FLEET",
-        title: "A Fleet Ready for Safari",
-        description: "A line of four by four vehicles prepared for safari departures and game viewing.",
-      },
     ],
   },
   {
@@ -68,11 +63,6 @@ const LOGISTICS_SECTIONS = [
         image: "LOGISTICS TRANSFER CABIN 02",
         title: "Room to Settle In",
         description: "A spacious vehicle interior for a relaxed ride between stops.",
-      },
-      {
-        image: "LOGISTICS TRANSFER CABIN 03",
-        title: "Comfortable Vehicle Interior",
-        description: "A roomy passenger cabin with cushioned seats for ground transfers and excursions.",
       },
       {
         image: "LOGISTICS TRANSFER MINIBUS",
