@@ -200,7 +200,8 @@ export function LegalPage({ title }) {
           <h3>Contact us</h3>
           <p>
             For a privacy question or request, contact <strong>{SITE_CONFIG.business.name}</strong> at{" "}
-            <a href={"mailto:" + SITE_CONFIG.contact.email}>{SITE_CONFIG.contact.email}</a>. If you are not satisfied
+            <a href={"mailto:" + SITE_CONFIG.contact.email}>{SITE_CONFIG.contact.email}</a>{" or "}
+            <a href="mailto:info@africadining.com">info@africadining.com</a>. If you are not satisfied
             with our response, you may contact Kenya's Office of the Data Protection Commissioner.
           </p>
         </div>
