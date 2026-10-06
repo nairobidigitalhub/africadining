@@ -328,7 +328,7 @@ export const DESTINATIONS = [
         title: "Activities",
         icon: "Compass",
         items: [
-          { name: "Hot Air Balloon Safari", image: "SERENGETI CLIENT BALLOON", blurb: "A sunrise flight over the plains, followed by a champagne bush breakfast on landing." },
+          { name: "Hot Air Balloon Safari", image: "MAASAI MARA BALLOON SUNSET 273236", blurb: "A sunrise flight over the plains, followed by a champagne bush breakfast on landing." },
           { name: "Guided Game Drives", image: "LOGISTICS SAFARI VEHICLE WILDLIFE", blurb: "Dawn and dusk drives with trackers who read the plain like a shared language." },
         ],
       },
@@ -340,7 +340,7 @@ export const DESTINATIONS = [
         ],
       },
     ],
-    gallery: ["WILDEBEEST RIVER CROSSING", "HOT AIR BALLOONS AT DAWN", "LION PRIDE ON PLAIN", "MAASAI VILLAGE VISIT", "ELEPHANT ON THE PLAINS", "CHEETAHS ON THE CHASE", "LIONS RESTING BY THE TRACK", "BALLOON LAUNCH AT DAWN", "MAASAI MARA CLIENT ZEBRA HERD"],
+    gallery: ["WILDEBEEST RIVER CROSSING", "HOT AIR BALLOONS AT DAWN", "LION PRIDE ON PLAIN", "MAASAI VILLAGE VISIT", "ELEPHANT ON THE PLAINS", "CHEETAHS ON THE CHASE", "LIONS RESTING BY THE TRACK", "BALLOON LAUNCH AT DAWN", "MAASAI MARA CLIENT ZEBRA HERD", "MAASAI MARA BALLOON SUNSET 273236"],
   },
   {
     id: "zanzibar",
