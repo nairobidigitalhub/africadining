@@ -26,7 +26,7 @@ const LOGISTICS_SECTIONS = [
   },
   {
     title: "Safari and Game Viewing",
-    introduction: "4 * 4 vehicles take guests along safari routes and across varied terrain for wildlife viewing.",
+    introduction: "4 × 4 vehicles take guests along safari routes and across varied terrain for wildlife viewing.",
     photos: [
       {
         image: "LOGISTICS SAFARI VEHICLE WILDLIFE",
@@ -36,7 +36,7 @@ const LOGISTICS_SECTIONS = [
       {
         image: "LOGISTICS SAFARI VEHICLE UGANDA",
         title: "Safari Vehicle in Uganda",
-        description: "A 4 * 4 ready to explore Uganda’s landscapes and wildlife areas.",
+        description: "A 4 × 4 ready to explore Uganda’s landscapes and wildlife areas.",
       },
       {
         image: "LOGISTICS SAFARI VEHICLE 02",
@@ -50,7 +50,7 @@ const LOGISTICS_SECTIONS = [
       },
       {
         image: "LOGISTICS SAFARI VEHICLE TOWN",
-        title: "4 * 4 Transfers",
+        title: "4 × 4 Transfers",
         description: "Safari vehicles are ready to carry guests between towns, lodges and wildlife areas.",
       },
       {
