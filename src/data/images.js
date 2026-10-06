@@ -329,7 +329,6 @@ export const IMAGE_LIBRARY = {
   "NGORONGORO CRATER RIM": "/photos/client-ngorongoro.jpg",
   "TARANGIRE BAOBABS": "/photos/client-tarangire.jpg",
   "LOGISTICS FLIGHT AIRCRAFT": "/photos/logistics-flight-aircraft.jpg",
-  "LOGISTICS FLIGHT CABIN": "/photos/logistics-flight-cabin.jpg",
   "LOGISTICS SAFARI VEHICLE WILDLIFE": "/photos/logistics-safari-vehicles-wildlife.jpg",
   "LOGISTICS SAFARI VEHICLE UGANDA": "/photos/logistics-safari-vehicle-uganda.jpg",
   "LOGISTICS SAFARI VEHICLE 02": "/photos/logistics-safari-vehicle-02.jpg",
@@ -339,6 +338,7 @@ export const IMAGE_LIBRARY = {
   "LOGISTICS SAFARI VEHICLE FLEET": "/photos/logistics-safari-vehicle-fleet.jpg",
   "LOGISTICS TRANSFER CABIN 01": "/photos/logistics-transfer-cabin-01.jpg",
   "LOGISTICS TRANSFER CABIN 02": "/photos/logistics-transfer-cabin-02.jpg",
+  "LOGISTICS TRANSFER CABIN 03": "/photos/logistics-flight-cabin.jpg",
   "LOGISTICS TRANSFER MINIBUS": "/photos/logistics-transfer-minibus.jpg",
 };
 

@@ -12,11 +12,6 @@ const LOGISTICS_SECTIONS = [
         title: "Flights to Remote Airstrips",
         description: "Dash, Cessna and Caravan aircraft help guests reach safari destinations across the region.",
       },
-      {
-        image: "LOGISTICS FLIGHT CABIN",
-        title: "Comfortable Cabin Travel",
-        description: "A look inside the cabin guests use on domestic flights between destinations.",
-      },
     ],
   },
   {
@@ -73,6 +68,11 @@ const LOGISTICS_SECTIONS = [
         image: "LOGISTICS TRANSFER CABIN 02",
         title: "Room to Settle In",
         description: "A spacious vehicle interior for a relaxed ride between stops.",
+      },
+      {
+        image: "LOGISTICS TRANSFER CABIN 03",
+        title: "Comfortable Vehicle Interior",
+        description: "A roomy passenger cabin with cushioned seats for ground transfers and excursions.",
       },
       {
         image: "LOGISTICS TRANSFER MINIBUS",
