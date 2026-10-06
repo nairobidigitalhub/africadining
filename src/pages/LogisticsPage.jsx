@@ -12,6 +12,16 @@ const LOGISTICS_SECTIONS = [
         title: "Flights to Remote Airstrips",
         description: "Dash, Cessna and Caravan aircraft help guests reach safari destinations across the region upon request.",
       },
+      {
+        image: "LOGISTICS FLIGHT AIRCRAFT AIRSTRIP",
+        title: "Aircraft at the Airstrip",
+        description: "A small aircraft waits at a remote airstrip before guests continue their safari journey.",
+      },
+      {
+        image: "LOGISTICS FLIGHT AIRCRAFT FRONT",
+        title: "Ready for Departure",
+        description: "A close view of an aircraft prepared for a domestic flight between destinations.",
+      },
     ],
   },
   {

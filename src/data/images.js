@@ -329,6 +329,8 @@ export const IMAGE_LIBRARY = {
   "NGORONGORO CRATER RIM": "/photos/client-ngorongoro.jpg",
   "TARANGIRE BAOBABS": "/photos/client-tarangire.jpg",
   "LOGISTICS FLIGHT AIRCRAFT": "/photos/logistics-flight-aircraft.jpg",
+  "LOGISTICS FLIGHT AIRCRAFT AIRSTRIP": "/photos/logistics-flight-airstrip.jpg",
+  "LOGISTICS FLIGHT AIRCRAFT FRONT": "/photos/logistics-flight-aircraft-front.jpg",
   "LOGISTICS SAFARI VEHICLE WILDLIFE": "/photos/logistics-safari-vehicles-wildlife.jpg",
   "LOGISTICS SAFARI VEHICLE UGANDA": "/photos/logistics-safari-vehicle-uganda.jpg",
   "LOGISTICS SAFARI VEHICLE 02": "/photos/logistics-safari-vehicle-02.jpg",
