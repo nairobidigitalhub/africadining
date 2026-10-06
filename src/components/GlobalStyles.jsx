@@ -3,7 +3,7 @@ import React from "react";
 export function GlobalStyles() {
   return (
     <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
       :root {
         --forest: #14251F;
@@ -30,7 +30,7 @@ export function GlobalStyles() {
         background: var(--sand);
         -webkit-font-smoothing: antialiased;
       }
-      h1, h2, h3, h4, .font-display { font-family: 'Playfair Display', Georgia, serif; font-weight: 400; letter-spacing: 0.01em; margin: 0; color: var(--forest); }
+      h1, h2, h3, h4, .font-display { font-family: 'Inter', -apple-system, sans-serif; font-weight: 400; letter-spacing: 0.01em; margin: 0; color: var(--forest); }
       p { line-height: 1.7; color: #3b453f; margin: 0; }
       a { color: inherit; text-decoration: none; }
       ul { margin: 0; padding: 0; list-style: none; }
@@ -105,7 +105,7 @@ export function GlobalStyles() {
       .ph-label { font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; max-width: 220px; }
 
       /* ---------- Coordinate stamp ---------- */
-      .coord-stamp { display: inline-flex; align-items: center; gap: 7px; background: rgba(23,32,29,0.72); backdrop-filter: blur(3px); color: var(--sand); padding: 7px 12px 7px 8px; border-radius: 999px; font-family: 'Playfair Display', serif; font-size: 0.72rem; letter-spacing: 0.03em; border: 1px solid rgba(247,243,234,0.3); }
+      .coord-stamp { display: inline-flex; align-items: center; gap: 7px; background: rgba(23,32,29,0.72); backdrop-filter: blur(3px); color: var(--sand); padding: 7px 12px 7px 8px; border-radius: 999px; font-family: 'Inter', sans-serif; font-size: 0.72rem; letter-spacing: 0.03em; border: 1px solid rgba(247,243,234,0.3); }
       .coord-stamp-ring { display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; border: 1px dashed var(--gold-light); color: var(--gold-light); }
 
       /* ---------- Contour divider ---------- */
@@ -131,8 +131,8 @@ export function GlobalStyles() {
       @media (min-width: 960px) {
         .brand-logo-wrap { width: 109px; }
       }
-      .brand-mark { width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--gold); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.1rem; }
-      .brand-word { color: var(--sand); font-family: 'Playfair Display', serif; font-size: 1.15rem; letter-spacing: 0.06em; line-height: 1.1; display: flex; flex-direction: column; }
+      .brand-mark { width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--gold); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; font-size: 1.1rem; }
+      .brand-word { color: var(--sand); font-family: 'Inter', sans-serif; font-size: 1.15rem; letter-spacing: 0.06em; line-height: 1.1; display: flex; flex-direction: column; }
       .brand-sub { font-family: 'Inter', sans-serif; font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); font-weight: 600; }
       .nav-desktop { display: none; align-items: center; justify-content: space-between; flex: 1 1 auto; gap: clamp(12px, 1.25vw, 18px); }
       .nav-link { color: var(--sand); flex: 0 0 auto; white-space: nowrap; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.025em; padding-bottom: 3px; border-bottom: 1.5px solid transparent; opacity: 0.88; transition: opacity .2s ease, border-color .2s ease; }
@@ -174,15 +174,15 @@ export function GlobalStyles() {
       .coord-marquee { background: var(--forest); overflow: hidden; padding: 14px 0; border-top: 1px solid rgba(247,243,234,0.08); border-bottom: 1px solid rgba(247,243,234,0.08); }
       .coord-marquee-track { display: flex; width: max-content; gap: 48px; animation: marquee 34s linear infinite; }
       @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-      .coord-marquee-item { font-family: 'Playfair Display', serif; color: var(--gold-light); font-size: 0.85rem; letter-spacing: 0.04em; white-space: nowrap; }
+      .coord-marquee-item { font-family: 'Inter', sans-serif; color: var(--gold-light); font-size: 0.85rem; letter-spacing: 0.04em; white-space: nowrap; }
       .coord-marquee-item em { font-style: normal; color: rgba(247,243,234,0.55); margin-left: 8px; font-family: 'Inter', sans-serif; font-size: 0.72rem; }
 
       /* ---------- Thesis / testimonial ---------- */
       .thesis { text-align: center; }
-      .thesis-quote { font-family: 'Playfair Display', serif; font-size: clamp(1.3rem, 2.6vw, 1.9rem); color: var(--forest); line-height: 1.5; font-weight: 400; }
+      .thesis-quote { font-family: 'Inter', sans-serif; font-size: clamp(1.3rem, 2.6vw, 1.9rem); color: var(--forest); line-height: 1.5; font-weight: 400; }
       .testimonial { text-align: center; }
       .testimonial-mark { color: var(--gold); margin-bottom: 8px; }
-      .testimonial-quote { font-family: 'Playfair Display', serif; font-size: clamp(1.2rem, 2.4vw, 1.6rem); color: var(--forest); line-height: 1.55; }
+      .testimonial-quote { font-family: 'Inter', sans-serif; font-size: clamp(1.2rem, 2.4vw, 1.6rem); color: var(--forest); line-height: 1.55; }
       .testimonial-name { margin-top: 18px; font-weight: 600; color: var(--forest); font-size: 0.92rem; }
       .testimonial-name span { font-weight: 400; color: #6b7268; }
       .testimonial-dots { display: flex; justify-content: center; gap: 8px; margin-top: 22px; }
@@ -307,7 +307,7 @@ export function GlobalStyles() {
       .detail-intro { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
       @media (min-width: 900px) { .detail-intro { grid-template-columns: 1.3fr 1fr; } }
       .detail-intro-text { font-size: 1.02rem; }
-      .detail-intro-pullquote { margin-top: 18px; font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.15rem; color: var(--teal); border-left: 3px solid var(--gold); padding-left: 16px; }
+      .detail-intro-pullquote { margin-top: 18px; font-family: 'Inter', sans-serif; font-style: italic; font-size: 1.15rem; color: var(--teal); border-left: 3px solid var(--gold); padding-left: 16px; }
       .fact-panel { background: var(--white); border-radius: var(--radius-md); padding: 28px; border: 1px solid rgba(20,37,31,0.08); }
       .fact-panel h3 { font-size: 1rem; margin-bottom: 14px; }
       .fact-panel h4 { font-size: 0.92rem; margin: 18px 0 10px; }
@@ -330,7 +330,7 @@ export function GlobalStyles() {
       .detail-block h3 { font-size: 1.1rem; margin-bottom: 12px; }
       .booking-sidebar { background: var(--white); border-radius: var(--radius-md); padding: 28px; border: 1px solid rgba(20,37,31,0.08); height: fit-content; position: sticky; top: 100px; }
       .booking-sidebar-stamp { margin-bottom: 16px; }
-      .booking-sidebar-price { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--forest); }
+      .booking-sidebar-price { font-family: 'Inter', sans-serif; font-size: 1.5rem; color: var(--forest); }
       .price-note { font-family: 'Inter', sans-serif; font-size: 0.7rem; text-transform: uppercase; color: #6b7268; letter-spacing: 0.05em; }
       .booking-sidebar-facts { margin: 18px 0; display: flex; flex-direction: column; gap: 10px; }
       .booking-sidebar-facts div { display: flex; justify-content: space-between; font-size: 0.86rem; padding-bottom: 10px; border-bottom: 1px dashed rgba(20,37,31,0.1); }
