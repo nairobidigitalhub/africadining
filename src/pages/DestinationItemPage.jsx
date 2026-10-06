@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { ArrowLeft, MapPin } from "lucide-react";
 import { DESTINATIONS } from "../data/destinations.js";
-import { Button, PageHero, PlaceholderImage, Reveal, A } from "../components/index.js";
+import { Button, PageHero, PlaceholderImage, Reveal, A, Lightbox } from "../components/index.js";
 
 export default function DestinationItemPage({ id, navigate, onBook }) {
+  const [lightbox, setLightbox] = useState(null);
   const [countryId, categoryIndex, itemIndex] = (id || "").split("~");
   const country = DESTINATIONS.find((destination) => destination.id === countryId);
   const category = country?.categories?.[Number(categoryIndex)];
@@ -28,6 +29,18 @@ export default function DestinationItemPage({ id, navigate, onBook }) {
             <div className="detail-block">
               <h2>Explore {item.name}</h2>
               <p className="detail-intro-text">{item.blurb}</p>
+              {item.gallery?.length > 0 && (
+                <>
+                  <h3>Birdlife gallery</h3>
+                  <div className="gallery-strip gallery-strip-3">
+                    {item.gallery.map((label, index) => (
+                      <button key={`${label}-${index}`} className="gallery-strip-item" onClick={() => setLightbox({ label, tone: country.accent })} aria-label={`Open image: ${label}`}>
+                        <PlaceholderImage label={label} tone={country.accent} ratio="4 / 3" />
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )}
               {item.region && <p className="offer-region"><MapPin size={13} aria-hidden="true" /> {item.region}, {country.name}</p>}
               {item.activities?.length > 0 && (
                 <>
@@ -45,6 +58,7 @@ export default function DestinationItemPage({ id, navigate, onBook }) {
           </Reveal>
         </div>
       </section>
+      {lightbox && <Lightbox item={lightbox} onClose={() => setLightbox(null)} />}
     </div>
   );
 }

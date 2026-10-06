@@ -8,7 +8,7 @@ export const DESTINATIONS = [
     coordinates: "1.29°S, 36.82°E",
     tagline: "Coastlines, capital city and classic savannah, all in one country",
     accent: "teal",
-    heroImage: "HOT AIR BALLOONS AT DAWN",
+    heroImage: "KENYA HERO CLIENT BALLOONS",
     cardImage: "KENYA WILD DOGS",
     description:
       "Kenya pairs the classic safari circuit — the Maasai Mara, Amboseli, Samburu and beyond — with a working coastline of dhow harbours and beaches protected by reefs, and a capital city where wildlife and skyline share a fence line.",
@@ -69,7 +69,7 @@ export const DESTINATIONS = [
         ],
       },
     ],
-    gallery: ["CHEETAHS ON THE CHASE", "MOMBASA TUDOR CREEK AT DUSK", "GIRAFFE CENTRE", "HOT AIR BALLOONS AT DAWN", "KENYA WILD DOGS"],
+    gallery: ["CHEETAHS ON THE CHASE", "MOMBASA TUDOR CREEK AT DUSK", "GIRAFFE CENTRE", "KENYA CLIENT WOMAN BY TREE", "KENYA WILD DOGS", "KENYA CLIENT CHEETAHS"],
   },
   {
     id: "amboseli", name: "Amboseli National Park", country: "Kenya", region: "Safari",
@@ -82,9 +82,9 @@ export const DESTINATIONS = [
     quote: "In Amboseli, elephants move across the plain beneath one of Africa’s most recognisable mountain silhouettes.",
     categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [
       { name: "Elephants of Amboseli", image: "AMBOSELI ELEPHANTS", blurb: "See Amboseli’s elephant herds moving beneath Kilimanjaro." },
-      { name: "Amboseli Birdlife", image: "BIRD IN TREE", blurb: "Look for birds across Amboseli’s wetlands, open plains and acacia woodland, from waterbirds to colorful savannah species." },
+      { name: "Amboseli Birdlife", image: "AMBOSELI WETLAND BIRD CLIENT", gallery: ["AMBOSELI WETLAND BIRD CLIENT", "AMBOSELI GRASSLAND BIRD CLIENT"], blurb: "Look for birds across Amboseli’s wetlands and open plains, from waterbirds among the reeds to ground birds in the grasslands." },
     ] }],
-    gallery: ["AMBOSELI ELEPHANTS"],
+    gallery: ["AMBOSELI ELEPHANTS", "AMBOSELI WETLAND BIRD CLIENT", "AMBOSELI GRASSLAND BIRD CLIENT"],
   },
   {
     id: "samburu", name: "Samburu Game Reserve", country: "Kenya", region: "Safari",

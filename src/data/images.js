@@ -340,6 +340,11 @@ export const IMAGE_LIBRARY = {
   "LOGISTICS TRANSFER CABIN 02": "/photos/logistics-transfer-cabin-02.jpg",
   "LOGISTICS TRANSFER CABIN 03": "/photos/logistics-flight-cabin.jpg",
   "LOGISTICS TRANSFER MINIBUS": "/photos/logistics-transfer-minibus.jpg",
+  "KENYA HERO CLIENT BALLOONS": "/photos/kenya-hero-client-balloons.jpg",
+  "KENYA CLIENT CHEETAHS": "/photos/kenya-client-cheetahs.jpg",
+  "KENYA CLIENT WOMAN BY TREE": "/photos/kenya-client-woman-tree.jpg",
+  "AMBOSELI WETLAND BIRD CLIENT": "/photos/amboseli-wetland-bird-client.jpg",
+  "AMBOSELI GRASSLAND BIRD CLIENT": "/photos/amboseli-grassland-bird-client.jpg",
 };
 
 

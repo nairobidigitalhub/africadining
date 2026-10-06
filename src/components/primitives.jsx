@@ -48,6 +48,11 @@ const IMAGE_FOCAL_POSITIONS = {
   "TARANGIRE BAOBABS": "center top",
   "TANZANIA — HERO IMAGE": "center 38%",
   "SAMBURU SHABA": "center 60%",
+  "KENYA HERO CLIENT BALLOONS": "center 60%",
+  "KENYA CLIENT CHEETAHS": "center 16%",
+  "KENYA CLIENT WOMAN BY TREE": "center 55%",
+  "AMBOSELI WETLAND BIRD CLIENT": "center 8%",
+  "AMBOSELI GRASSLAND BIRD CLIENT": "center 55%",
 };
 
 export const TONE_GRADIENTS = {
