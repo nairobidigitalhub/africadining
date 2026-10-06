@@ -5,18 +5,22 @@ import { Reveal, PlaceholderImage, Eyebrow, Button, SectionIntro, DemoContentNot
 const TEAM_ROLES = [
   {
     title: "CEO & FOUNDER",
+    signature: "CEO & Founder",
     message: "Welcome to Africa Dining & Travel Guide. We created this company to help every guest discover Africa with care, from the places they visit to the meals and people they meet. We look forward to helping you plan a journey that feels personal, memorable and well supported.",
   },
   {
     title: "OPERATIONS",
+    signature: "Head of Operations",
     message: "Our operations team coordinates the details behind each journey, from transfers and accommodation to schedules between destinations. We work with trusted local partners to help your trip run smoothly.",
   },
   {
     title: "CUSTOMER SERVICE",
+    signature: "Customer service manager",
     message: "We are here to listen, answer questions and support you before and during your journey. Tell us what you need, and we will help make each step clear and comfortable.",
   },
   {
     title: "SAFARI / ADVENTURE GUIDES",
+    signature: "Safari guides team",
     message: "Our guides bring local knowledge, care and experience to each outing. They help guests explore wildlife, landscapes and culture safely, while making room for meaningful discoveries.",
   },
 ];
@@ -110,7 +114,7 @@ export default function AboutPage({ navigate }) {
             <Eyebrow tone="teal">A Note from Our Team</Eyebrow>
             <h2 id="team-role-title" className="modal-title">{activeRole.title}</h2>
             <p className="team-role-message">“{activeRole.message}”</p>
-            <p className="team-role-signature">— CEO & Founder</p>
+            <p className="team-role-signature">— {activeRole.signature}</p>
           </div>
         </div>
       )}
