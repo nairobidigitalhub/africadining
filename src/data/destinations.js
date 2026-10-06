@@ -599,7 +599,6 @@ export const DESTINATIONS = [
         icon: "Waves",
         items: [
           { name: "Victoria Falls", image: "VICTORIA FALLS WATERFALL VIEW", blurb: "Witness one of the world's most spectacular waterfalls, surrounded by breathtaking scenery and unforgettable adventure experiences.", activities: ["Falls viewing walks", "Scenic helicopter flights (visibility is seasonal)"] },
-          { name: "Zambezi River", blurb: "The river that feeds the falls, and the setting for sunset cruises, fishing and rafting downstream of the gorge.", activities: ["Sunset cruises", "Whitewater rafting (seasonal, water-level dependent)"] },
           { name: "Victoria Falls National Park", image: "VICTORIA FALLS NATIONAL PARK IMAGE", blurb: "The Zimbabwean park protecting the falls themselves, with a network of viewpoints along the rainforest edge." },
           { name: "Zambezi National Park", blurb: "Upstream of the falls, a riverside park known for elephant, buffalo and birdlife along the Zambezi.", activities: ["Game drives", "River safaris"] },
         ],
@@ -608,8 +607,6 @@ export const DESTINATIONS = [
         title: "Wildlife & National Parks",
         icon: "PawPrint",
         items: [
-          { name: "Hwange National Park", blurb: "Zimbabwe's largest national park, with one of Africa's largest elephant populations.", activities: ["Game drives", "Walking safaris"] },
-          { name: "Mana Pools National Park", blurb: "A UNESCO World Heritage floodplain on the Zambezi, known for walking safaris among elephant and buffalo.", activities: ["Walking safaris", "Canoeing"] },
           { name: "Matobo National Park", blurb: "A landscape of ancient granite kopjes holding San rock art, black and white rhino, and historic gravesites.", activities: ["Rhino tracking", "Rock art viewing"] },
         ],
       },
@@ -661,8 +658,6 @@ export const DESTINATIONS = [
         icon: "TreePine",
         items: [
           { name: "Makgadikgadi Pans", blurb: "Among the largest salt pan systems in the world, hosting a seasonal zebra migration across otherwise stark, open terrain.", activities: ["Quad biking", "Zebra migration viewing (seasonal)"] },
-          { name: "Nxai Pan National Park", blurb: "Known for its ancient baobabs and a resident zebra population that grows during the wet season.", activities: ["Game drives"] },
-          { name: "Central Kalahari Game Reserve", blurb: "One of the world's largest protected wildlife reserves, with wildlife adapted to the desert and San Bushmen heritage.", activities: ["Game drives", "Cultural walks"] },
         ],
       },
       {
