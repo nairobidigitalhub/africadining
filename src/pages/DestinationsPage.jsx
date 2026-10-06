@@ -139,7 +139,7 @@ function makeCategoryCards(category) {
             coordinates: page.coordinates || country.coordinates,
             accent: page.accent || country.accent,
             cardImage: item.image || page.cardImage || country.cardImage,
-            hideImage: category === "Adventure" && /^(arusha national park|ruaha national park|lake manyara national park)$/i.test(item.name.trim()),
+            hideImage: category === "Adventure" && /^(arusha national park|ruaha national park|lake manyara national park|mount kenya)$/i.test(item.name.trim()),
             tagline: item.blurb || page.tagline || country.tagline,
           });
         }
