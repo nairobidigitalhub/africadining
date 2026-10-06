@@ -32,8 +32,7 @@ function matchesCategory(entry, category) {
     case "Islands":
       return /island|zanzibar|pemba|wasini|chale/i.test(allText);
     case "Adventure":
-      return !/^(arusha national park|ruaha national park|lake manyara national park)$/i.test(name.trim())
-        && !/island|beach|coast|coastal|shoreline|shore|seaside|marine|reef|coral/i.test(itemText)
+      return !/island|beach|coast|coastal|shoreline|shore|seaside|marine|reef|coral/i.test(itemText)
         && /adventure|trek|hiking|hike|canoe|mokoro|rafting|climb|diving|snorkel|balloon|kite.?surf|cycling|horseback|cruise|helicopter|zip.?line|walking safari|game drive/i.test(allText);
     case "Birdlife":
       return /bird|flamingo|wetland|marsh|swamp|waterfowl|penguin|pelican|avian|lake nakuru|lake naivasha|lake manyara|mabamba/i.test(allText);
@@ -140,6 +139,7 @@ function makeCategoryCards(category) {
             coordinates: page.coordinates || country.coordinates,
             accent: page.accent || country.accent,
             cardImage: item.image || page.cardImage || country.cardImage,
+            hideImage: category === "Adventure" && /^(arusha national park|ruaha national park|lake manyara national park)$/i.test(item.name.trim()),
             tagline: item.blurb || page.tagline || country.tagline,
           });
         }

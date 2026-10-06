@@ -24,13 +24,13 @@ export function DestinationCard({ destination, navigate, featured = false, linkT
 
   return (
     <Reveal className={`dest-card ${featured ? "dest-card-featured" : ""}`}>
-      {linkToDetails ? (
+      {!destination.hideImage && (linkToDetails ? (
         <button className="dest-card-media-btn" onClick={() => navigate(destination.targetPage || "destination", destination.targetParam || destination.id)} aria-label={`Explore ${destination.name}`}>
           {media}
         </button>
       ) : (
         <div className="dest-card-media-btn">{media}</div>
-      )}
+      ))}
       <div className="dest-card-body">
         <div className="dest-card-heading">
           <h3>{destination.name}</h3>
