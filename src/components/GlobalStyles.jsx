@@ -461,6 +461,13 @@ export function GlobalStyles() {
       .team-card { text-align: center; }
       .team-card h4 { margin-top: 14px; font-size: 1rem; }
       .team-card p { font-size: 0.82rem; margin-top: 2px; }
+      .team-role-card-wrap { display: flex; justify-content: center; }
+      .team-role-card { width: min(100%, 260px); aspect-ratio: 1; display: grid; place-items: center; padding: 28px; border: 1px solid rgba(201,138,61,0.55); border-radius: 50%; background: radial-gradient(circle at 32% 28%, #315447, var(--forest) 72%); color: var(--sand); cursor: pointer; font: inherit; font-size: clamp(0.95rem, 1.35vw, 1.15rem); font-weight: 600; letter-spacing: 0.07em; line-height: 1.5; text-align: center; transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
+      .team-role-card:hover { transform: translateY(-5px); box-shadow: 0 16px 30px rgba(20,37,31,0.18); background: radial-gradient(circle at 32% 28%, #3b6555, var(--forest) 72%); }
+      .team-role-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+      .team-role-modal { max-width: 560px; }
+      .team-role-message { margin-top: 20px; color: var(--brand-ink); font-size: 1.02rem; line-height: 1.8; }
+      .team-role-signature { margin-top: 22px; color: var(--teal); font-size: 0.9rem; font-weight: 600; text-align: right; }
 
       .not-found { text-align: center; }
       .not-found p { margin: 14px 0 26px; }

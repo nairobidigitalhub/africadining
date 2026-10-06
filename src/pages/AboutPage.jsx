@@ -1,9 +1,42 @@
-import React, { useEffect, useMemo, useState, useCallback } from "react";
-import { Menu, X, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, MapPin, Compass, UtensilsCrossed, Clock, Users, Phone, Mail, MessageCircle, Instagram, Facebook, Waves, Landmark, TreePine, Building2, ShoppingBag, Moon, Sparkles, Quote, Check, Download, Send, ImageIcon, Globe, PawPrint, AlertTriangle } from "lucide-react";
-import { DESTINATIONS, VISIBLE_DESTINATIONS, BOOKABLE_COUNTRIES, BOOKABLE_DESTINATIONS, findBookableByName, EXPERIENCES, DINING, GALLERY, TESTIMONIALS_IS_DEMO, TESTIMONIALS, TRAVEL_GUIDES, SERVICES, TEAM_IS_DEMO, TEAM, PARTNERS, placeholderPartnerLogo, IMAGE_LIBRARY } from "../data/index.js";
-import { Reveal, PlaceholderImage, CoordStamp, Eyebrow, ContourDivider, Button, A, SectionIntro, DemoContentNote, DestinationCard, ExperienceCard, DiningCard, Navbar, Footer, WhatsAppFloat, BookingModal, PageHero, Lightbox } from "../components/index.js";
+import React, { useEffect, useState } from "react";
+import { ArrowRight, Compass, Globe, Sparkles, X } from "lucide-react";
+import { Reveal, PlaceholderImage, Eyebrow, Button, SectionIntro, PageHero } from "../components/index.js";
+
+const TEAM_ROLES = [
+  {
+    title: "CEO & FOUNDER",
+    message: "Welcome to Africa Dining & Travel Guide. We created this company to help every guest discover Africa with care, from the places they visit to the meals and people they meet. We look forward to helping you plan a journey that feels personal, memorable and well supported.",
+  },
+  {
+    title: "OPERATIONS",
+    message: "Our operations team coordinates the details behind each journey, from transfers and accommodation to schedules between destinations. We work with trusted local partners to help your trip run smoothly.",
+  },
+  {
+    title: "CUSTOMER SERVICE",
+    message: "We are here to listen, answer questions and support you before and during your journey. Tell us what you need, and we will help make each step clear and comfortable.",
+  },
+  {
+    title: "SAFARI / ADVENTURE GUIDES",
+    message: "Our guides bring local knowledge, care and experience to each outing. They help guests explore wildlife, landscapes and culture safely, while making room for meaningful discoveries.",
+  },
+];
 
 export default function AboutPage({ navigate }) {
+  const [activeRole, setActiveRole] = useState(null);
+
+  useEffect(() => {
+    if (!activeRole) return undefined;
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") setActiveRole(null);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [activeRole]);
+
   return (
     <div className="page-shell">
       <PageHero eyebrow="About Us" title="Built by people who travel this ground themselves" tone="forest" />
@@ -55,22 +88,31 @@ export default function AboutPage({ navigate }) {
         </div>
       </section>
 
-      {TEAM.length > 0 && (
-        <section className="section section-sand">
-          <div className="container">
-            <SectionIntro eyebrow="The Team" title="A small studio, on the ground" tone="gold" />
-            {TEAM_IS_DEMO && <DemoContentNote>Sample team roster — replace with real names, roles and photos</DemoContentNote>}
-            <div className="team-grid">
-              {TEAM.map((m) => (
-                <Reveal key={m.name} className="team-card">
-                  <PlaceholderImage label={`${m.name.toUpperCase()} — PORTRAIT`} tone="earth" ratio="1 / 1" rounded="rounded-full" icon={Users} />
-                  <h4>{m.name}</h4>
-                  <p>{m.role}</p>
-                </Reveal>
-              ))}
-            </div>
+      <section className="section section-sand">
+        <div className="container">
+          <SectionIntro eyebrow="The Team" title="A small studio, on the ground" tone="gold" />
+          <div className="team-grid team-role-grid">
+            {TEAM_ROLES.map((role, index) => (
+              <Reveal key={role.title} delay={index * 70} className="team-role-card-wrap">
+                <button className="team-role-card" onClick={() => setActiveRole(role)} aria-haspopup="dialog">
+                  <span>{role.title}</span>
+                </button>
+              </Reveal>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
+
+      {activeRole && (
+        <div className="modal-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setActiveRole(null); }}>
+          <div className="modal team-role-modal" role="dialog" aria-modal="true" aria-labelledby="team-role-title">
+            <button className="modal-close" onClick={() => setActiveRole(null)} aria-label="Close team message"><X size={20} /></button>
+            <Eyebrow tone="teal">A Note from Our Team</Eyebrow>
+            <h2 id="team-role-title" className="modal-title">{activeRole.title}</h2>
+            <p className="team-role-message">“{activeRole.message}”</p>
+            <p className="team-role-signature">— CEO & Founder</p>
+          </div>
+        </div>
       )}
 
       <section className="section section-forest cta-banner">
