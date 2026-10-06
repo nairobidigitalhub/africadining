@@ -15,7 +15,7 @@ const TEAM_ROLES = [
   },
   {
     title: "CUSTOMER SERVICE",
-    signature: "Customer service manager",
+    signature: "Customer Service Manager",
     message: "We are here to listen, answer questions and support you before and during your journey. Tell us what you need, and we will help make each step clear and comfortable.",
   },
   {
