@@ -8,7 +8,7 @@ export function TermsPage({ navigate }) {
   return (
     <div className="page-shell">
       <PageHero eyebrow="Legal" title="Terms & Services" tone="forest" />
-      <section className="section section-sand">
+      <section className="section section-earth">
         <div className="container container-narrow legal-copy">
           <h2 className="section-title">Terms for Safari Planning and Travel Services</h2>
           <p>
@@ -34,7 +34,7 @@ export function TermsPage({ navigate }) {
           <h3>Traveller Responsibility</h3>
           <p>All travellers are responsible for providing accurate information and requirements as requested by our booking agent.</p>
 
-          <h3>1. Information Required When Booking Your Trip</h3>
+          <h3 className="terms-arrow-heading">Information Required When Booking Your Trip</h3>
           <p>
             After concluding your booking with Africa Dining &amp; Travel Guide, you may be required to provide relevant
             travel and personal information to enable us to plan and coordinate your safari and travel arrangements effectively.
@@ -48,12 +48,12 @@ export function TermsPage({ navigate }) {
           <p><strong>Confidentiality Guaranteed.</strong></p>
           <p>It is important to provide all requested information accurately and in a timely manner to ensure the smooth planning and operation of your trip.</p>
 
-          <h3>2. Travel Documents &amp; Health Requirements</h3>
+          <h3 className="terms-arrow-heading">Travel Documents &amp; Health Requirements</h3>
           <p>Travellers are responsible for obtaining and carrying the required valid travel and health documents for their journey.</p>
           <p>Where applicable, a <strong>Yellow Fever Certificate</strong> must be obtained and produced when going through immigration at any entry point.</p>
           <p>Travellers should inform their booking personnel of any physical, health, or dietary challenges and requirements well in advance to ensure comfort and convenience while travelling.</p>
 
-          <h3>3. Travel Insurance &amp; Flying Doctors Services</h3>
+          <h3 className="terms-arrow-heading">Travel Insurance &amp; Flying Doctors Services</h3>
           <p>Travel insurance is a priority.</p>
           <p>
             <strong>Flying Doctors Services</strong> for easy evacuation can be arranged upon request at a fee as advised during
@@ -61,23 +61,23 @@ export function TermsPage({ navigate }) {
             destinations where the service is available.
           </p>
 
-          <h3>4. Accommodation Availability</h3>
+          <h3 className="terms-arrow-heading">Accommodation Availability</h3>
           <p>For quality services with every booking, accommodation and service availability is checked before a tour is confirmed.</p>
           <p>Where the client's preferred accommodation or service is unavailable, alternative options will be sought with the traveller's consent and consideration.</p>
           <p>Any alternative accommodation or service arrangements will be communicated as part of the booking and travel planning process.</p>
           <p>During low and peak seasons, as applicable in most African destinations, late bookings are handled with concern, consideration, and transparency.</p>
           <p>Nothing is too much trouble when you choose Africa Dining &amp; Travel Guide as your travel partner.</p>
 
-          <h3>5. Meet &amp; Greet Services</h3>
+          <h3 className="terms-arrow-heading">Meet &amp; Greet Services</h3>
           <p>Airport welcomes, hotel arrival, hotel departure, and safari departure are a priority to ensure smooth operation.</p>
           <p>These services are handled by trained customer service personnel positioned at entry points in Africa as indicated in the traveller's itinerary.</p>
           <p>This helps facilitate the smooth commencement of the planned itinerary.</p>
 
-          <h3>6. Safari Briefing</h3>
+          <h3 className="terms-arrow-heading">Safari Briefing</h3>
           <p>A safari briefing is provided before the safari commences, depending on the country being visited and the itinerary arranged.</p>
           <p>While on safari, the guide provides a briefing before dinner about the next activity, including the relevant do's and don'ts.</p>
 
-          <h3>7. Transportation</h3>
+          <h3 className="terms-arrow-heading">Transportation</h3>
           <p>
             Our service vehicles may vary depending on the traveller's request, available and recommended standards, the
             service to be provided, the destination, and travel requirements, including weather conditions during the
@@ -92,12 +92,12 @@ export function TermsPage({ navigate }) {
             <li>Domestic flights, either scheduled or private charters, available upon request</li>
           </ul>
 
-          <h3>8. Branding &amp; Identification</h3>
+          <h3 className="terms-arrow-heading">Branding &amp; Identification</h3>
           <p>Our service vehicles are consistently branded with the <strong>Africa Dining &amp; Travel Guide</strong> logo.</p>
           <p>Our team members in branded gear are ready to assist whenever travellers require information or assistance.</p>
           <p>Our airport representatives, drivers and guides also wear branded company attire to make them easily identifiable to our guests.</p>
 
-          <h3>9. Booking Confirmation &amp; Monitoring</h3>
+          <h3 className="terms-arrow-heading">Booking Confirmation &amp; Monitoring</h3>
           <p>Once safari services have been confirmed by Africa Dining &amp; Travel Guide, our company booking agent will provide the relevant monitoring details to assist with the smooth operation of the trip.</p>
           <p>Guests will receive the necessary information and updates relating to their confirmed arrangements and itinerary through carefully maintained and monitored platforms.</p>
           <p>Travellers will be issued with the <strong>final safari itinerary and accommodation service vouchers</strong> once the safari deposit or full payment has been made.</p>
@@ -112,7 +112,7 @@ export function LegalPage({ title }) {
   return (
     <div className="page-shell">
       <PageHero eyebrow="Legal" title={title} tone="forest" />
-      <section className="section section-sand">
+      <section className="section section-earth">
         <div className="container container-narrow legal-copy">
           <p><strong>Last updated: October 6, 2026</strong></p>
           <p>

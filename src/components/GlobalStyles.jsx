@@ -474,6 +474,7 @@ export function GlobalStyles() {
       .not-found { text-align: center; }
       .not-found p { margin: 14px 0 26px; }
       .legal-copy h3 { margin-top: 26px; margin-bottom: 8px; font-size: 1.05rem; }
+      .legal-copy .terms-arrow-heading::before { content: "→"; display: inline-block; margin-right: 0.55em; color: var(--teal); }
       .legal-copy p { margin-bottom: 6px; }
       .legal-copy .section-title { margin-bottom: 4px; }
       .legal-copy ul { list-style: disc; padding-left: 22px; margin: 4px 0 14px; }
