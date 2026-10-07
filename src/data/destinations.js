@@ -353,7 +353,6 @@ export const DESTINATIONS = [
         icon: "Waves",
         items: [
           { name: "Nungwi & Kendwa", blurb: "The island's northern tip — white sand, turquoise shallows and reliable calm water." },
-          { name: "Sandbank Excursions", blurb: "Boat trips to sandbars that surface only at low tide, ringed by open ocean." },
         ],
       },
       {
@@ -505,7 +504,6 @@ export const DESTINATIONS = [
         icon: "Waves",
         items: [
           { name: "Zanzibar & Stone Town", image: "ZANZIBAR STONE TOWN CLIENT PHOTO", blurb: "Tanzania's spice island and its old quarter, recognized by UNESCO — already covered on this site as its own destination.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
-          { name: "Pemba Island", region: "Zanzibar Archipelago", blurb: "A quieter, less visited island north of Zanzibar known for clove plantations and pristine reef diving.", activities: ["Diving", "Snorkelling"] },
         ],
       },
       {
@@ -513,7 +511,6 @@ export const DESTINATIONS = [
         icon: "Landmark",
         items: [
           { name: "Maasai Cultural Experiences", blurb: "Visits hosted by Maasai communities near several northern parks, offered where local hosts make them available.", activities: ["Village visits", "Beadwork demonstrations"] },
-          { name: "Local Cultural Experiences", blurb: "Markets, craft workshops and coastal Swahili culture round out a Tanzania itinerary beyond the parks." },
         ],
       },
     ],
