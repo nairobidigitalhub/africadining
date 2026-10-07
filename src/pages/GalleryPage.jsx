@@ -34,7 +34,7 @@ export default function GalleryPage({ initialFilter }) {
 
   return (
     <div className="page-shell">
-      <PageHero eyebrow="Gallery" title="Africa, in frame" tone="forest" />
+      <PageHero eyebrow="Gallery" title="Africa in frame" tone="forest" />
       <section className="section section-sand">
         <div className="container">
           <div className="filter-row" role="group" aria-label="Filter gallery by destination">
