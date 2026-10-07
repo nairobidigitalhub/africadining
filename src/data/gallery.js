@@ -25,7 +25,6 @@ export const GALLERY = [
   { id: "g26", label: "LAKE NAKURU GREY HERON", destinationSlug: "kenya" },
   { id: "g27", label: "MAASAI MARA CHEETAH CHASE", destinationSlug: "maasai-mara", tall: true },
   { id: "g28", label: "MAASAI MARA LIONS BY TRACK", destinationSlug: "maasai-mara" },
-  { id: "g29", label: "BALLOON LAUNCH AT DAWN", destinationSlug: "maasai-mara" },
   { id: "g30", label: "AERIAL HIPPO POOL", destinationSlug: "maasai-mara" },
   { id: "g32", label: "EVENING DINING BY CANDLELIGHT" },
   { id: "g33", label: "MOUNTAIN GORILLA IN THE FOREST", destinationSlug: "uganda", tall: true },
