@@ -117,6 +117,23 @@ export const EXPERIENCES = [
     gallery: ["BALLOONS AT DAWN", "PLAINS FROM ABOVE", "BUSH BREAKFAST TABLE", "RIVER VIEW FROM THE BALLOON"],
   },
   {
+    id: "maasai-community-visit",
+    title: "Maasai Community Visit",
+    destinationSlug: "maasai-mara",
+    locationLabel: "Maasai Mara",
+    category: "Culture & History",
+    duration: "Arranged on request",
+    groupSize: "Private or small group",
+    price: "Custom quote",
+    image: "MAASAI MARA COMMUNITY VISIT",
+    shortDesc: "Meet Maasai hosts and learn about community traditions and everyday life during a respectful visit.",
+    description:
+      "Spend time with Maasai hosts in their community, learning about local traditions and everyday life through a respectful, guided visit. The experience can be arranged to suit your Maasai Mara itinerary.",
+    highlights: ["Meet local Maasai hosts", "Learn about community traditions", "Discover everyday life in the community", "Visit arrangements confirmed when booking"],
+    included: ["Local host arrangements", "Visit details confirmed when booking"],
+    gallery: ["MAASAI MARA COMMUNITY VISIT"],
+  },
+  {
     id: "stone-town-spice-tour",
     title: "Stone Town & Spice Farm Day",
     destinationSlug: "zanzibar",
