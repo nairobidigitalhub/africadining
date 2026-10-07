@@ -125,7 +125,7 @@ export default function ContactPage() {
           <Reveal delay={100} className="contact-info">
             <div className="contact-info-block">
               <h3><Phone size={16} /> Phone</h3>
-              <p>{phoneHref ? <a href={phoneHref}>{SITE_CONFIG.contact.phone}</a> : <span className="contact-pending">Pending client details</span>}</p>
+              <p>{phoneHref ? <a href={phoneHref}>{SITE_CONFIG.contact.phoneDisplay || SITE_CONFIG.contact.phone}</a> : <span className="contact-pending">Pending client details</span>}</p>
             </div>
             <div className="contact-info-block">
               <h3><Mail size={16} /> Email</h3>

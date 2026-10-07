@@ -8,6 +8,7 @@ export const SITE_CONFIG = {
   },
   contact: {
     phone: "+254 710 280000",
+    phoneDisplay: "+254 710 28••••",
     email: "africadining1@gmail.com",
     secondaryEmail: "info@africadining.com",
     whatsappNumber: "254710280000",   // WhatsApp number, digits only (matches the phone above)
