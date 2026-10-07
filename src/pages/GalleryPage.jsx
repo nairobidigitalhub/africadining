@@ -42,12 +42,12 @@ export default function GalleryPage({ initialFilter }) {
               <button key={f} className={`chip ${filter === f ? "is-active" : ""}`} onClick={() => setFilter(f)}>{f}</button>
             ))}
           </div>
-          <div className="masonry">
+          <div className="gallery-grid">
             {filtered.map((g, i) => {
               const destination = DESTINATIONS.find((d) => d.id === g.destinationSlug);
               return (
-                <button key={g.id} className={`masonry-item ${g.tall ? "is-tall" : ""}`} onClick={() => openAt(i)} aria-label={`Open image: ${g.label}`}>
-                  <PlaceholderImage label={g.label} tone={destination?.accent || "sand"} ratio={g.tall ? "3 / 4.4" : "4 / 3"} />
+                <button key={g.id} className="gallery-grid-item" onClick={() => openAt(i)} aria-label={`Open image: ${g.label}`}>
+                  <PlaceholderImage label={g.label} tone={destination?.accent || "sand"} ratio="4 / 3" />
                 </button>
               );
             })}

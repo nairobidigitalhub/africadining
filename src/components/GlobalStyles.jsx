@@ -367,11 +367,13 @@ export function GlobalStyles() {
       .qr-placeholder-dark .qr-grid span { background: rgba(247,243,234,0.15); }
       .qr-placeholder-dark .qr-grid span.on { background: var(--gold-light); }
 
-      /* ---------- Masonry gallery ---------- */
-      .masonry { columns: 1; gap: 16px; }
-      @media (min-width: 640px) { .masonry { columns: 2; } }
-      @media (min-width: 1024px) { .masonry { columns: 3; } }
-      .masonry-item { display: block; width: 100%; border: none; background: none; padding: 0; margin-bottom: 16px; break-inside: avoid; border-radius: var(--radius-sm); overflow: hidden; }
+      /* ---------- Gallery grid ---------- */
+      .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+      @media (min-width: 640px) { .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (min-width: 1024px) { .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+      .gallery-grid-item { display: block; width: 100%; aspect-ratio: 4 / 3; border: none; background: none; padding: 0; border-radius: var(--radius-sm); overflow: hidden; }
+      .gallery-grid-item .ph-media { width: 100%; height: 100%; }
+      .gallery-grid-item .ph-media-real img { object-fit: cover; }
 
       /* ---------- Modals / lightbox / booking ---------- */
       .modal-backdrop { position: fixed; inset: 0; background: rgba(20,37,31,0.7); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 20px; animation: fadeIn .25s ease; }
