@@ -22,7 +22,8 @@ function matchesCategory(entry, category) {
 
   switch (category) {
     case "Safari":
-      return /safari|wildlife|national park|game reserve|nature reserve|conservation area|gorilla trekking|game drive|safari reserve/i.test(allText);
+      return !/beach|coast|coastal|marine|reef|ocean|seaside|shore|dhow|harbou?r|lagoon|snorkel|diving|sandbank/i.test(itemText)
+        && /safari|wildlife|national park|game reserve|nature reserve|conservation area|gorilla trekking|game drive|safari reserve/i.test(allText);
     case "Coastal":
       return /beach|coast|coastal|marine|reef|ocean|seaside|shore|dhow|harbou?r|lagoon|snorkel|diving|sandbank/i.test(itemText);
     case "City":
