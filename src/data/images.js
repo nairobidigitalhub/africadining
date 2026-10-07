@@ -366,6 +366,7 @@ export const IMAGE_LIBRARY = {
   "MAASAI MARA CLIENT PORTRAIT": "/photos/client-maasai-mara.jpg",
   "MAASAI MARA CLIENT ZEBRA HERD": "/photos/client-maasai-mara-zebras.jpg",
   "MAASAI MARA BALLOON SUNSET 273236": "/photos/maasai-mara-balloon-sunset-273236.jpg",
+  "MAASAI MARA SUNSET TREE 287881": "/photos/maasai-mara-sunset-tree-287881.jpg",
   "SERENGETI CLIENT BALLOON": "/photos/client-serengeti-balloon.jpg",
   "CLIENT ACCOMMODATION ROOM 1": "/photos/client-accommodation-room-1.jpg",
   "CLIENT ACCOMMODATION ROOM 2": "/photos/client-accommodation-room-2.jpg",
