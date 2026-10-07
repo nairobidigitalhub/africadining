@@ -58,7 +58,6 @@ export const GALLERY = [
   { id: "g87", label: "SAMBURU SHABA GALLERY 3", destinationSlug: "kenya" },
   { id: "g88", label: "LAKE NAKURU CLIENT GIRAFFE ZEBRA", destinationSlug: "kenya" },
   { id: "g89", label: "ADVENTURE GUIDE CLIENT PHOTO", tall: true },
-  { id: "g91", label: "MAASAI MARA CLIENT PORTRAIT", destinationSlug: "kenya", tall: true },
   { id: "g93", label: "SERENGETI CLIENT BALLOON", destinationSlug: "tanzania", tall: true },
   { id: "g94", label: "CLIENT ACCOMMODATION ROOM 1", tall: true },
   { id: "g95", label: "CLIENT ACCOMMODATION ROOM 2", tall: true },
