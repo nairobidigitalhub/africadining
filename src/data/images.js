@@ -406,6 +406,16 @@ export const IMAGE_LIBRARY = {
   "SAMBURU GIRAFFE CLIENT": "/photos/samburu-giraffe.jpg",
   "SAMBURU ZEBRA HERD CLIENT": "/photos/samburu-zebra-herd.jpg",
   "SAMBURU ZEBRA CLIENT": "/photos/samburu-zebra.jpg",
+  "UGANDA CLIENT HERO": "/photos/uganda-hero-client.jpg",
+  "UGANDA QUEEN ELIZABETH NATIONAL PARK": "/photos/uganda-queen-elizabeth-national-park.jpg",
+  "UGANDA BOAT RIDING": "/photos/uganda-boat-riding.jpg",
+  "UGANDA BOAT RIDING 2": "/photos/uganda-boat-riding-2.jpg",
+  "UGANDA EWAFFE CULTURAL VILLAGE": "/photos/uganda-ewaffe-cultural-village.jpg",
+  "UGANDA EMBURARA FARM": "/photos/uganda-emburara-farm.jpg",
+  "UGANDA EMBURARA ANKOLE CATTLE": "/photos/uganda-emburara-ankole-cattle.jpg",
+  "UGANDA GHEE MAKING": "/photos/uganda-ghee-making.jpg",
+  "UGANDA MARTYRS HISTORY TOUR": "/photos/uganda-martyrs-history-tour.jpg",
+  "UGANDA KABAKA MUTESA HISTORY": "/photos/uganda-kabaka-mutesa-history.jpg",
 };
 
 

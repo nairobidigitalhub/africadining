@@ -525,7 +525,7 @@ export const DESTINATIONS = [
     coordinates: "1.05°S, 29.63°E",
     tagline: "Mountain gorillas in the misted forests of Bwindi",
     accent: "teal",
-    heroImage: "MOUNTAIN GORILLA IN THE FOREST",
+    heroImage: "UGANDA CLIENT HERO",
     cardImage: "MOUNTAIN GORILLA CLOSE-UP",
     description:
       "Uganda's Bwindi Impenetrable National Park is one of the last strongholds of the mountain gorilla, reached through dense, ancient rainforest in the country's southwest.",
@@ -542,6 +542,7 @@ export const DESTINATIONS = [
         items: [
           { name: "Bwindi Impenetrable National Park", image: "MOUNTAIN GORILLA IN THE FOREST", blurb: "Journey into Uganda's ancient rainforest for an unforgettable mountain gorilla trekking experience.", activities: ["Mountain gorilla trekking"] },
           { name: "Mountain Gorilla Trekking", image: "MOUNTAIN GORILLA CLOSE-UP", blurb: "A permitted trek led by a ranger to a habituated gorilla family — Bwindi's signature experience." },
+          { name: "Queen Elizabeth National Park", image: "UGANDA QUEEN ELIZABETH NATIONAL PARK", blurb: "Explore savannah, wetlands and woodland in one of Uganda's best-known wildlife parks.", activities: ["Game drives", "Boat safari"] },
         ],
       },
       {
@@ -550,6 +551,7 @@ export const DESTINATIONS = [
         items: [
           { name: "Lake Bunyonyi", image: "HIGHLAND LAKE VIEW", blurb: "Explore the quiet highland waters and green island-dotted scenery of southwestern Uganda.", activities: ["Canoeing", "Island visits"] },
           { name: "Lake Victoria", blurb: "Discover the lakeside around Entebbe, with boat trips, wetlands and views across Africa's largest lake.", activities: ["Boat trips", "Birdwatching"] },
+          { name: "Boat Riding in Uganda", image: "UGANDA BOAT RIDING", gallery: ["UGANDA BOAT RIDING 2"], blurb: "Take in Uganda's lake scenery from the water on a relaxed guided boat ride.", activities: ["Boat riding", "Lake views"] },
         ],
       },
       {
@@ -558,6 +560,12 @@ export const DESTINATIONS = [
         items: [
           { name: "Kasubi Royal Tombs", blurb: "Visit the burial ground of Buganda kings and learn about the traditions and living heritage of the Baganda." },
           { name: "Uganda Museum", blurb: "Explore Uganda's cultural and natural history through its ethnographic, archaeological and historical collections." },
+          { name: "Ewaffe Cultural Village", image: "UGANDA EWAFFE CULTURAL VILLAGE", blurb: "Meet local hosts and explore Ugandan traditions, food and everyday cultural life at Ewaffe Cultural Village." },
+          { name: "Emburara Farm Visit", image: "UGANDA EMBURARA FARM", blurb: "Visit a working farm and learn about Ankole cattle and rural life in western Uganda." },
+          { name: "Ankole Cattle at Emburara Farm", image: "UGANDA EMBURARA ANKOLE CATTLE", blurb: "See the long-horned Ankole cattle and learn about their place in local farming and heritage." },
+          { name: "Ghee Making", image: "UGANDA GHEE MAKING", blurb: "Learn how ghee is traditionally prepared and used in Ugandan food culture." },
+          { name: "Uganda Martyrs Heritage Tour", image: "UGANDA MARTYRS HISTORY TOUR", blurb: "Visit sites connected with the Uganda Martyrs and learn about this important chapter in the country's history." },
+          { name: "Kabaka Mutesa and Buganda History", image: "UGANDA KABAKA MUTESA HISTORY", blurb: "Explore the history of Kabaka Mutesa and the Buganda kingdom through its people, traditions and heritage sites." },
         ],
       },
     ],
