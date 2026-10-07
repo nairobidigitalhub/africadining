@@ -101,6 +101,23 @@ export const EXPERIENCES = [
     gallery: ["BWINDI GORILLA TREKKING"],
   },
   {
+    id: "serengeti-balloon-safari",
+    title: "Serengeti Balloon Safari",
+    destinationSlug: "tanzania",
+    locationLabel: "Serengeti, Tanzania",
+    category: "Wildlife",
+    duration: "Arranged on request",
+    groupSize: "Small group",
+    price: "Custom quote",
+    image: "SERENGETI CLIENT BALLOON",
+    shortDesc: "Float above the Serengeti plains in a hot air balloon.",
+    description:
+      "Take in the Serengeti from above on a hot air balloon safari, with wide views across its open plains and wildlife habitat. Flight arrangements can be tailored to your Tanzania itinerary.",
+    highlights: ["Hot air balloon flight over the Serengeti", "Aerial views of the plains", "Flight details arranged around your itinerary"],
+    included: ["Flight and transfer details confirmed when booking"],
+    gallery: ["SERENGETI CLIENT BALLOON"],
+  },
+  {
     id: "mara-balloon-safari",
     title: "Sunrise Balloon Safari",
     destinationSlug: "maasai-mara",
