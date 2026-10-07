@@ -359,6 +359,7 @@ export const IMAGE_LIBRARY = {
   "HELL'S GATE NATIONAL PARK EXCURSION": "/photos/hells-gate-national-park.jpg",
   "SAMBURU SHABA": "/photos/samburu-shaba-river-camp.jpg",
   "SHABA ADVENTURE CLIENT PHOTO": "/photos/shaba-adventure-client.jpg",
+  "SHABA WATER EXPERIENCE PHOTO": "/photos/shaba-water-experience.jpg",
   "SAMBURU SHABA GALLERY 1": "/photos/client-samburu-gallery-1.jpg",
   "SAMBURU SHABA GALLERY 2": "/photos/client-samburu-gallery-2.jpg",
   "SAMBURU SHABA GALLERY 3": "/photos/client-samburu-gallery-3.jpg",
