@@ -89,6 +89,7 @@ export function TermsPage({ navigate }) {
             <li>Vans</li>
             <li>Coaches</li>
             <li>4x4 Safari Land Cruisers with pop-up roofs</li>
+            <li>Domestic flights, either scheduled or private charters, available upon request</li>
           </ul>
 
           <h3>8. Branding &amp; Identification</h3>
