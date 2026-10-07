@@ -108,7 +108,7 @@ export const EXPERIENCES = [
     duration: "4 hours (incl. breakfast)",
     groupSize: "8 – 16 guests",
     price: "From $475 / person",
-    image: "MARA BALLOON SAFARI IMAGE",
+    image: "MAASAI MARA BIG FIVE BUFFALO",
     shortDesc: "Drift over the plains at first light, then land to a champagne bush breakfast.",
     description:
       "Lift off before sunrise and drift silently over herds that stretch to the horizon, the pilot reading thermals to bring you low over rivers and ridgelines. Landing is followed by a full bush breakfast laid on the plain, with sparkling wine.",
