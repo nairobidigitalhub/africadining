@@ -327,6 +327,8 @@ export function GlobalStyles() {
       .gallery-strip-item { display: block; width: 100%; aspect-ratio: 4 / 3; border: none; background: none; padding: 0; border-radius: var(--radius-sm); overflow: hidden; }
       .gallery-strip-item .ph-media { width: 100%; height: 100%; }
       .gallery-strip-item .ph-media-real { background: var(--sand); }
+      .gallery-strip-item .ph-media-fill-gaps::before { content: ""; position: absolute; inset: -10px; background: var(--photo-fill-image) center / cover no-repeat; filter: blur(12px); opacity: 0.58; transform: scale(1.04); }
+      .gallery-strip-item .ph-media-fill-gaps img { position: relative; }
       .gallery-strip-item .ph-media-real img { object-fit: contain; }
 
       .detail-split { display: grid; grid-template-columns: 1fr; gap: 44px; }

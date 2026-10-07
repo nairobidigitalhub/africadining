@@ -195,7 +195,7 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
           <div className="gallery-strip">
             {destination.gallery.map((label, i) => (
               <button key={i} className="gallery-strip-item" onClick={() => setLightbox({ label, tone: destination.accent })} aria-label={`Open image: ${label}`}>
-                <PlaceholderImage label={label} tone={destination.accent} ratio="4 / 3" />
+                <PlaceholderImage label={label} tone={destination.accent} ratio="4 / 3" fillGaps />
               </button>
             ))}
           </div>

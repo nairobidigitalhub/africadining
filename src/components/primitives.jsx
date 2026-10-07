@@ -78,7 +78,7 @@ export function Reveal({ children, delay = 0, className = "", as: Tag = "div" })
   );
 }
 
-export function PlaceholderImage({ label, ratio = "4 / 3", tone = "sand", icon: Icon = ImageIcon, className = "", rounded = "rounded-lg" }) {
+export function PlaceholderImage({ label, ratio = "4 / 3", tone = "sand", icon: Icon = ImageIcon, className = "", rounded = "rounded-lg", fillGaps = false }) {
   const realSrc = IMAGE_LIBRARY[label];
 
   if (realSrc) {
@@ -86,8 +86,8 @@ export function PlaceholderImage({ label, ratio = "4 / 3", tone = "sand", icon: 
     const fitFrame = FIT_FRAME_PHOTO_LABELS.has(label);
     return (
       <div
-        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${label === "SAMBURU SHABA" ? "samburu-shaba-photo-frame" : ""} ${rounded} ${className}`}
-        style={{ aspectRatio: ratio }}
+        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${fillGaps ? "ph-media-fill-gaps" : ""} ${label === "SAMBURU SHABA" ? "samburu-shaba-photo-frame" : ""} ${rounded} ${className}`}
+        style={{ aspectRatio: ratio, ...(fillGaps ? { "--photo-fill-image": `url("${realSrc}")` } : {}) }}
       >
         <img
           src={realSrc}
