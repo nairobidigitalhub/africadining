@@ -319,7 +319,7 @@ export const DESTINATIONS = [
         title: "Wildlife",
         icon: "PawPrint",
         items: [
-          { name: "Great Migration Crossings", blurb: "Watch a million wildebeest and zebra cross the Mara River, home to crocodiles, from July to October." },
+          { name: "Great Migration Crossings", image: "WILDEBEEST RIVER CROSSING", blurb: "Watch a million wildebeest and zebra cross the Mara River, home to crocodiles, from July to October." },
           { name: "Big Cat Territories", image: "BIG CAT TERRITORIES", blurb: "Some of Africa's best studied lion prides and a healthy resident cheetah population." },
         ],
       },
