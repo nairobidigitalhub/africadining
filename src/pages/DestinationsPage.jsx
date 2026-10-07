@@ -7,6 +7,27 @@ import { Button } from "../components/primitives.jsx";
 
 const COUNTRY_ORDER = ["Kenya", "Uganda", "Tanzania", "South Africa", "Zimbabwe", "Botswana"];
 const FILTERS = ["All", "Safari", "Coastal", "City", "Culture", "Islands", "Adventure", "Birdlife"];
+const CITY_FILTER_EXCLUDED_ITEMS = new Set([
+  "watamu",
+  "bamburi",
+  "kilifi",
+  "malindi",
+  "fort jesus & mombasa old town",
+  "nairobi city tour",
+  "nairobi national museum",
+  "nyali beach",
+  "old town",
+  "mombasa marine park",
+  "maasai market",
+  "chef led tasting rooms",
+  "stone town",
+  "zanzibar",
+  "zanzibar & stone town",
+  "local cultural experiences",
+  "victoria falls",
+  "victoria falls national park",
+  "great zimbabwe",
+]);
 
 const COUNTRY_DESTINATIONS = COUNTRY_ORDER
   .map((name) => VISIBLE_DESTINATIONS.find((destination) => destination.name === name))
@@ -124,6 +145,7 @@ function makeCategoryCards(category) {
         for (const [itemIndex, item] of (group.items || []).entries()) {
           const entry = { country, page, category: group, item };
           if (!item.name || !matchesCategory(entry, category)) continue;
+          if (category === "City" && CITY_FILTER_EXCLUDED_ITEMS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
 
           const uniqueName = (item.linksTo || item.name).toLowerCase().trim();
           const uniqueKey = `${country.name}:${uniqueName}`;

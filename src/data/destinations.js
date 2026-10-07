@@ -49,6 +49,10 @@ export const DESTINATIONS = [
         items: [
           { name: "Mombasa", blurb: "Kenya's historic harbour city, with beaches lined by dhows — covered in full on its own page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
           { name: "Diani Beach", blurb: "Ten kilometres of white sand on the south coast — covered in full on its own page.", linksTo: "diani", linksToLabel: "Diani" },
+          { name: "Malindi", blurb: "A historic coastal town north of Mombasa, known for its beaches and marine park." },
+          { name: "Watamu", image: "MOMBASA — COASTLINE IMAGE", blurb: "A quiet beach town near Malindi, known for its marine national park and reef diving." },
+          { name: "Bamburi", blurb: "A beach suburb of Mombasa, home to hotels and the Haller Park nature sanctuary." },
+          { name: "Kilifi", blurb: "A coastal town on Kilifi Creek, known for its beaches and historic ruins nearby." },
           { name: "Wasini Island", blurb: "An island off Shimoni on Kenya's south coast, known for dolphin tours and marine park excursions." },
           { name: "Chale Island", blurb: "A small island off Diani, ringed by coral reef and beach." },
           { name: "Shimoni", blurb: "A coastal village near Wasini Island and a departure point for dolphin watching and reef excursions." },
@@ -58,7 +62,10 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
+          { name: "Fort Jesus & Mombasa Old Town", blurb: "Visit the 16th century Portuguese fort and explore the surrounding coral stone lanes and carved Swahili doors." },
           { name: "Maasai Cultural Visits", blurb: "Meet local hosts and learn about Maasai beadwork, traditions and community life through respectful, hosted visits." },
+          { name: "Nairobi City Tour", blurb: "Discover Nairobi with stops at the National Museum, Jamia Mosque, City Market and the Kenyatta International Convention Centre." },
+          { name: "Nairobi National Museum", blurb: "Explore Kenya's natural and cultural history, from hominid fossils to contemporary art." },
         ],
       },
     ],
@@ -149,6 +156,7 @@ export const DESTINATIONS = [
         title: "Beaches",
         icon: "Waves",
         items: [
+          { name: "Nyali Beach", blurb: "Wide sandy beach protected by reefs, a short drive from the city centre — calm water, good for families." },
           { name: "Bamburi Beach", blurb: "The liveliest stretch of coast, with beach bars, camel rides at dusk and watersports operators." },
         ],
       },
@@ -156,6 +164,7 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
+          { name: "Old Town", blurb: "Narrow coral stone streets lined with intricately carved Swahili and Omani doors." },
         ],
       },
       {
@@ -170,6 +179,7 @@ export const DESTINATIONS = [
         icon: "Compass",
         items: [
           { name: "Dhow Sunset Cruise", image: "GUESTS BOARDING BOAT", blurb: "Traditional sail out past the harbour, drinks and grilled snacks included." },
+          { name: "Mombasa Marine Park", blurb: "Snorkelling over shallow coral gardens from a boat with a glass bottom." },
         ],
       },
     ],
@@ -211,6 +221,7 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
+          { name: "Maasai Market", blurb: "A rotating open air market for beadwork, textiles and carvings, sold directly by makers." },
           { name: "Nairobi National Museum", blurb: "Kenya's natural and cultural history, from hominid fossils to contemporary art." },
         ],
       },
@@ -218,6 +229,7 @@ export const DESTINATIONS = [
         title: "Dining",
         icon: "UtensilsCrossed",
         items: [
+          { name: "Chef Led Tasting Rooms", blurb: "A new generation of Nairobi kitchens reworking Kenyan staples with technique and provenance." },
           { name: "Nyama Choma Gardens", blurb: "Grilling over open fires, best eaten outdoors and shared late into the evening." },
         ],
       },
@@ -361,6 +373,7 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
+          { name: "Stone Town", blurb: "A dense UNESCO old quarter of coral stone buildings, carved doors and spice markets." },
           { name: "Spice Farm Tours", blurb: "Guided walks through clove, cardamom and vanilla plantations, with tastings." },
         ],
       },
@@ -504,6 +517,7 @@ export const DESTINATIONS = [
         title: "Coast & Islands",
         icon: "Waves",
         items: [
+          { name: "Zanzibar & Stone Town", blurb: "Tanzania's spice island and its old quarter, recognized by UNESCO — already covered on this site as its own destination.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
           { name: "Pemba Island", region: "Zanzibar Archipelago", blurb: "A quieter, less visited island north of Zanzibar known for clove plantations and pristine reef diving.", activities: ["Diving", "Snorkelling"] },
         ],
       },
@@ -512,6 +526,7 @@ export const DESTINATIONS = [
         icon: "Landmark",
         items: [
           { name: "Maasai Cultural Experiences", blurb: "Visits hosted by Maasai communities near several northern parks, offered where local hosts make them available.", activities: ["Village visits", "Beadwork demonstrations"] },
+          { name: "Local Cultural Experiences", blurb: "Markets, craft workshops and coastal Swahili culture round out a Tanzania itinerary beyond the parks." },
         ],
       },
     ],
@@ -574,6 +589,8 @@ export const DESTINATIONS = [
         title: "The Falls & Zambezi River",
         icon: "Waves",
         items: [
+          { name: "Victoria Falls", image: "VICTORIA FALLS WATERFALL VIEW", blurb: "Witness one of the world's most spectacular waterfalls, surrounded by breathtaking scenery and unforgettable adventure experiences.", activities: ["Falls viewing walks", "Scenic helicopter flights (visibility is seasonal)"] },
+          { name: "Victoria Falls National Park", image: "VICTORIA FALLS NATIONAL PARK IMAGE", blurb: "The Zimbabwean park protecting the falls themselves, with a network of viewpoints along the rainforest edge." },
         ],
       },
       {
@@ -586,6 +603,7 @@ export const DESTINATIONS = [
         title: "Heritage & Culture",
         icon: "Landmark",
         items: [
+          { name: "Great Zimbabwe", blurb: "The stone ruins of a medieval city and the country's namesake — one of the most significant archaeological sites in Africa south of the Sahara." },
         ],
       },
     ],
