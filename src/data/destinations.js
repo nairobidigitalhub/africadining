@@ -672,7 +672,7 @@ export const DESTINATIONS = [
         ],
       },
     ],
-    gallery: ["OKAVANGO DELTA AERIAL", "MOKORO CANOE SAFARI", "CHOBE RIVER ELEPHANTS", "MAKGADIKGADI SALT PANS", "TSODILO HILLS ROCK ART"],
+    gallery: ["OKAVANGO DELTA AERIAL", "MOKORO CANOE SAFARI", "CHOBE RIVER ELEPHANTS"],
   },
   {
     id: "namibia", name: "Namibia", country: "Namibia", region: "Adventure",
