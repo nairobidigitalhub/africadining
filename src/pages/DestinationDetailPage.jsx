@@ -25,7 +25,7 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
           tone={destination.accent}
           ratio="auto"
           rounded="rounded-none"
-          className={`detail-hero-media ${destination.heroImage === "HOT AIR BALLOONS AT DAWN" ? "detail-hero-media-fill" : ""}`}
+          className={`detail-hero-media ${destination.heroImage === "HOT AIR BALLOONS AT DAWN" ? "detail-hero-media-fill" : ""} ${destination.heroImage === "MAASAI MARA CLIENT PORTRAIT" ? "detail-hero-media-cover" : ""}`}
         />
         <div className="hero-overlay" aria-hidden="true" />
         <div className="detail-hero-content">
