@@ -323,7 +323,9 @@ export function GlobalStyles() {
       .gallery-strip-3 { grid-template-columns: repeat(3, 1fr); }
       @media (min-width: 640px) { .gallery-strip:not(.gallery-strip-3) { grid-template-columns: repeat(3, 1fr); } }
       @media (min-width: 900px) { .gallery-strip:not(.gallery-strip-3) { grid-template-columns: repeat(6, 1fr); } }
-      .gallery-strip-item { border: none; background: none; padding: 0; border-radius: var(--radius-sm); overflow: hidden; }
+      .gallery-strip-item { display: block; width: 100%; aspect-ratio: 4 / 3; border: none; background: none; padding: 0; border-radius: var(--radius-sm); overflow: hidden; }
+      .gallery-strip-item .ph-media { width: 100%; height: 100%; }
+      .gallery-strip-item .ph-media-real img { object-fit: cover; }
 
       .detail-split { display: grid; grid-template-columns: 1fr; gap: 44px; }
       @media (min-width: 960px) { .detail-split { grid-template-columns: 1.6fr 1fr; } }

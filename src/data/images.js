@@ -235,6 +235,7 @@ export const IMAGE_LIBRARY = {
   "MAASAI MARA BIG FIVE BUFFALO": "/photos/maasai-mara-big-five-buffalo-287844.jpg",
   "MAASAI MARA COMMUNITY VISIT": "/photos/maasai-mara-community-visit-287868.jpg",
   "MAASAI MARA CULTURAL GATHERING": "/photos/maasai-mara-cultural-gathering-287876.jpg",
+  "MAASAI VILLAGE VISIT": "/photos/maasai-mara-community-visit-287868.jpg",
 
   "CAPE TOWN — HERO IMAGE": PHOTO_CAPE_TOWN_COASTLINE,
   "CAPE TOWN — TABLE MOUNTAIN IMAGE": PHOTO_CAPE_TOWN_COASTLINE,
