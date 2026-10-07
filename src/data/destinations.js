@@ -47,8 +47,8 @@ export const DESTINATIONS = [
         title: "Coast & Islands",
         icon: "Waves",
         items: [
-          { name: "Mombasa", blurb: "Kenya's historic harbour city, with beaches lined by dhows — covered in full on its own page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
-          { name: "Diani Beach", blurb: "Ten kilometres of white sand on the south coast — covered in full on its own page.", linksTo: "diani", linksToLabel: "Diani" },
+          { name: "Mombasa", image: "MOMBASA CLIENT BEACH PHOTO", blurb: "Kenya's historic harbour city, with beaches lined by dhows — covered in full on its own page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
+          { name: "Diani Beach", image: "DIANI BEACH — SHORELINE IMAGE", blurb: "Ten kilometres of white sand on the south coast — covered in full on its own page.", linksTo: "diani", linksToLabel: "Diani" },
           { name: "Malindi", blurb: "A historic coastal town north of Mombasa, known for its beaches and marine park." },
           { name: "Watamu", image: "MOMBASA — COASTLINE IMAGE", blurb: "A quiet beach town near Malindi, known for its marine national park and reef diving." },
           { name: "Bamburi", blurb: "A beach suburb of Mombasa, home to hotels and the Haller Park nature sanctuary." },
@@ -140,7 +140,7 @@ export const DESTINATIONS = [
     tagline: "Where the Indian Ocean meets centuries of Swahili history",
     accent: "teal",
     heroImage: "MOMBASA — HERO IMAGE",
-    cardImage: "MOMBASA — COASTLINE IMAGE",
+    cardImage: "MOMBASA CLIENT BEACH PHOTO",
     description:
       "Kenya's old harbour city layers Swahili, Portuguese and Omani history along a coastline of warm water protected by reefs. Spend your mornings in the coral stone lanes of Old Town and your afternoons on sand the colour of bone china — Mombasa rewards a slow itinerary.",
     bestTime: "June – March",
@@ -558,6 +558,22 @@ export const DESTINATIONS = [
         items: [
           { name: "Bwindi Impenetrable National Park", image: "MOUNTAIN GORILLA IN THE FOREST", blurb: "Journey into Uganda's ancient rainforest for an unforgettable mountain gorilla trekking experience.", activities: ["Mountain gorilla trekking"] },
           { name: "Mountain Gorilla Trekking", image: "MOUNTAIN GORILLA CLOSE-UP", blurb: "A permitted trek led by a ranger to a habituated gorilla family — Bwindi's signature experience." },
+        ],
+      },
+      {
+        title: "Lakes & Waterways",
+        icon: "Waves",
+        items: [
+          { name: "Lake Bunyonyi", image: "HIGHLAND LAKE VIEW", blurb: "Explore the quiet highland waters and green island-dotted scenery of southwestern Uganda.", activities: ["Canoeing", "Island visits"] },
+          { name: "Lake Victoria", blurb: "Discover the lakeside around Entebbe, with boat trips, wetlands and views across Africa's largest lake.", activities: ["Boat trips", "Birdwatching"] },
+        ],
+      },
+      {
+        title: "Culture & History",
+        icon: "Landmark",
+        items: [
+          { name: "Kasubi Royal Tombs", blurb: "Visit the burial ground of Buganda kings and learn about the traditions and living heritage of the Baganda." },
+          { name: "Uganda Museum", blurb: "Explore Uganda's cultural and natural history through its ethnographic, archaeological and historical collections." },
         ],
       },
     ],
