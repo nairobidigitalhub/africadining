@@ -270,14 +270,12 @@ export const DESTINATIONS = [
         icon: "Waves",
         items: [
           { name: "Diani Main Beach", blurb: "Soft sand, calm shallows protected by reefs, and sun loungers under makuti thatch shade." },
-          { name: "Galu Beach", blurb: "The quieter southern stretch, favoured for long, uninterrupted morning walks." },
         ],
       },
       {
         title: "Activities",
         icon: "Compass",
         items: [
-          { name: "Colobus Forest Walk", blurb: "Guided walks through remnant coastal forest, home to the endangered Angolan colobus." },
         ],
       },
       {
