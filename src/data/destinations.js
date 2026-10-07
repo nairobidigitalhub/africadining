@@ -517,7 +517,7 @@ export const DESTINATIONS = [
         title: "Coast & Islands",
         icon: "Waves",
         items: [
-          { name: "Zanzibar & Stone Town", blurb: "Tanzania's spice island and its old quarter, recognized by UNESCO — already covered on this site as its own destination.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
+          { name: "Zanzibar & Stone Town", image: "ZANZIBAR STONE TOWN CLIENT PHOTO", blurb: "Tanzania's spice island and its old quarter, recognized by UNESCO — already covered on this site as its own destination.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
           { name: "Pemba Island", region: "Zanzibar Archipelago", blurb: "A quieter, less visited island north of Zanzibar known for clove plantations and pristine reef diving.", activities: ["Diving", "Snorkelling"] },
         ],
       },
