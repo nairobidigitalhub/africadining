@@ -111,7 +111,6 @@ export const DESTINATIONS = [
     quote: "At Lake Nakuru, wildlife sightings and changing lake views share the same compact park.",
     categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [
       { name: "Rhino Sanctuary", image: "RHINO SANCTUARY CLIENT PHOTO", blurb: "Look for black and white rhinos among the park’s woodlands and open grasslands." },
-      { name: "Lake & Birdlife", image: "LAKE NAKURU SCENIC LAKE", blurb: "Enjoy Rift Valley lake views and watch for flamingos and other birdlife along the shore." },
     ] }],
     gallery: ["LAKE NAKURU ANTELOPE", "LAKE NAKURU RHINO", "LAKE NAKURU CLIENT GIRAFFE ZEBRA"],
   },
@@ -125,7 +124,6 @@ export const DESTINATIONS = [
     highlights: ["Birdlife along the lake shore", "Boat trips on the freshwater lake", "Hippos and other wildlife"],
     quote: "A boat on Lake Naivasha brings you close to the birds and wildlife that gather along its quiet shores.",
     categories: [{ title: "Lake & Birdlife", icon: "Waves", items: [
-      { name: "Lake Naivasha Birdlife", image: "LAKE NAIVASHA BIRD", blurb: "Watch fish eagles, pelicans and other birds around the freshwater lake and its papyrus-lined shores." },
     ] }],
     gallery: ["LAKE NAIVASHA BIRD", "WADING BIRD AMONG REEDS", "GREY HERON IN SHALLOWS"],
   },
@@ -166,7 +164,6 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Fort Jesus", blurb: "A UNESCO World Heritage garrison built by the Portuguese in 1593, guarding the old harbour mouth." },
           { name: "Old Town", blurb: "Narrow coral stone streets lined with intricately carved Swahili and Omani doors." },
         ],
       },
