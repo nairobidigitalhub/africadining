@@ -15,7 +15,7 @@ export function DestinationCard({ destination, navigate, featured = false, linkT
       <PlaceholderImage
         label={destination.cardImage}
         tone={destination.accent}
-        ratio={compact ? "4 / 3" : "4 / 5"}
+        ratio={destination.imageRatio || (compact ? "4 / 3" : "4 / 5")}
         className="dest-card-media"
       />
       <CoordStamp label={destination.coordinates} className="dest-card-stamp" />

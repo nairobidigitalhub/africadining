@@ -508,9 +508,7 @@ export const DESTINATIONS = [
           { name: "Serengeti National Park", region: "Northern Circuit", image: "SERENGETI CLIENT BALLOON", blurb: "Experience endless savannahs, abundant wildlife and the spectacular Great Migration.", activities: ["Game drives", "Hot air balloon safaris"] },
           { name: "Ngorongoro Conservation Area", region: "Northern Circuit", image: "NGORONGORO CRATER RIM", blurb: "Descend into the spectacular Ngorongoro Crater, where an extraordinary concentration of wildlife thrives within an ancient volcanic landscape.", activities: ["Crater floor game drives", "Cultural visits"] },
           { name: "Tarangire National Park", region: "Northern Circuit", image: "TARANGIRE BAOBABS", blurb: "Explore a beautiful safari landscape famous for its elephants, ancient baobabs and seasonal wildlife gatherings.", activities: ["Game drives", "Walking safaris"] },
-          { name: "Lake Manyara National Park", region: "Northern Circuit", blurb: "Discover diverse landscapes, abundant birdlife and the famous lions that climb trees at Lake Manyara.", activities: ["Game drives", "Canoeing (seasonal)"] },
-          { name: "Arusha National Park", region: "Northern Circuit", blurb: "Explore Mount Meru's forested slopes, crater lakes and open grasslands, with opportunities for walking safaris and canoeing.", activities: ["Game drives", "Walking safaris", "Canoeing"] },
-          { name: "Ruaha National Park", region: "Southern Circuit", blurb: "A remote, less visited park known for large elephant populations and rugged, riverine landscapes.", activities: ["Game drives", "Walking safaris"] },
+          { name: "Ruaha National Park", region: "Southern Circuit", imageRatio: "1 / 1", blurb: "A remote, less visited park known for large elephant populations and rugged, riverine landscapes.", activities: ["Game drives", "Walking safaris"] },
         ],
       },
       {
@@ -604,7 +602,6 @@ export const DESTINATIONS = [
         title: "Wildlife & National Parks",
         icon: "PawPrint",
         items: [
-          { name: "Matobo National Park", blurb: "A landscape of ancient granite kopjes holding San rock art, black and white rhino, and historic gravesites.", activities: ["Rhino tracking", "Rock art viewing"] },
         ],
       },
       {
