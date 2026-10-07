@@ -218,7 +218,6 @@ export const DESTINATIONS = [
         title: "Wildlife",
         icon: "PawPrint",
         items: [
-          { name: "Nairobi National Park", blurb: "Lion, rhino and giraffe roam within sight of the skyline — a half day safari from breakfast." },
           { name: "Sheldrick Wildlife Trust", blurb: "Orphaned elephant calves, raised by hand and readied for release into the wild." },
         ],
       },
