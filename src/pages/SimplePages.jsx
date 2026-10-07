@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState, useCallback } from "react";
-import { SITE_CONFIG } from "../config/site.js";
+import { SITE_CONFIG, mailHref } from "../config/site.js";
 import { Menu, X, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, MapPin, Compass, UtensilsCrossed, Clock, Users, Phone, Mail, MessageCircle, Instagram, Facebook, Waves, Landmark, TreePine, Building2, ShoppingBag, Moon, Sparkles, Quote, Check, Download, Send, ImageIcon, Globe, PawPrint, AlertTriangle } from "lucide-react";
 import { DESTINATIONS, VISIBLE_DESTINATIONS, BOOKABLE_COUNTRIES, BOOKABLE_DESTINATIONS, findBookableByName, EXPERIENCES, DINING, GALLERY, TESTIMONIALS_IS_DEMO, TESTIMONIALS, TRAVEL_GUIDES, SERVICES, TEAM_IS_DEMO, TEAM, PARTNERS, placeholderPartnerLogo, IMAGE_LIBRARY } from "../data/index.js";
 import { Reveal, PlaceholderImage, CoordStamp, Eyebrow, ContourDivider, Button, A, SectionIntro, DemoContentNote, DestinationCard, ExperienceCard, DiningCard, Navbar, Footer, WhatsAppFloat, BookingModal, PageHero, Lightbox } from "../components/index.js";
@@ -152,9 +152,10 @@ export function LegalPage({ title }) {
           <h3>Who may receive information</h3>
           <p>
             Booking requests submitted through the website are transmitted to EmailJS, the service used to deliver the
-            request to our business inbox at {SITE_CONFIG.contact.email}. Our website hosting and service providers may
-            also process limited technical information needed to operate and protect the site. These providers are expected
-            to use information only to provide their services to us.
+            request to our configured business inbox. For direct enquiries, contact us at {SITE_CONFIG.contact.email}{" / "}
+            {SITE_CONFIG.contact.secondaryEmail}. Our website hosting and service providers may also process limited
+            technical information needed to operate and protect the site. These providers are expected to use information
+            only to provide their services to us.
           </p>
           <p>
             If you ask us to arrange travel, we may share relevant details with a lodge, transport provider, guide, or
@@ -200,8 +201,8 @@ export function LegalPage({ title }) {
           <h3>Contact us</h3>
           <p>
             For a privacy question or request, contact <strong>{SITE_CONFIG.business.name}</strong> at{" "}
-            <a href={"mailto:" + SITE_CONFIG.contact.email}>{SITE_CONFIG.contact.email}</a>{" or "}
-            <a href="mailto:info@africadining.com">info@africadining.com</a>. If you are not satisfied
+            <a href={mailHref(SITE_CONFIG.contact.email, SITE_CONFIG.contact.secondaryEmail)}>{SITE_CONFIG.contact.email}</a>{" / "}
+            <a href={mailHref(SITE_CONFIG.contact.secondaryEmail, SITE_CONFIG.contact.email)}>{SITE_CONFIG.contact.secondaryEmail}</a>. If you are not satisfied
             with our response, you may contact Kenya's Office of the Data Protection Commissioner.
           </p>
         </div>

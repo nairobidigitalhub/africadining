@@ -9,6 +9,7 @@ export const SITE_CONFIG = {
     contact: {
         phone: "+254 710 280000",
         email: "africadining1@gmail.com",
+        secondaryEmail: "info@africadining.com",
         whatsappNumber: "254710280000",
         address: "",
     },
@@ -28,8 +29,9 @@ export function telHref(phone) {
     return phone ? `tel:${phone.replace(/[^\d+]/g, "")}` : null;
 }
 
-export function mailHref(email) {
-    return email ? `mailto:${email}` : null;
+export function mailHref(email, ccEmail) {
+    if (!email) return null;
+    return ccEmail ? `mailto:${email}?cc=${encodeURIComponent(ccEmail)}` : `mailto:${email}`;
 }
 
 export function waHref(number) {

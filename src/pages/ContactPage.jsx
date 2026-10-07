@@ -27,7 +27,8 @@ export default function ContactPage() {
   };
 
   const phoneHref = telHref(SITE_CONFIG.contact.phone);
-  const emailHref = mailHref(SITE_CONFIG.contact.email);
+  const emailHref = mailHref(SITE_CONFIG.contact.email, SITE_CONFIG.contact.secondaryEmail);
+  const secondaryEmailHref = mailHref(SITE_CONFIG.contact.secondaryEmail, SITE_CONFIG.contact.email);
   const wa = waHref(SITE_CONFIG.contact.whatsappNumber);
 
   return (
@@ -87,7 +88,7 @@ export default function ContactPage() {
             </div>
             <div className="contact-info-block">
               <h3><Mail size={16} /> Email</h3>
-              <p>{emailHref ? <a href={emailHref}>{SITE_CONFIG.contact.email}</a> : <span className="contact-pending">Pending client details</span>}</p>
+              <p>{emailHref ? <><a href={emailHref}>{SITE_CONFIG.contact.email}</a> / <a href={secondaryEmailHref}>{SITE_CONFIG.contact.secondaryEmail}</a></> : <span className="contact-pending">Pending client details</span>}</p>
             </div>
             <div className="contact-info-block">
               <h3><MapPin size={16} /> Studio</h3>

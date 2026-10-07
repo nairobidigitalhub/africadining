@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Check, ChevronLeft, ChevronRight, X, Send, Phone, MessageCircle } from "lucide-react";
 import { DESTINATIONS, BOOKABLE_COUNTRIES, BOOKABLE_DESTINATIONS, findBookableByName } from "../data/destinations.js";
 import { EMAILJS_CONFIG } from "../config/emailjs.js";
+import { SITE_CONFIG } from "../config/site.js";
 import { Button, Eyebrow } from "./primitives.jsx";
 
 export function BookingModal({ item, onClose }) {
@@ -99,7 +100,7 @@ export function BookingModal({ item, onClose }) {
       if (!response.ok) throw new Error("Booking request could not be sent.");
       setStep("confirmed");
     } catch {
-      setSubmitError("We couldn't send your request. Please try again or email africadining1@gmail.com.");
+      setSubmitError(`We couldn't send your request. Please try again or email ${SITE_CONFIG.contact.email} / ${SITE_CONFIG.contact.secondaryEmail}.`);
     } finally {
       setIsSending(false);
     }
