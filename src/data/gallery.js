@@ -1,6 +1,5 @@
 export const GALLERY = [
   { id: "g1", label: "MOMBASA OLD TOWN DOORWAY", destinationSlug: "mombasa", tall: true },
-  { id: "g2", label: "MAASAI MARA BALLOON DAWN", destinationSlug: "maasai-mara" },
   { id: "g4", label: "CAPE TOWN TABLE MOUNTAIN", destinationSlug: "cape-town", tall: true },
   { id: "g6", label: "NAIROBI GIRAFFE CENTRE", destinationSlug: "nairobi" },
   { id: "g8", label: "WILDEBEEST RIVER CROSSING", destinationSlug: "maasai-mara", tall: true },
