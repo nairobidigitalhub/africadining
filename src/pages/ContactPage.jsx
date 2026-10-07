@@ -35,7 +35,7 @@ export default function ContactPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           service_id: EMAILJS_CONFIG.serviceId,
-          template_id: EMAILJS_CONFIG.templateId,
+          template_id: EMAILJS_CONFIG.contactTemplateId,
           user_id: EMAILJS_CONFIG.publicKey,
           template_params: {
             name: values.name.trim(),
@@ -49,8 +49,10 @@ export default function ContactPage() {
             experience: values.subject,
             price: "Not applicable",
             notes: values.message.trim(),
+            title: values.subject,
             subject: values.subject,
             message: values.message.trim(),
+            time: new Date().toLocaleString("en-KE", { dateStyle: "medium", timeStyle: "short" }),
             cc_email: SITE_CONFIG.contact.secondaryEmail,
           },
         }),

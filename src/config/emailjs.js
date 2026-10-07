@@ -3,5 +3,6 @@
 export const EMAILJS_CONFIG = {
   serviceId: "service_9pf4uuk",
   templateId: "template_y9ddqwm",
+  contactTemplateId: "1bp7lmf",
   publicKey: "PWkTNeSzLDsElAprA",
 };
