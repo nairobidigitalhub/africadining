@@ -163,7 +163,7 @@ function makeCategoryCards(category) {
             accent: page.accent || country.accent,
             cardImage: item.image || page.cardImage || country.cardImage,
             imageRatio: item.imageRatio,
-            hideImage: category === "Adventure" && /^(arusha national park|ruaha national park|lake manyara national park)$/i.test(item.name.trim()),
+            hideImage: item.hideImage || (category === "Adventure" && /^(arusha national park|ruaha national park|lake manyara national park)$/i.test(item.name.trim())),
             tagline: item.blurb || page.tagline || country.tagline,
           });
         }

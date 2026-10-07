@@ -53,9 +53,9 @@ export const DESTINATIONS = [
           { name: "Watamu", image: "MOMBASA — COASTLINE IMAGE", blurb: "A quiet beach town near Malindi, known for its marine national park and reef diving." },
           { name: "Bamburi", blurb: "A beach suburb of Mombasa, home to hotels and the Haller Park nature sanctuary." },
           { name: "Kilifi", blurb: "A coastal town on Kilifi Creek, known for its beaches and historic ruins nearby." },
-          { name: "Wasini Island", blurb: "An island off Shimoni on Kenya's south coast, known for dolphin tours and marine park excursions." },
-          { name: "Chale Island", blurb: "A small island off Diani, ringed by coral reef and beach." },
-          { name: "Shimoni", blurb: "A coastal village near Wasini Island and a departure point for dolphin watching and reef excursions." },
+          { name: "Wasini Island", hideImage: true, blurb: "An island off Shimoni on Kenya's south coast, known for dolphin tours and marine park excursions." },
+          { name: "Chale Island", hideImage: true, blurb: "A small island off Diani, ringed by coral reef and beach." },
+          { name: "Shimoni", hideImage: true, blurb: "A coastal village near Wasini Island and a departure point for dolphin watching and reef excursions." },
         ],
       },
       {

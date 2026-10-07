@@ -25,7 +25,7 @@ export default function DestinationItemPage({ id, navigate, onBook }) {
       <section className="section section-sand">
         <div className="container detail-split">
           <Reveal className="detail-main">
-            <PlaceholderImage label={item.image || `${item.name.toUpperCase()} IMAGE`} tone={country.accent} ratio="4 / 3" />
+            {!item.hideImage && <PlaceholderImage label={item.image || `${item.name.toUpperCase()} IMAGE`} tone={country.accent} ratio="4 / 3" />}
             <div className="detail-block">
               <h2>Explore {item.name}</h2>
               <p className="detail-intro-text">{item.blurb}</p>
