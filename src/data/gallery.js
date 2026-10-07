@@ -59,7 +59,6 @@ export const GALLERY = [
   { id: "g101", label: "LOGISTICS FLIGHT BOARDING", tall: true },
   { id: "g104", label: "LOGISTICS SAFARI VEHICLE UGANDA" },
   { id: "g105", label: "LOGISTICS SAFARI VEHICLE 02" },
-  { id: "g106", label: "LOGISTICS SAFARI VEHICLE LIONS" },
   { id: "g108", label: "LOGISTICS SAFARI VEHICLE GUIDE" },
   { id: "g110", label: "LOGISTICS TRANSFER CABIN 01" },
   { id: "g113", label: "LOGISTICS TRANSFER MINIBUS" },

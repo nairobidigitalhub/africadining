@@ -241,8 +241,9 @@ export function GlobalStyles() {
       .exp-card:hover, .dine-card:hover { box-shadow: 0 20px 40px -24px rgba(20,37,31,0.35); transform: translateY(-3px); }
       .exp-card-media-btn, .dine-card-media-btn { position: relative; border: none; background: none; padding: 0; display: block; width: 100%; }
       .exp-card-media, .dine-card-media { border-radius: 0; }
-      .exp-card-media-fill.ph-media-real-contain img { object-fit: fill; }
-      .ph-media-real.exp-card-media-cover img { object-fit: cover; }
+      .ph-media-real.exp-card-media img { object-fit: contain; background: var(--sand); }
+      .exp-card-media-fill.ph-media-real-contain img,
+      .ph-media-real.exp-card-media-cover img { object-fit: contain; }
       .accommodation-card { transition: box-shadow .3s ease; }
       .accommodation-card:hover { transform: none; }
       .accommodation-grid { align-items: stretch; }
@@ -325,7 +326,8 @@ export function GlobalStyles() {
       @media (min-width: 900px) { .gallery-strip:not(.gallery-strip-3) { grid-template-columns: repeat(6, 1fr); } }
       .gallery-strip-item { display: block; width: 100%; aspect-ratio: 4 / 3; border: none; background: none; padding: 0; border-radius: var(--radius-sm); overflow: hidden; }
       .gallery-strip-item .ph-media { width: 100%; height: 100%; }
-      .gallery-strip-item .ph-media-real img { object-fit: cover; }
+      .gallery-strip-item .ph-media-real { background: var(--sand); }
+      .gallery-strip-item .ph-media-real img { object-fit: contain; }
 
       .detail-split { display: grid; grid-template-columns: 1fr; gap: 44px; }
       @media (min-width: 960px) { .detail-split { grid-template-columns: 1.6fr 1fr; } }
