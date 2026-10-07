@@ -50,10 +50,7 @@ export const DESTINATIONS = [
         items: [
           { name: "Mombasa", image: "MOMBASA CLIENT BEACH PHOTO", blurb: "Kenya's historic harbour city, with beaches lined by dhows — covered in full on its own page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
           { name: "Diani Beach", image: "DIANI BEACH — SHORELINE IMAGE", blurb: "Ten kilometres of white sand on the south coast — covered in full on its own page.", linksTo: "diani", linksToLabel: "Diani" },
-          { name: "Malindi", blurb: "A historic coastal town north of Mombasa, known for its beaches and marine park." },
           { name: "Watamu", image: "MOMBASA — COASTLINE IMAGE", blurb: "A quiet beach town near Malindi, known for its marine national park and reef diving." },
-          { name: "Bamburi", blurb: "A beach suburb of Mombasa, home to hotels and the Haller Park nature sanctuary." },
-          { name: "Kilifi", blurb: "A coastal town on Kilifi Creek, known for its beaches and historic ruins nearby." },
           { name: "Wasini Island", hideImage: true, blurb: "An island off Shimoni on Kenya's south coast, known for dolphin tours and marine park excursions." },
           { name: "Chale Island", hideImage: true, blurb: "A small island off Diani, ringed by coral reef and beach." },
           { name: "Shimoni", hideImage: true, blurb: "A coastal village near Wasini Island and a departure point for dolphin watching and reef excursions." },
@@ -158,7 +155,6 @@ export const DESTINATIONS = [
         icon: "Waves",
         items: [
           { name: "Nyali Beach", blurb: "Wide sandy beach protected by reefs, a short drive from the city centre — calm water, good for families." },
-          { name: "Bamburi Beach", blurb: "The liveliest stretch of coast, with beach bars, camel rides at dusk and watersports operators." },
         ],
       },
       {
@@ -404,8 +400,6 @@ export const DESTINATIONS = [
         title: "Nature",
         icon: "TreePine",
         items: [
-          { name: "Table Mountain", blurb: "A cable car or a half day hike to a flat summit with views over both oceans." },
-          { name: "Boulders Beach", blurb: "A sheltered cove shared with a resident colony of African penguins." },
         ],
       },
       {
@@ -490,7 +484,6 @@ export const DESTINATIONS = [
           { name: "Serengeti National Park", region: "Northern Circuit", image: "SERENGETI CLIENT BALLOON", blurb: "Experience endless savannahs, abundant wildlife and the spectacular Great Migration.", activities: ["Game drives", "Hot air balloon safaris"] },
           { name: "Ngorongoro Conservation Area", region: "Northern Circuit", image: "NGORONGORO CRATER RIM", blurb: "Descend into the spectacular Ngorongoro Crater, where an extraordinary concentration of wildlife thrives within an ancient volcanic landscape.", activities: ["Crater floor game drives", "Cultural visits"] },
           { name: "Tarangire National Park", region: "Northern Circuit", image: "TARANGIRE BAOBABS", blurb: "Explore a beautiful safari landscape famous for its elephants, ancient baobabs and seasonal wildlife gatherings.", activities: ["Game drives", "Walking safaris"] },
-          { name: "Ruaha National Park", region: "Southern Circuit", imageRatio: "4 / 3", blurb: "A remote, less visited park known for large elephant populations and rugged, riverine landscapes.", activities: ["Game drives", "Walking safaris"] },
         ],
       },
       {
