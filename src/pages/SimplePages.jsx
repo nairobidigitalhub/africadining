@@ -134,9 +134,9 @@ export function LegalPage({ title }) {
             our team will explain why and agree on an appropriate way to provide them.
           </p>
           <p>
-            The contact form and newsletter box currently shown on this website are demonstrations: they do not send
-            your message or subscribe your email address. If you contact us by email, phone, or WhatsApp, we receive the
-            information you include in that conversation.
+            The contact form sends the details you enter to our business inbox through EmailJS. The newsletter box is a
+            demonstration and does not subscribe your email address. If you contact us by email, phone, or WhatsApp, we
+            receive the information you include in that conversation.
           </p>
 
           <h3>How we use your information</h3>

@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState, useCallback } from "react";
 import { SITE_CONFIG, telHref, mailHref, waHref } from "../config/site.js";
+import { EMAILJS_CONFIG } from "../config/emailjs.js";
 import { Menu, X, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, MapPin, Compass, UtensilsCrossed, Clock, Users, Phone, Mail, MessageCircle, Instagram, Facebook, Waves, Landmark, TreePine, Building2, ShoppingBag, Moon, Sparkles, Quote, Check, Download, Send, ImageIcon, Globe, PawPrint, AlertTriangle } from "lucide-react";
 import { DESTINATIONS, VISIBLE_DESTINATIONS, BOOKABLE_COUNTRIES, BOOKABLE_DESTINATIONS, findBookableByName, EXPERIENCES, DINING, GALLERY, TESTIMONIALS_IS_DEMO, TESTIMONIALS, TRAVEL_GUIDES, SERVICES, TEAM_IS_DEMO, TEAM, PARTNERS, placeholderPartnerLogo, IMAGE_LIBRARY } from "../data/index.js";
 import { Reveal, PlaceholderImage, CoordStamp, Eyebrow, ContourDivider, Button, A, SectionIntro, DemoContentNote, DestinationCard, ExperienceCard, DiningCard, Navbar, Footer, WhatsAppFloat, BookingModal, PageHero, Lightbox } from "../components/index.js";
@@ -8,6 +9,8 @@ export default function ContactPage() {
   const [values, setValues] = useState({ name: "", email: "", phone: "", subject: "General enquiry", message: "" });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const update = (field) => (e) => setValues((v) => ({ ...v, [field]: e.target.value }));
 
@@ -20,10 +23,45 @@ export default function ContactPage() {
     return Object.keys(next).length === 0;
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    // No backend is connected yet — this only advances local UI state.
-    if (validate()) setSubmitted(true);
+    if (isSending || !validate()) return;
+    setIsSending(true);
+    setSubmitError("");
+
+    try {
+      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          service_id: EMAILJS_CONFIG.serviceId,
+          template_id: EMAILJS_CONFIG.templateId,
+          user_id: EMAILJS_CONFIG.publicKey,
+          template_params: {
+            name: values.name.trim(),
+            email: values.email.trim(),
+            phone: values.phone.trim() || "Not provided",
+            country: "Website enquiry",
+            destination: "Not specified",
+            travel_date: "Not specified",
+            adults: 0,
+            children: 0,
+            experience: values.subject,
+            price: "Not applicable",
+            notes: values.message.trim(),
+            subject: values.subject,
+            message: values.message.trim(),
+            cc_email: SITE_CONFIG.contact.secondaryEmail,
+          },
+        }),
+      });
+      if (!response.ok) throw new Error("Contact request could not be sent.");
+      setSubmitted(true);
+    } catch {
+      setSubmitError(`We couldn't send your message. Please try again or email ${SITE_CONFIG.contact.email} / ${SITE_CONFIG.contact.secondaryEmail}.`);
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const phoneHref = telHref(SITE_CONFIG.contact.phone);
@@ -76,7 +114,8 @@ export default function ContactPage() {
                   <textarea id="c-message" name="message" rows={5} value={values.message} onChange={update("message")} aria-invalid={!!errors.message} aria-describedby={errors.message ? "c-message-err" : undefined} />
                   {errors.message && <span id="c-message-err" className="field-error">{errors.message}</span>}
                 </div>
-                <Button type="submit" variant="primary" icon={Send}>Send Message</Button>
+                {submitError && <p role="alert" className="field-error">{submitError}</p>}
+                <Button type="submit" variant="primary" icon={Send} disabled={isSending}>{isSending ? "Sending…" : "Send Message"}</Button>
               </form>
             )}
           </Reveal>

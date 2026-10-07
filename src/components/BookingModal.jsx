@@ -94,6 +94,7 @@ export function BookingModal({ item, onClose }) {
             price: item.price || item.priceRange || "Not specified",
             notes: String(formData.get("notes") || "").trim() || "None",
             website: String(formData.get("website") || "").trim(),
+            cc_email: SITE_CONFIG.contact.secondaryEmail,
           },
         }),
       });
