@@ -175,7 +175,6 @@ export const DESTINATIONS = [
         icon: "UtensilsCrossed",
         items: [
           { name: "Swahili Seafood Kitchens", blurb: "Curries with coconut and tamarind, grilled kingfish and biryani rooted in centuries of trade." },
-          { name: "Tamarind Dhow Dinner", blurb: "A restored dhow moored at sunset, seafood platters served on deck." },
         ],
       },
       {
