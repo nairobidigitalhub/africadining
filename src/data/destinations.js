@@ -262,19 +262,6 @@ export const DESTINATIONS = [
     quote: "The sand here is fine enough to forget you're wearing shoes at all.",
     categories: [
       {
-        title: "Beaches",
-        icon: "Waves",
-        items: [
-          { name: "Diani Main Beach", blurb: "Soft sand, calm shallows protected by reefs, and sun loungers under makuti thatch shade." },
-        ],
-      },
-      {
-        title: "Activities",
-        icon: "Compass",
-        items: [
-        ],
-      },
-      {
         title: "Nature",
         icon: "TreePine",
         items: [
