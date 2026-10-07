@@ -42,7 +42,6 @@ export default function ExperiencesPage({ navigate, onBook, initialDestination }
               <ExperienceCard key={exp.id} experience={exp} navigate={navigate} onBook={onBook} />
             ))}
           </div>
-          {filtered.length === 0 && <p className="empty-state">No experiences match those filters yet — try clearing one.</p>}
         </div>
       </section>
 
