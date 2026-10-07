@@ -198,6 +198,8 @@ export const IMAGE_LIBRARY = {
   "SAMBURU LANDSCAPE": "/photos/samburu-landscape.jpg",
   "SAMBURU ANTELOPE": "/photos/samburu-antelope.jpg",
   "SAMBURU BIRD AND CHICK": "/photos/samburu-bird-and-chick.jpg",
+  "TAITA HILLS CLIENT PHOTO": "/photos/287729.jpg",
+  "MAASAI MARA CLIENT PHOTO": "/photos/287828.jpg",
   "LAKE NAKURU RHINO": "/photos/lake-nakuru-rhino.jpg",
   "LAKE NAKURU SCENIC LAKE": "/photos/lake-nakuru-lake.jpg",
   "LAKE NAKURU ANTELOPE": "/photos/lake-nakuru-antelope.jpg",
