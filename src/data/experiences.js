@@ -134,6 +134,23 @@ export const EXPERIENCES = [
     gallery: ["MAASAI MARA COMMUNITY VISIT"],
   },
   {
+    id: "maasai-cultural-gathering",
+    title: "Maasai Cultural Gathering",
+    destinationSlug: "maasai-mara",
+    locationLabel: "Maasai Mara",
+    category: "Culture & History",
+    duration: "Arranged on request",
+    groupSize: "Private or small group",
+    price: "Custom quote",
+    image: "MAASAI MARA CULTURAL GATHERING",
+    shortDesc: "Join local Maasai hosts for a cultural gathering with traditional song, dance and community stories.",
+    description:
+      "Spend time with local Maasai hosts during a community-led gathering. Experience traditional song and dance, hear stories about Maasai traditions and ask questions in a respectful setting. Visit details are arranged with local hosts.",
+    highlights: ["Community-led gathering", "Traditional song and dance", "Learn about Maasai traditions", "Visit arrangements confirmed when booking"],
+    included: ["Local host coordination", "Visit details confirmed when booking"],
+    gallery: ["MAASAI MARA CULTURAL GATHERING"],
+  },
+  {
     id: "stone-town-spice-tour",
     title: "Stone Town & Spice Farm Day",
     destinationSlug: "zanzibar",
