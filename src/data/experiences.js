@@ -118,6 +118,23 @@ export const EXPERIENCES = [
     gallery: [],
   },
   {
+    id: "shaba-reserve-adventure",
+    title: "Shaba Reserve Adventure",
+    destinationSlug: "kenya",
+    locationLabel: "Shaba, Kenya",
+    category: "Adventure",
+    duration: "Arranged on request",
+    groupSize: "Private or small group",
+    price: "Custom quote",
+    image: "SHABA ADVENTURE CLIENT PHOTO",
+    shortDesc: "Explore Shaba's rocky river landscapes and northern Kenya wilderness.",
+    description:
+      "Explore the rugged river scenery and wilderness of Shaba in northern Kenya. The experience can be arranged around your itinerary and interests.",
+    highlights: ["Shaba's rocky river landscapes", "Northern Kenya wilderness", "Wildlife viewing"],
+    included: ["Visit details confirmed when booking"],
+    gallery: [],
+  },
+  {
     id: "serengeti-balloon-safari",
     title: "Serengeti Balloon Safari",
     destinationSlug: "tanzania",
