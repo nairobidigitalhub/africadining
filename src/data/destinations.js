@@ -550,7 +550,7 @@ export const DESTINATIONS = [
         icon: "Waves",
         items: [
           { name: "Lake Bunyonyi", image: "HIGHLAND LAKE VIEW", blurb: "Explore the quiet highland waters and green island-dotted scenery of southwestern Uganda.", activities: ["Canoeing", "Island visits"] },
-          { name: "Lake Victoria", blurb: "Discover the lakeside around Entebbe, with boat trips, wetlands and views across Africa's largest lake.", activities: ["Boat trips", "Birdwatching"] },
+          { name: "Lake Victoria", image: "UGANDA LAKE VICTORIA BOAT PHOTO", blurb: "Discover the lakeside around Entebbe, with boat trips, wetlands and views across Africa's largest lake.", activities: ["Boat trips", "Birdwatching"] },
         ],
       },
       {

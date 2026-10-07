@@ -408,6 +408,7 @@ export const IMAGE_LIBRARY = {
   "SAMBURU ZEBRA CLIENT": "/photos/samburu-zebra.jpg",
   "UGANDA CLIENT HERO": "/photos/uganda-hero-client.jpg",
   "UGANDA QUEEN ELIZABETH NATIONAL PARK": "/photos/uganda-queen-elizabeth-national-park.jpg",
+  "UGANDA LAKE VICTORIA BOAT PHOTO": "/photos/uganda-lake-victoria-boat.jpg",
   "UGANDA BOAT RIDING": "/photos/uganda-boat-riding.jpg",
   "UGANDA BOAT RIDING 2": "/photos/uganda-boat-riding-2.jpg",
   "UGANDA EWAFFE CULTURAL VILLAGE": "/photos/uganda-ewaffe-cultural-village.jpg",
