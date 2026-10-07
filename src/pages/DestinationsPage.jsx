@@ -161,7 +161,7 @@ function makeCategoryCards(category) {
             country: country.name,
             coordinates: page.coordinates || country.coordinates,
             accent: page.accent || country.accent,
-            cardImage: item.image || page.cardImage || country.cardImage,
+            cardImage: Object.prototype.hasOwnProperty.call(item, "image") ? item.image : (page.cardImage || country.cardImage),
             imageRatio: item.imageRatio,
             hideImage: item.hideImage || (category === "Adventure" && /^(arusha national park|ruaha national park|lake manyara national park)$/i.test(item.name.trim())),
             tagline: item.blurb || page.tagline || country.tagline,

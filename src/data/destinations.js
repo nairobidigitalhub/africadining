@@ -60,9 +60,9 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Fort Jesus & Mombasa Old Town", blurb: "Visit the 16th century Portuguese fort and explore the surrounding coral stone lanes and carved Swahili doors." },
-          { name: "Maasai Cultural Visits", blurb: "Meet local hosts and learn about Maasai beadwork, traditions and community life through respectful, hosted visits." },
-          { name: "Nairobi City Tour", blurb: "Discover Nairobi with stops at the National Museum, Jamia Mosque, City Market and the Kenyatta International Convention Centre." },
+          { name: "Fort Jesus & Mombasa Old Town", image: null, blurb: "Visit the 16th century Portuguese fort and explore the surrounding coral stone lanes and carved Swahili doors." },
+          { name: "Maasai Cultural Visits", image: null, blurb: "Meet local hosts and learn about Maasai beadwork, traditions and community life through respectful, hosted visits." },
+          { name: "Nairobi City Tour", image: null, blurb: "Discover Nairobi with stops at the National Museum, Jamia Mosque, City Market and the Kenyatta International Convention Centre." },
           { name: "Nairobi National Museum", blurb: "Explore Kenya's natural and cultural history, from hominid fossils to contemporary art." },
         ],
       },
