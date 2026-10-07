@@ -210,14 +210,14 @@ export const IMAGE_LIBRARY = {
   "HELL'S GATE GORGE": "/photos/hells-gate-gorge.jpg",
   "MAASAI MARA LIONS": "/photos/maasai-mara-lions.jpg",
   "ELEPHANT HERD ON SAFARI — KENYA IMAGE": PHOTO_ELEPHANT_HERD_AMBOSELI,
-  "MOMBASA — COASTLINE IMAGE": "/photos/mombasa.jpg",
+  "MOMBASA — COASTLINE IMAGE": "/photos/mombasa-user-photo.jpg",
   "MOMBASA — HERO IMAGE": "/photos/mombasa.jpg",
   "BOTSWANA — HERO IMAGE": "/photos/botswana.jpg",
   "BOTSWANA — OKAVANGO IMAGE": "/photos/botswana.jpg",
   "TANZANIA — SERENGETI IMAGE": "/photos/serengeti.jpg",
   "TANZANIA — HERO IMAGE": "/photos/tanzania-buffalo-hero.jpg",
 
-  "DIANI BEACH — SHORELINE IMAGE": PHOTO_DIANI_SHORELINE,
+  "DIANI BEACH — SHORELINE IMAGE": "/photos/diani-user-photo.jpg",
   "DIANI SHORELINE": PHOTO_DIANI_SHORELINE,
   "DIANI BEACH SHORELINE": PHOTO_DIANI_SHORELINE,
 
