@@ -24,7 +24,6 @@ const FULL_PHOTO_LABELS = new Set([
   "CLIENT ACCOMMODATION ROOM 1",
   "CLIENT ACCOMMODATION ROOM 2",
   "KILIMANJARO SUMMIT",
-  "KASUBI ROYAL TOMBS",
 ]);
 
 const FIT_FRAME_PHOTO_LABELS = new Set([
@@ -79,11 +78,8 @@ export function PlaceholderImage({ label, ratio = "4 / 3", className = "", round
     const fitFrame = FIT_FRAME_PHOTO_LABELS.has(label);
     return (
       <div
-        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${label === "SAMBURU SHABA" ? "samburu-shaba-photo-frame" : ""} ${label === "KASUBI ROYAL TOMBS" ? "kasubi-photo-frame" : ""} ${rounded} ${className}`}
-        style={{
-          aspectRatio: ratio,
-          ...(label === "KASUBI ROYAL TOMBS" ? { "--ph-photo-background": `url("${realSrc}")` } : {}),
-        }}
+        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${label === "SAMBURU SHABA" ? "samburu-shaba-photo-frame" : ""} ${rounded} ${className}`}
+        style={{ aspectRatio: ratio }}
       >
         <img
           src={realSrc}
