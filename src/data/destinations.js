@@ -117,7 +117,7 @@ export const DESTINATIONS = [
     id: "lake-naivasha", name: "Lake Naivasha", country: "Kenya", region: "Rift Valley",
     hidden: true, tags: ["Wildlife", "Birdlife"], coordinates: "0.76°S, 36.42°E",
     tagline: "Freshwater shores alive with birdlife and wildlife",
-    accent: "teal", heroImage: "LAKE NAIVASHA BIRD", cardImage: "LAKE NAIVASHA BIRD",
+    accent: "teal", heroImage: "SHOREBIRDS ON SAND", cardImage: "LAKE NAIVASHA BIRD",
     description: "Lake Naivasha is a freshwater lake in Kenya’s Rift Valley, known for its birdlife, papyrus-lined shores and boat trips among hippos.",
     bestTime: "June – October and January – February",
     highlights: ["Birdlife along the lake shore", "Boat trips on the freshwater lake", "Hippos and other wildlife"],
