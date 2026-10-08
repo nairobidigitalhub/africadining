@@ -12,14 +12,13 @@ import {
   Sparkles,
 } from "lucide-react";
 import { PARTNERS } from "../data/partners.js";
-import { TESTIMONIALS, TESTIMONIALS_IS_DEMO } from "../data/testimonials.js";
+import { TESTIMONIALS } from "../data/testimonials.js";
 import { VISIBLE_DESTINATIONS, DESTINATIONS } from "../data/destinations.js";
 import { SERVICES } from "../data/services.js";
 import {
   Reveal,
   PlaceholderImage,
   SectionIntro,
-  DemoContentNote,
   Eyebrow,
   CoordStamp,
   A,
@@ -41,7 +40,6 @@ export function TestimonialsSection() {
     <section className="section section-sand">
       <div className="container container-narrow">
         <Reveal className="testimonial">
-          {TESTIMONIALS_IS_DEMO && <DemoContentNote>Sample testimonial — replace with real client reviews</DemoContentNote>}
           <Quote size={28} className="testimonial-mark" aria-hidden="true" />
           <p className="testimonial-quote">{TESTIMONIALS[index].quote}</p>
           <p className="testimonial-name">

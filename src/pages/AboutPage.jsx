@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ArrowRight, Compass, Globe, Sparkles, X } from "lucide-react";
-import { Reveal, PlaceholderImage, Eyebrow, Button, SectionIntro, DemoContentNote, PageHero } from "../components/index.js";
+import { Reveal, PlaceholderImage, Eyebrow, Button, SectionIntro, PageHero } from "../components/index.js";
 
 const TEAM_ROLES = [
   {
@@ -49,7 +49,6 @@ export default function AboutPage({ navigate }) {
         <div className="container detail-intro">
           <Reveal className="detail-intro-copy">
             <Eyebrow tone="teal">Our Story</Eyebrow>
-            <DemoContentNote>Sample company story — replace with the client's real founding story</DemoContentNote>
             <p className="detail-intro-text">
               Africa Dining & Travel Guide started as a shared notebook between three friends who kept getting asked
               the same question: "where should I actually go?" What began as informal
