@@ -196,9 +196,6 @@ export function BookingModal({ item, onClose }) {
                 <label htmlFor="bk-website">Leave this field blank</label>
                 <input id="bk-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
               </div>
-              <p className="booking-note">
-                This is a booking request, not a live reservation — nothing is charged or reserved yet.
-              </p>
               {submitError && <p className="field-error" role="alert">{submitError}</p>}
               <Button type="submit" variant="primary" className="booking-submit" disabled={isSending}>
                 {isSending ? "Sending request…" : "Request to Book"}
