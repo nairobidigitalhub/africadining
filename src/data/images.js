@@ -377,6 +377,7 @@ export const IMAGE_LIBRARY = {
   "CLIENT ACCOMMODATION ROOM 1": "/photos/client-accommodation-room-1.jpg",
   "CLIENT ACCOMMODATION ROOM 2": "/photos/client-accommodation-room-2.jpg",
   "NAIROBI EXCURSION": "/photos/nairobi-excursion.jpg",
+  "NAIROBI CITY TOUR": "/photos/nairobi-city-tour.jpg",
   "KILIMANJARO SUMMIT": "/photos/client-kilimanjaro-national-park.jpg",
   "NGORONGORO CRATER RIM": "/photos/client-ngorongoro.jpg",
   "TARANGIRE BAOBABS": "/photos/client-tarangire.jpg",
