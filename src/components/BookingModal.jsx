@@ -19,7 +19,36 @@ export function BookingModal({ item, onClose }) {
 
   useEffect(() => {
     if (!item) return;
-    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    const previouslyFocused = document.activeElement;
+    const onKey = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+        return;
+      }
+      if (e.key !== "Tab") return;
+
+      const dialog = dialogRef.current;
+      if (!dialog) return;
+      const focusable = dialog.querySelectorAll(
+        'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      );
+      if (!focusable.length) {
+        e.preventDefault();
+        dialog.focus();
+        return;
+      }
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      const focusIsOutside = !dialog.contains(document.activeElement);
+      if (e.shiftKey && (document.activeElement === first || focusIsOutside)) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && (document.activeElement === last || focusIsOutside)) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
     document.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
     const t = setTimeout(() => dialogRef.current?.focus(), 10);
@@ -27,6 +56,7 @@ export function BookingModal({ item, onClose }) {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
       clearTimeout(t);
+      if (previouslyFocused instanceof HTMLElement && previouslyFocused.isConnected) previouslyFocused.focus();
     };
   }, [item, onClose]);
 
@@ -59,6 +89,7 @@ export function BookingModal({ item, onClose }) {
   const destName = item.destinationName || DESTINATIONS.find((d) => d.id === item.destinationSlug)?.name;
   const destinationsForCountry = BOOKABLE_DESTINATIONS.filter((b) => b.country === country);
   const selectedDestination = BOOKABLE_DESTINATIONS.find((b) => b.id === destinationId);
+  const minTravelDate = new Date(Date.now() - new Date().getTimezoneOffset() * 60_000).toISOString().slice(0, 10);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -153,7 +184,7 @@ export function BookingModal({ item, onClose }) {
 
               <div className="field">
                 <label htmlFor="bk-date">Travel date</label>
-                <input id="bk-date" name="date" type="date" required value={travelDate} onChange={(e) => setTravelDate(e.target.value)} />
+                <input id="bk-date" name="date" type="date" min={minTravelDate} required value={travelDate} onChange={(e) => setTravelDate(e.target.value)} />
               </div>
 
               <div className="field-row">
@@ -174,7 +205,7 @@ export function BookingModal({ item, onClose }) {
                   </div>
                 </div>
               </div>
-              <p className="field-hint">Adults: 12 years and above · Children: 12 years and below.</p>
+              <p className="field-hint">Adults: 13 years and above · Children: 12 years and below.</p>
 
               <div className="field">
                 <label htmlFor="bk-name">Full name</label>
