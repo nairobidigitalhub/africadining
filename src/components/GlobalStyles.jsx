@@ -96,6 +96,10 @@ export function GlobalStyles() {
       .ph-media-real.about-team-photo img { object-position: 58% center; filter: brightness(1.28) contrast(1.08); }
       .ph-media-real.ph-media-real-contain img { object-fit: contain; }
       .ph-media-real.ph-media-real-fill img { object-fit: fill; }
+      .ph-media-real.kasubi-photo-frame::before { content: ""; position: absolute; inset: -12px; background: var(--ph-photo-background) center / cover no-repeat; filter: blur(10px) brightness(0.68); transform: scale(1.06); }
+      .ph-media-real.kasubi-photo-frame img { position: relative; z-index: 1; object-fit: contain; }
+      .gallery-strip-item .ph-media-real.kasubi-photo-frame img,
+      .gallery-grid-item .ph-media-real.kasubi-photo-frame img { object-fit: contain; }
       .ph-media-real.samburu-shaba-photo-frame { background-color: #f4f4f4; }
       /* Accommodation thumbnails share one frame and show the complete source image. */
       .ph-media-real.accommodation-media img { object-fit: fill; }

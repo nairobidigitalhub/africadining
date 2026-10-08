@@ -79,8 +79,11 @@ export function PlaceholderImage({ label, ratio = "4 / 3", className = "", round
     const fitFrame = FIT_FRAME_PHOTO_LABELS.has(label);
     return (
       <div
-        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${label === "SAMBURU SHABA" ? "samburu-shaba-photo-frame" : ""} ${rounded} ${className}`}
-        style={{ aspectRatio: ratio }}
+        className={`ph-media ph-media-real ${showFullImage ? "ph-media-real-contain" : ""} ${fitFrame ? "ph-media-real-fill" : ""} ${label === "SAMBURU SHABA" ? "samburu-shaba-photo-frame" : ""} ${label === "KASUBI ROYAL TOMBS" ? "kasubi-photo-frame" : ""} ${rounded} ${className}`}
+        style={{
+          aspectRatio: ratio,
+          ...(label === "KASUBI ROYAL TOMBS" ? { "--ph-photo-background": `url("${realSrc}")` } : {}),
+        }}
       >
         <img
           src={realSrc}
