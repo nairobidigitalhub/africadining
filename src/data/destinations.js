@@ -550,7 +550,6 @@ export const DESTINATIONS = [
         icon: "Landmark",
         items: [
           { name: "Kasubi Royal Tombs", blurb: "Visit the burial ground of Buganda kings and learn about the traditions and living heritage of the Baganda." },
-          { name: "Kampala", image: null, blurb: "Explore Kampala, Uganda's capital, and its cultural and historical landmarks." },
           { name: "Uganda Martyrs Heritage Tour", image: "UGANDA MARTYRS HISTORY TOUR", blurb: "Visit sites connected with the Uganda Martyrs and learn about this important chapter in the country's history." },
           { name: "Kabaka Mutesa and Buganda History", image: "UGANDA KABAKA MUTESA HISTORY", blurb: "Explore the history of Kabaka Mutesa and the Buganda kingdom through its people, traditions and heritage sites." },
         ],
