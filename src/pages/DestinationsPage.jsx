@@ -7,6 +7,22 @@ import { Button } from "../components/primitives.jsx";
 
 const COUNTRY_ORDER = ["Kenya", "Uganda", "Tanzania", "South Africa", "Zimbabwe", "Botswana"];
 const FILTERS = ["All", "Safari", "Coastal", "City", "Culture", "Islands", "Adventure", "Birdlife"];
+const CULTURE_FILTER_EXCLUDED_CARDS = new Set([
+  "maasai mara",
+  "mombasa",
+  "shimoni",
+  "nairobi national museum",
+  "samburu game reserve",
+  "old town",
+  "nairobi",
+  "the big five",
+  "maasai village visit",
+  "bo-kaap cape malay kitchens",
+  "bo-kaap",
+  "robben island",
+  "maasai cultural experiences",
+  "cape town",
+]);
 const CITY_FILTER_EXCLUDED_ITEMS = new Set([
   "watamu",
   "bamburi",
@@ -68,7 +84,9 @@ function matchesPageTag(page, category) {
   if (category === "Safari") return tags.includes("Safari") || tags.includes("Wildlife");
   if (category === "Coastal") return tags.includes("Coastal");
   if (category === "City") return tags.includes("City");
-  if (category === "Culture") return tags.includes("Culture");
+  if (category === "Culture") {
+    return tags.includes("Culture") && !CULTURE_FILTER_EXCLUDED_CARDS.has(page.name.toLowerCase().trim());
+  }
   if (category === "Islands") return tags.includes("Islands");
   if (category === "Adventure") return tags.includes("Adventure") && !tags.includes("Coastal");
   if (category === "Birdlife") return tags.includes("Birdlife");
@@ -145,6 +163,7 @@ function makeCategoryCards(category) {
         for (const [itemIndex, item] of (group.items || []).entries()) {
           const entry = { country, page, category: group, item };
           if (!item.name || !matchesCategory(entry, category)) continue;
+          if (category === "Culture" && CULTURE_FILTER_EXCLUDED_CARDS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
           if (category === "City" && CITY_FILTER_EXCLUDED_ITEMS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
 
           const uniqueName = (item.linksTo || item.name).toLowerCase().trim();
