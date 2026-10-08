@@ -66,7 +66,7 @@ export function BookingModal({ item, onClose }) {
   }, [item, onClose]);
 
   // Every time a new booking is opened, reset the form and try to
-  // pre-select the country + destination it was opened from — via
+  // pre-select the country + destination it was opened from, using
   // BOOKABLE_DESTINATIONS, the same single source of truth the dropdowns
   // below are built from, so this never drifts out of sync.
   useEffect(() => {
@@ -245,7 +245,7 @@ export function BookingModal({ item, onClose }) {
             <span className="confirm-icon"><Check size={26} /></span>
             <h3 className="modal-title">Request sent</h3>
             <p>
-              Thanks{name ? `, ${name.split(" ")[0]}` : ""} — we've received your request for{" "}
+              Thanks{name ? `, ${name.split(" ")[0]}` : ""}. We've received your request for{" "}
               <strong>{selectedDestination?.name || country}</strong>{country ? `, ${country}` : ""}.
             </p>
             <dl className="booking-summary">

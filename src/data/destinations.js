@@ -11,7 +11,7 @@ export const DESTINATIONS = [
     heroImage: "KENYA HERO CLIENT BALLOONS",
     cardImage: "KENYA WILD DOGS",
     description:
-      "Kenya pairs the classic safari circuit — the Maasai Mara, Amboseli, Samburu and beyond — with a working coastline of dhow harbours and beaches protected by reefs, and a capital city where wildlife and skyline share a fence line.",
+      "Kenya pairs the classic safari circuit, including the Maasai Mara, Amboseli, Samburu and beyond, with a working coastline of dhow harbours and beaches protected by reefs, plus a capital city where wildlife and skyline share a fence line.",
     bestTime: "June – October (dry season) for most parks; the coast is a destination throughout the year",
     highlights: [
       "The Maasai Mara's Great Migration and big cat sightings",
@@ -19,13 +19,13 @@ export const DESTINATIONS = [
       "Mombasa's Old Town and coastline lined with dhows",
       "Nairobi, the only capital with a national park at its edge",
     ],
-    quote: "Kenya was never just one trip — it's a coastline, a capital and half a dozen distinct safari ecosystems, each worth its own itinerary.",
+    quote: "Kenya was never just one trip. It's a coastline, a capital and half a dozen distinct safari ecosystems, each worth its own itinerary.",
     categories: [
       {
         title: "Wildlife & Safari",
         icon: "PawPrint",
         items: [
-          { name: "Maasai Mara", image: "MAASAI MARA CLIENT PHOTO", blurb: "Kenya's best known safari reserve, home to the Great Migration — covered in full on its own page.", linksTo: "maasai-mara", linksToLabel: "Maasai Mara" },
+          { name: "Maasai Mara", image: "MAASAI MARA CLIENT PHOTO", blurb: "Kenya's best known safari reserve and home to the Great Migration. Explore its full guide on the Maasai Mara page.", linksTo: "maasai-mara", linksToLabel: "Maasai Mara" },
           { name: "Amboseli National Park", image: "AMBOSELI ELEPHANTS", blurb: "Famous for its large elephant herds and spectacular views of Mount Kilimanjaro.", linksTo: "amboseli", linksToLabel: "Amboseli" },
           { name: "Samburu Game Reserve", image: "SAMBURU ZEBRA", blurb: "Discover rugged northern landscapes and unique wildlife, including species rarely found elsewhere in Kenya.", linksTo: "samburu", linksToLabel: "Samburu" },
           { name: "Lake Nakuru National Park", image: "LAKE NAKURU RHINO", blurb: "Explore a scenic Rift Valley park known for rhinos, flamingos, diverse birdlife and beautiful lake views.", linksTo: "lake-nakuru", linksToLabel: "Lake Nakuru" },
@@ -48,8 +48,8 @@ export const DESTINATIONS = [
         title: "Coast & Islands",
         icon: "Waves",
         items: [
-          { name: "Mombasa", image: "MOMBASA CLIENT BEACH PHOTO", blurb: "Kenya's historic harbour city, with beaches lined by dhows — covered in full on its own page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
-          { name: "Diani Beach", image: "DIANI BEACH — SHORELINE IMAGE", blurb: "Ten kilometres of white sand on the south coast — covered in full on its own page.", linksTo: "diani", linksToLabel: "Diani" },
+          { name: "Mombasa", image: "MOMBASA CLIENT BEACH PHOTO", blurb: "Kenya's historic harbour city, with beaches lined by dhows. Explore its full guide on the Mombasa page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
+          { name: "Diani Beach", image: "DIANI BEACH — SHORELINE IMAGE", blurb: "Ten kilometres of white sand on Kenya's south coast. Explore its full guide on the Diani page.", linksTo: "diani", linksToLabel: "Diani" },
           { name: "Kilifi", image: "MOMBASA — COASTLINE IMAGE", blurb: "A quiet beach town near Malindi, known for its marine national park and reef diving." },
           { name: "Wasini Island", hideImage: true, blurb: "An island off Shimoni on Kenya's south coast, known for dolphin tours and marine park excursions." },
           { name: "Chale Island", hideImage: true, blurb: "A small island off Diani, ringed by coral reef and beach." },
@@ -142,7 +142,7 @@ export const DESTINATIONS = [
     heroImage: "MOMBASA — HERO IMAGE",
     cardImage: "MOMBASA CLIENT BEACH PHOTO",
     description:
-      "Kenya's old harbour city layers Swahili, Portuguese and Omani history along a coastline of warm water protected by reefs. Spend your mornings in the coral stone lanes of Old Town and your afternoons on sand the colour of bone china — Mombasa rewards a slow itinerary.",
+      "Kenya's old harbour city layers Swahili, Portuguese and Omani history along a coastline of warm water protected by reefs. Spend your mornings in the coral stone lanes of Old Town and your afternoons on sand the colour of bone china. Mombasa rewards a slow itinerary.",
     bestTime: "June – March",
     highlights: [
       "Old Town's carved doors and coral stone alleys",
@@ -150,13 +150,13 @@ export const DESTINATIONS = [
       "Beaches protected by reefs from Nyali to Diani",
       "Dhow sails at sunset off Tudor Creek",
     ],
-    quote: "Mombasa doesn't perform for visitors — it simply continues, and lets you in.",
+    quote: "Mombasa doesn't perform for visitors. It simply continues, and lets you in.",
     categories: [
       {
         title: "Beaches",
         icon: "Waves",
         items: [
-          { name: "Nyali Beach", blurb: "Wide sandy beach protected by reefs, a short drive from the city centre — calm water, good for families." },
+          { name: "Nyali Beach", blurb: "A wide sandy beach protected by reefs, a short drive from the city centre. Its calm water is good for families." },
         ],
       },
       {
@@ -199,7 +199,7 @@ export const DESTINATIONS = [
     heroImage: "NAIROBI — SKYLINE HERO IMAGE",
     cardImage: "NAIROBI — SKYLINE IMAGE",
     description:
-      "Nairobi moves between two identities without friction — a fast, design led East African capital, and a city where giraffes graze against a backdrop of glass towers. It's the natural first and last stop on an East African itinerary.",
+      "Nairobi moves between two identities without friction. It's a fast, design led East African capital where giraffes graze against a backdrop of glass towers, and a natural first or last stop on an East African itinerary.",
     bestTime: "Throughout the year; driest Jun–Oct",
     highlights: [
       "Nairobi National Park, wildlife within city limits",
@@ -249,7 +249,7 @@ export const DESTINATIONS = [
     heroImage: "DIANI BEACH — HERO IMAGE",
     cardImage: "DIANI BEACH — SHORELINE IMAGE",
     description:
-      "South of Mombasa, Diani trades city history for pure coastline — a long beach lined with palms and some of the clearest water on the East African coast, backed by remnant forest that still holds colobus monkeys.",
+      "South of Mombasa, Diani offers a long palm lined beach and some of the clearest water on the East African coast, backed by remnant forest that still holds colobus monkeys.",
     bestTime: "December – March",
     highlights: [
       "Ten uninterrupted kilometres of white sand",
@@ -344,13 +344,13 @@ export const DESTINATIONS = [
       "Sandbank swimming trips at low tide",
       "Jozani Forest, home to the red colobus monkey",
     ],
-    quote: "You can smell Zanzibar before you see it — clove, salt, frangipani.",
+    quote: "You can smell Zanzibar before you see it: clove, salt and frangipani.",
     categories: [
       {
         title: "Beaches",
         icon: "Waves",
         items: [
-          { name: "Nungwi & Kendwa", blurb: "The island's northern tip — white sand, turquoise shallows and reliable calm water." },
+          { name: "Nungwi & Kendwa", blurb: "The island's northern tip has white sand, turquoise shallows and reliably calm water." },
         ],
       },
       {
@@ -468,7 +468,7 @@ export const DESTINATIONS = [
     heroImage: "TANZANIA — HERO IMAGE",
     cardImage: "TANZANIA — SERENGETI IMAGE",
     description:
-      "Tanzania spans the classic northern safari circuit of the Serengeti and Ngorongoro Crater, the peak of Mount Kilimanjaro, and — across the channel — the lanes of Zanzibar, fragrant with spices. Few countries hold this much variety together without feeling stretched thin.",
+      "Tanzania spans the classic northern safari circuit of the Serengeti and Ngorongoro Crater, the peak of Mount Kilimanjaro, and the spice scented lanes of Zanzibar across the channel. Few countries hold this much variety together without feeling stretched thin.",
     bestTime: "June – October (dry season); late January – March for the calving season",
     highlights: [
       "The Great Migration crossing the Serengeti's plains",
@@ -476,7 +476,7 @@ export const DESTINATIONS = [
       "Mount Kilimanjaro, Africa's highest peak",
       "Stone Town and the spice scented shores of Zanzibar",
     ],
-    quote: "Tanzania doesn't ask you to choose between mountain, plain and coastline — it hands you all three.",
+    quote: "Tanzania doesn't ask you to choose between mountain, plain and coastline. It gives you all three.",
     categories: [
       {
         title: "Wildlife & Safari",
@@ -498,7 +498,7 @@ export const DESTINATIONS = [
         title: "Coast & Islands",
         icon: "Waves",
         items: [
-          { name: "Zanzibar & Stone Town", image: "ZANZIBAR STONE TOWN CLIENT PHOTO", blurb: "Tanzania's spice island and its old quarter, recognized by UNESCO — already covered on this site as its own destination.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
+          { name: "Zanzibar & Stone Town", image: "ZANZIBAR STONE TOWN CLIENT PHOTO", blurb: "Tanzania's spice island and its old quarter, recognized by UNESCO. Explore its full guide on the Zanzibar page.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
         ],
       },
       {
@@ -529,14 +529,14 @@ export const DESTINATIONS = [
       "Mountain gorilla trekking in Bwindi Impenetrable National Park",
       "Treks led by rangers through dense, ancient rainforest",
     ],
-    quote: "Bwindi doesn't reveal its gorillas easily — the trek there is part of what makes finding them feel earned.",
+    quote: "Bwindi doesn't reveal its gorillas easily. The trek is part of what makes finding them feel earned.",
     categories: [
       {
         title: "Wildlife & Safari",
         icon: "PawPrint",
         items: [
           { name: "Bwindi Impenetrable National Park", image: "MOUNTAIN GORILLA IN THE FOREST", blurb: "Journey into Uganda's ancient rainforest for an unforgettable mountain gorilla trekking experience.", activities: ["Mountain gorilla trekking"] },
-          { name: "Mountain Gorilla Trekking", image: "MOUNTAIN GORILLA CLOSE-UP", blurb: "A permitted trek led by a ranger to a habituated gorilla family — Bwindi's signature experience." },
+          { name: "Mountain Gorilla Trekking", image: "MOUNTAIN GORILLA CLOSE-UP", blurb: "A permitted trek led by a ranger to a habituated gorilla family, Bwindi's signature experience." },
           { name: "Queen Elizabeth National Park", image: "UGANDA QUEEN ELIZABETH NATIONAL PARK", blurb: "Explore savannah, wetlands and woodland in one of Uganda's best-known wildlife parks.", activities: ["Game drives", "Boat safari"] },
         ],
       },
@@ -572,7 +572,7 @@ export const DESTINATIONS = [
     heroImage: "VICTORIA FALLS — HERO IMAGE",
     cardImage: "VICTORIA FALLS — MAIN IMAGE",
     description:
-      "Zimbabwe's headline attraction is Victoria Falls, straddling the Zambezi River on the border with Zambia — one of the largest waterfalls in the world. Beyond the falls, the country opens into a wider wilderness that includes Hwange's elephant herds and the Matobo Hills' granite kopjes.",
+      "Zimbabwe's headline attraction is Victoria Falls, one of the world's largest waterfalls on the Zambezi River border with Zambia. Beyond the falls, the country opens into a wider wilderness that includes Hwange's elephant herds and the Matobo Hills' granite kopjes.",
     bestTime: "February – May for peak water flow; August – December for lower water and clearer viewing of the gorge",
     highlights: [
       "Victoria Falls, one of the largest waterfalls in the world",
@@ -580,7 +580,7 @@ export const DESTINATIONS = [
       "Hwange National Park's large elephant herds",
       "Great Zimbabwe's stone ruins, dating back centuries",
     ],
-    quote: "You hear Victoria Falls before you see it — locally, Mosi-oa-Tunya, \"the smoke that thunders.\"",
+    quote: "You hear Victoria Falls before you see it. Locally, it's called Mosi-oa-Tunya, \"the smoke that thunders.\"",
     categories: [
       {
         title: "The Falls & Zambezi River",
@@ -600,7 +600,7 @@ export const DESTINATIONS = [
         title: "Heritage & Culture",
         icon: "Landmark",
         items: [
-          { name: "Great Zimbabwe", blurb: "The stone ruins of a medieval city and the country's namesake — one of the most significant archaeological sites in Africa south of the Sahara." },
+          { name: "Great Zimbabwe", blurb: "The stone ruins of a medieval city and the country's namesake, among the most significant archaeological sites in Africa south of the Sahara." },
         ],
       },
     ],
@@ -618,7 +618,7 @@ export const DESTINATIONS = [
     heroImage: "BOTSWANA — HERO IMAGE",
     cardImage: "BOTSWANA — OKAVANGO IMAGE",
     description:
-      "Botswana trades the classic safari by vehicle for something slower — a mokoro gliding through the Okavango Delta's channels, or a boat easing along the Chobe River past elephant herds. Beyond the delta, the country opens into vast salt pans and one of the world's largest protected wilderness areas in the Central Kalahari.",
+      "Botswana trades the classic safari by vehicle for slower experiences, such as a mokoro gliding through the Okavango Delta's channels or a boat easing along the Chobe River past elephant herds. Beyond the delta, the country opens into vast salt pans and one of the world's largest protected wilderness areas in the Central Kalahari.",
     bestTime: "May – October (dry season, the most reliable stretch for wildlife viewing)",
     highlights: [
       "Mokoro (canoe) safaris through the Okavango Delta",
@@ -626,7 +626,7 @@ export const DESTINATIONS = [
       "The vast salt expanses of the Makgadikgadi Pans",
       "San rock art at the Tsodilo Hills",
     ],
-    quote: "In the Okavango, the vehicle stops and the mokoro starts — the delta only shows itself at paddling pace.",
+    quote: "In the Okavango, the vehicle stops and the mokoro starts. The delta only shows itself at paddling pace.",
     categories: [
       {
         title: "Wilderness & Safari",

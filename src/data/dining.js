@@ -26,7 +26,7 @@ export const DINING = [
     type: "Local Food Tour",
     priceRange: "$$",
     image: "NYAMA CHOMA GARDEN IMAGE",
-    description: "Grilling over open fires in a Nairobi garden setting — communal, unhurried, and best eaten with your hands late into the evening.",
+    description: "Grilling over open fires in a Nairobi garden setting. It is communal, unhurried, and best eaten with your hands late into the evening.",
     menuHighlights: ["Nyama choma grilled over charcoal", "Kachumbari salad", "Ugali and sukuma wiki", "Local craft beer pairing"],
   },
   {

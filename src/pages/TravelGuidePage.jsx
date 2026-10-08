@@ -19,7 +19,7 @@ export default function TravelGuidePage({ navigate }) {
             <Eyebrow tone="teal">Featured Guide</Eyebrow>
             <h2 className="section-title">East &amp; Southern Africa Guide</h2>
             <p>
-              Our field guide to the region — destination notes, vetted experiences and
+              Our field guide to the region includes destination notes, vetted experiences and
               dining rooms, and a season-by-season planning calendar. Available as a digital
               download, with printed copies at partner hotels.
             </p>
@@ -29,13 +29,13 @@ export default function TravelGuidePage({ navigate }) {
               </Button>
               <Button variant="secondary" onClick={() => navigate("contact")}>Request a Printed Copy</Button>
             </div>
-            {downloadRequested && <p className="booking-note">Downloads open shortly — this is a placeholder while the guide library is being finalised.</p>}
+            {downloadRequested && <p className="booking-note">Downloads open shortly. The guide library is being finalised.</p>}
           </Reveal>
         </div>
       </section>
 
       <div id="guide-services">
-        <PageHero eyebrow="Travel Guide" title="Our Services" sub="Guide services for how you like to explore — pick the style that fits your trip." tone="forest" />
+        <PageHero eyebrow="Travel Guide" title="Our Services" sub="Guide services for how you like to explore. Pick the style that fits your trip." tone="forest" />
       </div>
       <section className="section section-sand">
         <div className="container">

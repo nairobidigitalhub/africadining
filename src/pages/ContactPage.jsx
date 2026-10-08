@@ -81,7 +81,7 @@ export default function ContactPage() {
               <div className="contact-success">
                 <span className="confirm-icon"><Check size={26} /></span>
                 <h2 className="section-title">Message sent</h2>
-                <p>Thanks, {values.name.split(" ")[0]} — our team replies to every enquiry within one business day.</p>
+                <p>Thanks, {values.name.split(" ")[0]}. Our team replies to every enquiry within one business day.</p>
               </div>
             ) : (
               <form className="contact-form" onSubmit={onSubmit} noValidate>

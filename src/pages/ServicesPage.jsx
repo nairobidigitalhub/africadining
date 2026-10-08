@@ -6,7 +6,7 @@ import { Reveal, PlaceholderImage, CoordStamp, Eyebrow, ContourDivider, Button, 
 export default function ServicesPage({ navigate }) {
   return (
     <div className="page-shell">
-      <PageHero eyebrow="Travel Guide" title="Our Services" sub="Guide services for how you like to explore — pick the style that fits your trip." tone="forest" />
+      <PageHero eyebrow="Travel Guide" title="Our Services" sub="Guide services for how you like to explore. Pick the style that fits your trip." tone="forest" />
       <section className="section section-sand">
         <div className="container">
           <div className="listing-grid listing-grid-3">

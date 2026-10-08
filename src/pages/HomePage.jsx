@@ -125,7 +125,7 @@ export default function HomePage({ navigate, onBook }) {
             <Eyebrow tone="teal">Our Approach</Eyebrow>
             <p className="thesis-quote">
               “Africa isn't one trip. It's a coastline, a savannah, a spice market and a chef's
-              table — and it deserves an itinerary built around what's actually there, not a
+              table, and it deserves an itinerary built around what's actually there, not a
               template stretched to fit.”
             </p>
           </Reveal>
@@ -137,7 +137,7 @@ export default function HomePage({ navigate, onBook }) {
           <SectionIntro
             eyebrow="Explore Destinations"
             title="Six ways into Africa, and counting"
-            lede="Each destination is built as its own field guide — what to see, where to eat, and what to do, curated rather than exhaustive."
+            lede="Each destination is built as its own field guide, with what to see, where to eat, and what to do, curated rather than exhaustive."
             tone="gold"
           />
           <div className="dest-grid">
@@ -161,7 +161,7 @@ export default function HomePage({ navigate, onBook }) {
           <div className="value-grid">
             {[
               { icon: Compass, title: "Local expertise", body: "Every itinerary is built by people who've walked the routes, not assembled from a catalogue." },
-              { icon: UtensilsCrossed, title: "Dining, not an afterthought", body: "Food is treated as a destination in its own right — from street stalls to chef's tables." },
+              { icon: UtensilsCrossed, title: "Dining, not an afterthought", body: "Food is treated as a destination in its own right, from street stalls to chef's tables." },
               { icon: Users, title: "Small group care", body: "Most experiences run in small groups, with guides who adjust the day to the people in it." },
               { icon: Sparkles, title: "Seamless from enquiry to return", body: "One point of contact from your first question to your ride home from the airport." },
             ].map((v, i) => (

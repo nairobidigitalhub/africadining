@@ -28,7 +28,7 @@ export function Navbar({ route, navigate, onBook }) {
   return (
     <header className={`navbar ${transparent ? "navbar-transparent" : "navbar-solid"} ${menuOpen ? "navbar-menu-open" : ""}`}>
       <div className="navbar-inner">
-        <A page="home" navigate={navigate} className="brand" aria-label={`${SITE_CONFIG.business.name} — home`}>
+        <A page="home" navigate={navigate} className="brand" aria-label={`${SITE_CONFIG.business.name} home`}>
           <span className="brand-logo-wrap">
             <img src={LOGO_IMAGE} alt="" aria-hidden="true" />
           </span>

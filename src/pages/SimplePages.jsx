@@ -19,8 +19,8 @@ export function TermsPage({ navigate }) {
           <h3>Our Safari &amp; Travel Services</h3>
           <p>We offer:</p>
           <ul>
-            <li><strong>Safari and travel programs</strong> — for visitors who wish to choose from available options and are open to suggestions.</li>
-            <li><strong>Safari programs planned around your interests</strong> — for visitors with specific interests and family parties.</li>
+            <li><strong>Safari and travel programs:</strong> for visitors who wish to choose from available options and are open to suggestions.</li>
+            <li><strong>Safari programs planned around your interests:</strong> for visitors with specific interests and family parties.</li>
           </ul>
           <p>Our booking agents are conversant with safari seasons and have helpful information to assist clients in making appropriate choices when planning their trips.</p>
           <p>It is our priority to help travellers make informed choices based on their preferred destinations, travel requirements, and the applicable safari season.</p>

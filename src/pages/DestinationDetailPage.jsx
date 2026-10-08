@@ -204,7 +204,7 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
         <div className="container">
           <Reveal className="cta-banner-inner">
             <h2 className="section-title">Ready to experience {destination.name}?</h2>
-            <p>We'll shape the details — dates, pace and dining — around how you like to travel.</p>
+            <p>We'll shape the dates, pace and dining around how you like to travel.</p>
             <div className="hero-ctas">
               <Button variant="primary" icon={ArrowRight} onClick={() => onBook({ title: `${destination.name} Itinerary`, destinationName: destination.name, price: "Custom quote" })}>Book Now</Button>
               <Button variant="ghost" onClick={() => navigate("contact")}>Talk to Us</Button>

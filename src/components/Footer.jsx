@@ -25,7 +25,7 @@ export function Footer({ navigate }) {
             {SITE_CONFIG.business.lineOne}<span className="brand-sub">{SITE_CONFIG.business.lineTwo}</span>
           </span>
           <p>
-            Curated African journeys, destination expertise and dining experiences —
+            Curated African journeys, destination expertise and dining experiences,
             planned by people who know the coastline, the plains and the kitchens firsthand.
           </p>
           <div className="footer-social">

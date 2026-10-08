@@ -52,14 +52,14 @@ export default function AboutPage({ navigate }) {
             <p className="detail-intro-text">
               Africa Dining & Travel Guide started as a shared notebook between three friends who kept getting asked
               the same question: "where should I actually go?" What began as informal
-              itineraries for visiting friends became a studio dedicated to a simple idea —
-              that a trip through Africa should be planned with the same care as the
+              itineraries for visiting friends became a studio dedicated to a simple idea:
+              a trip through Africa should be planned with the same care as the
               destinations themselves deserve.
             </p>
             <p className="detail-intro-text">
               Today, we plan journeys and dining experiences across six destinations, with
               local specialists on the ground in each one. We keep our roster of experiences
-              deliberately curated rather than exhaustive — everything on this site is here
+              deliberately curated rather than exhaustive. Everything on this site is here
               because someone on our team has done it, eaten it, or sailed it themselves.
             </p>
           </Reveal>
@@ -80,12 +80,12 @@ export default function AboutPage({ navigate }) {
             <Reveal delay={80} className="value-card">
               <span className="value-icon"><Globe size={22} strokeWidth={1.5} /></span>
               <h3>Vision</h3>
-              <p>A continent explored on its own terms — where every visitor leaves with a genuine sense of place, not a checklist.</p>
+              <p>A continent explored on its own terms, where every visitor leaves with a genuine sense of place, not a checklist.</p>
             </Reveal>
             <Reveal delay={160} className="value-card">
               <span className="value-icon"><Sparkles size={22} strokeWidth={1.5} /></span>
               <h3>What's Different</h3>
-              <p>We curate rather than catalogue — a shorter list of experiences, each one vetted by someone on our team.</p>
+              <p>We curate rather than catalogue. Each experience is vetted by someone on our team.</p>
             </Reveal>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function AboutPage({ navigate }) {
             <Eyebrow tone="teal">A Note from Our Team</Eyebrow>
             <h2 id="team-role-title" className="modal-title">{activeRole.title}</h2>
             <p className="team-role-message">“{activeRole.message}”</p>
-            <p className="team-role-signature">— {activeRole.signature}</p>
+            <p className="team-role-signature">{activeRole.signature}</p>
           </div>
         </div>
       )}
