@@ -40,6 +40,11 @@ export function BookingModal({ item, onClose }) {
 
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
+      if (document.activeElement === dialog) {
+        e.preventDefault();
+        (e.shiftKey ? last : first).focus();
+        return;
+      }
       const focusIsOutside = !dialog.contains(document.activeElement);
       if (e.shiftKey && (document.activeElement === first || focusIsOutside)) {
         e.preventDefault();
