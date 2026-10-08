@@ -600,13 +600,6 @@ export const DESTINATIONS = [
           { name: "Zimbabwe Waterhole Safari", image: "ZIMBABWE ANTELOPES AT WATERHOLE", blurb: "Watch antelope gather at a waterhole amid Zimbabwe's open bush and grassland.", activities: ["Wildlife viewing", "Waterhole sightings"] },
         ],
       },
-      {
-        title: "Heritage & Culture",
-        icon: "Landmark",
-        items: [
-          { name: "Great Zimbabwe", blurb: "The stone ruins of a medieval city and the country's namesake, among the most significant archaeological sites in Africa south of the Sahara." },
-        ],
-      },
     ],
     gallery: ["VICTORIA FALLS WATERFALL VIEW", "ZAMBEZI SUNSET CRUISE", "HWANGE ELEPHANT HERD", "MATOBO ROCK FORMATIONS", "GREAT ZIMBABWE RUINS"],
   },
