@@ -54,7 +54,7 @@ export default function App() {
   return (
     <div className="app-root">
       <GlobalStyles />
-      <Navbar route={route} navigate={navigate} />
+      <Navbar route={route} navigate={navigate} onBook={handleBook} />
       <main>{page}</main>
       <Footer navigate={navigate} />
       <WhatsAppFloat />

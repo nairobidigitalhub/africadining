@@ -4,11 +4,12 @@ import { SITE_CONFIG, NAV_LINKS } from "../config/siteConfig.js";
 import { LOGO_IMAGE } from "../data/images.js";
 import { A, Button } from "./primitives.jsx";
 
-export function Navbar({ route, navigate }) {
+export function Navbar({ route, navigate, onBook }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const isHome = route.page === "home";
   const transparent = isHome && !scrolled && !menuOpen;
+  const openBooking = () => onBook({ title: "Plan your trip" });
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -48,7 +49,7 @@ export function Navbar({ route, navigate }) {
         </nav>
 
         <div className="navbar-actions">
-          <Button variant="primary" className="nav-cta" onClick={() => navigate("experiences")}>
+          <Button variant="primary" className="nav-cta" onClick={openBooking}>
             Book Now
           </Button>
           <button
@@ -77,11 +78,10 @@ export function Navbar({ route, navigate }) {
             </A>
           ))}
         </nav>
-        <Button variant="primary" className="nav-mobile-cta" onClick={() => navigate("experiences")}>
+        <Button variant="primary" className="nav-mobile-cta" onClick={openBooking}>
           Book Now
         </Button>
       </div>
     </header>
   );
 }
-
