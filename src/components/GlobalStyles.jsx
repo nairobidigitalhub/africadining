@@ -255,7 +255,6 @@ export function GlobalStyles() {
       .exp-card-meta { display: flex; gap: 16px; font-size: 0.8rem; color: #6b7268; margin-top: 4px; }
       .exp-card-meta span, .booking-sidebar-facts dt { display: flex; align-items: center; gap: 5px; }
       .exp-card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 14px; gap: 10px; flex-wrap: wrap; }
-      .exp-card-price { font-weight: 700; color: var(--forest); font-size: 0.9rem; }
       .exp-card-actions { display: flex; gap: 8px; }
       .dine-card-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
       .dine-card-price { font-weight: 700; color: var(--gold); }

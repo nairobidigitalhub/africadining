@@ -71,7 +71,6 @@ export function ExperienceCard({ experience, navigate, onBook }) {
           <span><Users size={14} /> {experience.groupSize}</span>
         </div>
         <div className="exp-card-footer">
-          <span className="exp-card-price">{experience.price}</span>
           <div className="exp-card-actions">
             <Button variant="secondary" className="btn-sm" onClick={() => navigate("experience", experience.id)}>View</Button>
             <Button variant="primary" className="btn-sm" onClick={() => onBook(experience)}>Book Now</Button>
