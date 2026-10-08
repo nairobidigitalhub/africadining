@@ -145,7 +145,7 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
       <section className="section section-sand">
         <div className="container">
           <SectionIntro eyebrow="Where to Stay" title={`Accommodation in ${destination.name}`} tone="teal" />
-          {destination.stays && destination.stays.length > 0 ? (
+          {destination.stays && destination.stays.length > 0 && (
             <div className="listing-grid listing-grid-3">
               {destination.stays.map((stay) => (
                 <Reveal key={stay.name} className="offer-card">
@@ -155,7 +155,6 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
                 </Reveal>
               ))}
             </div>
-          ) : (
           )}
           <Reveal className="section-cta">
             <Button variant="secondary" onClick={() => navigate("accommodation")} icon={ArrowRight}>Browse All Accommodation</Button>
