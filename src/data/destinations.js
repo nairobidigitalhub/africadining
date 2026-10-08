@@ -108,6 +108,8 @@ export const DESTINATIONS = [
     quote: "At Lake Nakuru, wildlife sightings and changing lake views share the same compact park.",
     categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [
       { name: "Rhino Sanctuary", image: "RHINO SANCTUARY CLIENT PHOTO", blurb: "Look for black and white rhinos among the park’s woodlands and open grasslands." },
+    ] }, { title: "Birdlife", icon: "Waves", items: [
+      { name: "Lake Nakuru Birdlife", image: "LAKE NAKURU FLAMINGOS", blurb: "See flamingos and other waterbirds along the lake’s shores and wetlands." },
     ] }],
     gallery: ["LAKE NAKURU ANTELOPE", "LAKE NAKURU RHINO", "LAKE NAKURU CLIENT GIRAFFE ZEBRA"],
   },
@@ -121,6 +123,7 @@ export const DESTINATIONS = [
     highlights: ["Birdlife along the lake shore", "Boat trips on the freshwater lake", "Hippos and other wildlife"],
     quote: "A boat on Lake Naivasha brings you close to the birds and wildlife that gather along its quiet shores.",
     categories: [{ title: "Lake & Birdlife", icon: "Waves", items: [
+      { name: "Lake & Birdlife", image: "FLAMINGO BY WATER", blurb: "Look for flamingos and other waterbirds along Lake Naivasha’s freshwater shores." },
     ] }],
     gallery: ["LAKE NAIVASHA BIRD", "WADING BIRD AMONG REEDS", "GREY HERON IN SHALLOWS"],
   },
