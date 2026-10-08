@@ -210,6 +210,29 @@ function makeCategoryCards(category) {
     }
   }
 
+  if (category === "City") {
+    for (const cityDestination of [
+      { id: "lake-nakuru", name: "Nakuru", tagline: "Discover Nakuru, a lively Rift Valley city and gateway to Lake Nakuru National Park." },
+      { id: "lake-naivasha", name: "Naivasha", tagline: "Explore Naivasha, a Rift Valley town beside freshwater shores and wildlife." },
+    ]) {
+      const page = DESTINATIONS.find((destination) => destination.id === cityDestination.id);
+      if (!page) continue;
+
+      cards.push({
+        id: page.id,
+        targetPage: "destination",
+        targetParam: page.id,
+        listingKey: `city:${page.id}`,
+        name: cityDestination.name,
+        country: page.country,
+        coordinates: page.coordinates,
+        accent: page.accent,
+        cardImage: null,
+        tagline: cityDestination.tagline,
+      });
+    }
+  }
+
   return cards;
 }
 
