@@ -31,7 +31,7 @@ export default function DestinationItemPage({ id, navigate, onBook }) {
               <p className="detail-intro-text">{item.blurb}</p>
               {item.gallery?.length > 0 && (
                 <>
-                  <h3>Birdlife gallery</h3>
+                  <h3>{item.galleryTitle || "Photo gallery"}</h3>
                   <div className="gallery-strip gallery-strip-3">
                     {item.gallery.map((label, index) => (
                       <button key={`${label}-${index}`} className="gallery-strip-item" onClick={() => setLightbox({ label, tone: country.accent })} aria-label={`Open image: ${label}`}>

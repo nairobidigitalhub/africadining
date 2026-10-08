@@ -594,6 +594,8 @@ export const DESTINATIONS = [
         title: "Wildlife & National Parks",
         icon: "PawPrint",
         items: [
+          { name: "Hwange National Park", image: "ZIMBABWE ELEPHANT HERD", blurb: "Explore Zimbabwe's largest national park, known for its wide savannahs and abundant wildlife.", activities: ["Game drives", "Elephant viewing"], galleryTitle: "Wildlife gallery", gallery: ["ZIMBABWE ANTELOPE HERD", "ZIMBABWE ANTELOPES AT WATERHOLE", "ZIMBABWE ELEPHANT HERD"] },
+          { name: "Lake Kariba Wilderness", image: "KARIBA FISHERMANS COVE LODGE", blurb: "Take in the open water, rugged shoreline and lakeside setting around Kariba.", activities: ["Lakeside scenery", "Nature outings"] },
         ],
       },
       {
@@ -604,7 +606,7 @@ export const DESTINATIONS = [
         ],
       },
     ],
-    gallery: ["VICTORIA FALLS WATERFALL VIEW", "ZAMBEZI SUNSET CRUISE", "HWANGE ELEPHANT HERD", "MATOBO ROCK FORMATIONS", "GREAT ZIMBABWE RUINS", "ZIMBABWE ANTELOPE HERD", "ZIMBABWE ANTELOPES AT WATERHOLE", "KARIBA FISHERMANS COVE LODGE", "ZIMBABWE ELEPHANT HERD"],
+    gallery: ["VICTORIA FALLS WATERFALL VIEW", "ZAMBEZI SUNSET CRUISE", "HWANGE ELEPHANT HERD", "MATOBO ROCK FORMATIONS", "GREAT ZIMBABWE RUINS"],
   },
   {
     id: "botswana",
