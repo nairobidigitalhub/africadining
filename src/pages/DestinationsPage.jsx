@@ -24,6 +24,7 @@ const CULTURE_FILTER_EXCLUDED_CARDS = new Set([
   "cape town",
 ]);
 const COASTAL_FILTER_EXCLUDED_ITEMS = new Set(["mombasa marine park"]);
+const ISLANDS_FILTER_EXCLUDED_ITEMS = new Set(["nungwi & kendwa", "jozani forest"]);
 const CITY_FILTER_EXCLUDED_ITEMS = new Set([
   "watamu",
   "bamburi",
@@ -167,6 +168,7 @@ function makeCategoryCards(category) {
           if (category === "Culture" && CULTURE_FILTER_EXCLUDED_CARDS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
           if (category === "Coastal" && COASTAL_FILTER_EXCLUDED_ITEMS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
           if (category === "City" && CITY_FILTER_EXCLUDED_ITEMS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
+          if (category === "Islands" && ISLANDS_FILTER_EXCLUDED_ITEMS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
 
           const uniqueName = (item.linksTo || item.name).toLowerCase().trim();
           const uniqueKey = `${country.name}:${uniqueName}`;
