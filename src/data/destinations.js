@@ -673,6 +673,7 @@ export const DESTINATIONS = [
       { name: "Sossusvlei", image: "NAMIBIA DEADVLEI TREE 2", blurb: "Visit the salt and clay pan surrounded by some of the Namib’s tallest dunes." },
       { name: "Big Daddy", image: "NAMIB DUNE WALK 286864", blurb: "Climb one of the Namib’s tallest dunes for sweeping views over the desert." },
       { name: "Dune 45", image: "NAMIBIA DEADVLEI TREE 1", blurb: "Walk the famous red dune and take in the shifting colors of the Namib Desert." },
+      { name: "Etosha National Park", image: "NAMIBIA ELEPHANT AND ANTELOPE", blurb: "Spot elephants and other wildlife around Etosha’s salt pan and waterholes." },
     ] }],
     gallery: ["NAMIBIA DEADVLEI TREE 1", "NAMIBIA DEADVLEI TREE 2", "NAMIB DUNE WALK 286864"],
   },
