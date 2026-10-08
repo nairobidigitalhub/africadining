@@ -505,11 +505,11 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Maasai Cultural Experiences", blurb: "Visits hosted by Maasai communities near several northern parks, offered where local hosts make them available.", activities: ["Village visits", "Beadwork demonstrations"] },
+          { name: "Maasai Cultural Experiences", image: "MAASAI CULTURAL EXPERIENCES", blurb: "Visits hosted by Maasai communities near several northern parks, offered where local hosts make them available.", activities: ["Village visits", "Beadwork demonstrations"] },
         ],
       },
     ],
-    gallery: ["SERENGETI PLAINS", "SERENGETI CLIENT BALLOON", "NGORONGORO CRATER RIM", "KILIMANJARO SUMMIT", "TARANGIRE BAOBABS", "STONE TOWN ALLEY"],
+    gallery: ["SERENGETI PLAINS", "SERENGETI CLIENT BALLOON", "NGORONGORO CRATER RIM", "KILIMANJARO SUMMIT", "TARANGIRE BAOBABS", "STONE TOWN ALLEY", "MAASAI CULTURAL EXPERIENCES"],
   },
   {
     id: "uganda",
@@ -552,13 +552,13 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Kasubi Royal Tombs", blurb: "Visit the burial ground of Buganda kings and learn about the traditions and living heritage of the Baganda." },
+          { name: "Kasubi Royal Tombs", image: "KASUBI ROYAL TOMBS", blurb: "Visit the burial ground of Buganda kings and learn about the traditions and living heritage of the Baganda." },
           { name: "Uganda Martyrs Heritage Tour", image: "UGANDA MARTYRS HISTORY TOUR", blurb: "Visit sites connected with the Uganda Martyrs and learn about this important chapter in the country's history." },
           { name: "Kabaka Mutesa and Buganda History", image: "UGANDA KABAKA MUTESA HISTORY", blurb: "Explore the history of Kabaka Mutesa and the Buganda kingdom through its people, traditions and heritage sites." },
         ],
       },
     ],
-    gallery: ["MOUNTAIN GORILLA IN THE FOREST", "MOUNTAIN GORILLA CLOSE-UP", "HIGHLAND LAKE VIEW", "THATCHED LODGE COTTAGE"],
+    gallery: ["MOUNTAIN GORILLA IN THE FOREST", "MOUNTAIN GORILLA CLOSE-UP", "HIGHLAND LAKE VIEW", "THATCHED LODGE COTTAGE", "UGANDA LAKE VICTORIA BOAT PHOTO", "KASUBI ROYAL TOMBS"],
   },
   {
     id: "zimbabwe",
@@ -604,7 +604,7 @@ export const DESTINATIONS = [
         ],
       },
     ],
-    gallery: ["VICTORIA FALLS WATERFALL VIEW", "ZAMBEZI SUNSET CRUISE", "HWANGE ELEPHANT HERD", "MATOBO ROCK FORMATIONS", "GREAT ZIMBABWE RUINS"],
+    gallery: ["VICTORIA FALLS WATERFALL VIEW", "ZAMBEZI SUNSET CRUISE", "HWANGE ELEPHANT HERD", "MATOBO ROCK FORMATIONS", "GREAT ZIMBABWE RUINS", "ZIMBABWE ANTELOPE HERD", "ZIMBABWE ANTELOPES AT WATERHOLE", "KARIBA FISHERMANS COVE LODGE", "ZIMBABWE ELEPHANT HERD"],
   },
   {
     id: "botswana",

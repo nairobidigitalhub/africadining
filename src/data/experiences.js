@@ -234,6 +234,23 @@ export const EXPERIENCES = [
     gallery: ["CABLE CAR ASCENT", "VINEYARD ROWS", "ESTATE LUNCH TABLE"],
   },
   {
+    id: "botswana-okavango-mokoro-ride",
+    title: "Okavango Delta Mokoro Ride",
+    destinationSlug: "botswana",
+    locationLabel: "Okavango Delta, Botswana",
+    category: "On the Water",
+    duration: "Arranged on request",
+    groupSize: "Private or small group",
+    price: "Custom quote",
+    image: "BOTSWANA MOKORO RIDE",
+    shortDesc: "Glide through the Okavango Delta in a traditional mokoro canoe.",
+    description:
+      "Explore the Okavango Delta from the water on a guided mokoro ride. Drift through quiet channels and take in the delta's wetlands and surrounding wildlife at a gentle pace.",
+    highlights: ["Guided mokoro ride", "Explore quiet delta channels", "See the wetlands from the water"],
+    included: ["Guide and mokoro arrangements confirmed when booking"],
+    gallery: ["BOTSWANA MOKORO RIDE"],
+  },
+  {
     id: "uganda-boat-riding",
     title: "Uganda Boat Riding",
     destinationSlug: "uganda",
