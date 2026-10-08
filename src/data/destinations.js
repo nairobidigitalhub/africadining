@@ -32,7 +32,7 @@ export const DESTINATIONS = [
           { name: "Lake Naivasha", image: "LAKE NAIVASHA BIRD", blurb: "Enjoy a peaceful freshwater lake surrounded by wildlife and birdlife, with opportunities for boat rides and nature experiences.", linksTo: "lake-naivasha", linksToLabel: "Lake Naivasha" },
           { name: "Tsavo National Park", image: "TSAVO NATIONAL PARK CLIENT PHOTO", blurb: "Discover one of Kenya's largest wilderness areas, famous for elephants and dramatic landscapes." },
           { name: "Taita Hills", image: "TAITA HILLS CLIENT PHOTO", blurb: "Explore scenic hills, rich wildlife and intimate safari experiences in a private conservancy." },
-          { name: "Nairobi National Park", image: "NAIROBI NATIONAL PARK GATE", blurb: "A unique safari park bordering Nairobi's skyline, home to lion, rhino and giraffe.", linksTo: "nairobi", linksToLabel: "Nairobi National Park" },
+          { name: "Nairobi National Park", image: "NAIROBI NATIONAL PARK GATE", blurb: "A unique safari park bordering Nairobi's skyline, home to lion, rhino and giraffe.", linksTo: "nairobi", linksToLabel: "Nairobi" },
         ],
       },
       {
