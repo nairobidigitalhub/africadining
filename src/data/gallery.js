@@ -152,6 +152,15 @@ export const GALLERY = [
   { id: "g231", label: "CHOBE NATIONAL PARK PHOTO 15", destinationSlug: "chobe-national-park" },
   { id: "g232", label: "CHOBE NATIONAL PARK PHOTO 16", destinationSlug: "chobe-national-park" },
   { id: "g233", label: "CHOBE NATIONAL PARK PHOTO 17", destinationSlug: "chobe-national-park" },
+  { id: "g234", label: "BOTSWANA MOKORO RIDE", destinationSlug: "botswana" },
+  { id: "g235", label: "KASUBI ROYAL TOMBS", destinationSlug: "uganda", tall: true },
+  { id: "g236", label: "UGANDA LAKE VICTORIA BOAT PHOTO", destinationSlug: "uganda" },
+  { id: "g237", label: "MAASAI CULTURAL EXPERIENCES", destinationSlug: "tanzania", tall: true },
+  { id: "g238", label: "MOUNTAIN GORILLA CLOSE-UP", destinationSlug: "uganda", tall: true },
+  { id: "g239", label: "ZIMBABWE ANTELOPE HERD", destinationSlug: "zimbabwe" },
+  { id: "g240", label: "ZIMBABWE ANTELOPES AT WATERHOLE", destinationSlug: "zimbabwe" },
+  { id: "g241", label: "KARIBA FISHERMANS COVE LODGE", destinationSlug: "zimbabwe" },
+  { id: "g242", label: "ZIMBABWE ELEPHANT HERD", destinationSlug: "zimbabwe" },
 ];
 
 // ── DEMO CONTENT ─────────────────────────────────────────────────────────
