@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Instagram,
   Facebook,
   Globe,
   MessageCircle,
-  Check,
-  Send,
 } from "lucide-react";
 import { SITE_CONFIG, waHref } from "../config/siteConfig.js";
 import { A, ContourDivider } from "./primitives.jsx";
 
 export function Footer({ navigate }) {
-  const [subscribed, setSubscribed] = useState(false);
   const wa = waHref(SITE_CONFIG.contact.whatsappNumber);
   const ig = SITE_CONFIG.social.instagram;
   const fb = SITE_CONFIG.social.facebook;
@@ -59,23 +56,9 @@ export function Footer({ navigate }) {
         </div>
 
         <div className="footer-col footer-newsletter">
-          <h3>Field Notes</h3>
-          <p>Occasional dispatches on new destinations and seasonal experiences. No spam.</p>
-          {subscribed ? (
-            <p className="newsletter-success"><Check size={16} /> You're on the list.</p>
-          ) : (
-            <form
-              className="newsletter-form"
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubscribed(true);
-              }}
-            >
-              <label htmlFor="newsletter-email" className="sr-only">Email address</label>
-              <input id="newsletter-email" name="email" type="email" required placeholder="you@email.com" />
-              <button type="submit" aria-label="Subscribe"><Send size={16} /></button>
-            </form>
-          )}
+          <h3>Plan Your Trip</h3>
+          <p>Tell us what you’d like to explore and our team can help plan your journey.</p>
+          {wa && <a className="btn btn-secondary" href={wa} target="_blank" rel="noreferrer noopener"><span>Chat on WhatsApp</span><MessageCircle size={17} aria-hidden="true" /></a>}
         </div>
       </div>
 
