@@ -131,10 +131,12 @@ export default function ContactPage() {
               <h3><Mail size={16} /> Email</h3>
               <p>{emailHref ? <><a href={emailHref}>{SITE_CONFIG.contact.email}</a> / <a href={secondaryEmailHref}>{SITE_CONFIG.contact.secondaryEmail}</a></> : <span className="contact-pending">Pending client details</span>}</p>
             </div>
-            <div className="contact-info-block">
-              <h3><MapPin size={16} /> Studio</h3>
-              <p>{SITE_CONFIG.contact.address || <span className="contact-pending">Pending client details</span>}</p>
-            </div>
+            {SITE_CONFIG.contact.address && (
+              <div className="contact-info-block">
+                <h3><MapPin size={16} /> Studio</h3>
+                <p>{SITE_CONFIG.contact.address}</p>
+              </div>
+            )}
             {wa && <Button variant="secondary" href={wa} icon={MessageCircle} className="contact-whatsapp" target="_blank" rel="noreferrer noopener">Chat on WhatsApp</Button>}
             <div className="footer-social">
               {SITE_CONFIG.social.instagram && <a href={SITE_CONFIG.social.instagram} aria-label={`${SITE_CONFIG.business.name} on Instagram`} target="_blank" rel="noreferrer noopener"><Instagram size={18} /></a>}
