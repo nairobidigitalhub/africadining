@@ -484,6 +484,7 @@ export const DESTINATIONS = [
         items: [
           { name: "Serengeti National Park", region: "Northern Circuit", image: "SERENGETI CLIENT BALLOON", blurb: "Experience endless savannahs, abundant wildlife and the spectacular Great Migration.", activities: ["Game drives", "Hot air balloon safaris"] },
           { name: "Ngorongoro Conservation Area", region: "Northern Circuit", image: "NGORONGORO CRATER RIM", blurb: "Descend into the spectacular Ngorongoro Crater, where an extraordinary concentration of wildlife thrives within an ancient volcanic landscape.", activities: ["Crater floor game drives", "Cultural visits"] },
+          { name: "Lake Manyara National Park", region: "Northern Circuit", image: "LAKE MANYARA NATIONAL PARK", blurb: "Explore a Rift Valley landscape of lakeshore, woodland and open grassland, rich in wildlife and birdlife.", activities: ["Game drives", "Birdwatching"] },
           { name: "Tarangire National Park", region: "Northern Circuit", image: "TARANGIRE BAOBABS", blurb: "Explore a beautiful safari landscape famous for its elephants, ancient baobabs and seasonal wildlife gatherings.", activities: ["Game drives", "Walking safaris"] },
         ],
       },
