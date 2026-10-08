@@ -1,11 +1,10 @@
-import React, { useEffect, useMemo, useState, useCallback } from "react";
+import React, { useEffect, useMemo, useCallback } from "react";
 import { SITE_CONFIG, waHref } from "../config/site.js";
 import { Menu, X, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, MapPin, Compass, UtensilsCrossed, Clock, Users, Phone, Mail, MessageCircle, Instagram, Facebook, Waves, Landmark, TreePine, Building2, ShoppingBag, Moon, Sparkles, Quote, Check, Download, Send, ImageIcon, Globe, PawPrint, AlertTriangle } from "lucide-react";
 import { DESTINATIONS, VISIBLE_DESTINATIONS, BOOKABLE_COUNTRIES, BOOKABLE_DESTINATIONS, findBookableByName, EXPERIENCES, DINING, GALLERY, TESTIMONIALS_IS_DEMO, TESTIMONIALS, TRAVEL_GUIDES, SERVICES, TEAM_IS_DEMO, TEAM, PARTNERS, placeholderPartnerLogo, IMAGE_LIBRARY } from "../data/index.js";
 import { Reveal, PlaceholderImage, CoordStamp, Eyebrow, ContourDivider, Button, A, SectionIntro, DemoContentNote, DestinationCard, ExperienceCard, DiningCard, Navbar, Footer, WhatsAppFloat, BookingModal, PageHero, Lightbox } from "../components/index.js";
 
 export default function TravelGuidePage({ navigate }) {
-  const [downloadRequested, setDownloadRequested] = useState(false);
   return (
     <div className="page-shell">
       <PageHero eyebrow="Travel Guide" title="The Africa Dining & Travel Guide" sub="Destination notes, seasonal advice, and the dining rooms worth planning a stop around." tone="forest" />
@@ -24,12 +23,11 @@ export default function TravelGuidePage({ navigate }) {
               download, with printed copies at partner hotels.
             </p>
             <div className="hero-ctas">
-              <Button variant="primary" icon={Download} onClick={() => setDownloadRequested(true)}>
-                {downloadRequested ? "Download link sent" : "Get the Digital Guide"}
+              <Button variant="primary" icon={Download} onClick={() => navigate("contact")}>
+                Request the Digital Guide
               </Button>
               <Button variant="secondary" onClick={() => navigate("contact")}>Request a Printed Copy</Button>
             </div>
-            {downloadRequested && <p className="booking-note">Downloads open shortly. The guide library is being finalised.</p>}
           </Reveal>
         </div>
       </section>

@@ -123,14 +123,18 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal delay={100} className="contact-info">
-            <div className="contact-info-block">
-              <h3><Phone size={16} /> Phone</h3>
-              <p>{wa ? <a href={wa} target="_blank" rel="noreferrer noopener" aria-label={`Chat with ${SITE_CONFIG.business.name} on WhatsApp`}>{SITE_CONFIG.contact.phoneDisplay || SITE_CONFIG.contact.phone}</a> : phoneHref ? <a href={phoneHref}>{SITE_CONFIG.contact.phoneDisplay || SITE_CONFIG.contact.phone}</a> : <span className="contact-pending">Pending client details</span>}</p>
-            </div>
-            <div className="contact-info-block">
-              <h3><Mail size={16} /> Email</h3>
-              <p>{emailHref ? <><a href={emailHref}>{SITE_CONFIG.contact.email}</a> / <a href={secondaryEmailHref}>{SITE_CONFIG.contact.secondaryEmail}</a></> : <span className="contact-pending">Pending client details</span>}</p>
-            </div>
+            {(wa || phoneHref) && (
+              <div className="contact-info-block">
+                <h3><Phone size={16} /> Phone</h3>
+                <p>{wa ? <a href={wa} target="_blank" rel="noreferrer noopener" aria-label={`Chat with ${SITE_CONFIG.business.name} on WhatsApp`}>{SITE_CONFIG.contact.phoneDisplay || SITE_CONFIG.contact.phone}</a> : <a href={phoneHref}>{SITE_CONFIG.contact.phoneDisplay || SITE_CONFIG.contact.phone}</a>}</p>
+              </div>
+            )}
+            {emailHref && (
+              <div className="contact-info-block">
+                <h3><Mail size={16} /> Email</h3>
+                <p><a href={emailHref}>{SITE_CONFIG.contact.email}</a> / <a href={secondaryEmailHref}>{SITE_CONFIG.contact.secondaryEmail}</a></p>
+              </div>
+            )}
             {SITE_CONFIG.contact.address && (
               <div className="contact-info-block">
                 <h3><MapPin size={16} /> Studio</h3>

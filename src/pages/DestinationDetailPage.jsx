@@ -178,7 +178,6 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
             </>
           ) : (
             <>
-              <p className="section-note">Destination-specific dining recommendations for {destination.name} are still being put together.</p>
               <Reveal className="section-cta">
                 <Button variant="secondary" onClick={() => navigate("dining")} icon={ArrowRight}>Browse All Dining</Button>
               </Reveal>

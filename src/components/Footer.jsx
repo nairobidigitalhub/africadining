@@ -33,7 +33,6 @@ export function Footer({ navigate }) {
             {fb && <a href={fb} aria-label={`${SITE_CONFIG.business.name} on Facebook`} target="_blank" rel="noreferrer noopener"><Facebook size={18} /></a>}
             {tt && <a href={tt} aria-label={`${SITE_CONFIG.business.name} on TikTok`} target="_blank" rel="noreferrer noopener"><Globe size={18} /></a>}
             {wa && <a href={wa} aria-label={`Message ${SITE_CONFIG.business.name} on WhatsApp`} target="_blank" rel="noreferrer noopener"><MessageCircle size={18} /></a>}
-            {!ig && !fb && !tt && !wa && <span className="footer-social-empty">Social links pending client details</span>}
           </div>
         </div>
 
