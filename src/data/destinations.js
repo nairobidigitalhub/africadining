@@ -667,15 +667,14 @@ export const DESTINATIONS = [
     bestTime: "May – October",
     highlights: ["Namib Desert scenery", "Wildlife across open plains", "Deadvlei’s distinctive trees and dunes"],
     quote: "Namibia’s broad horizons bring desert scenery and wildlife into one remarkable journey.",
-    categories: [{ title: "Desert & Wildlife", icon: "TreePine", items: [
-      { name: "Namibia Wildlife", image: "NAMIBIA ELEPHANT AND ANTELOPE", blurb: "An elephant and antelope share Namibia’s dry, open landscape." },
-      { name: "Namibian Antelope", image: "NAMIBIA ANTELOPE PAIR", blurb: "Antelope stand among the sparse grasses of Namibia’s open country." },
-      { name: "Deadvlei Dunes", image: "NAMIBIA DEADVLEI TREE 1", blurb: "A stark desert pan, ancient dead trees and red dunes create a striking landscape." },
-      { name: "Oryx in the Desert", image: "NAMIBIA ORYX IN DUNES", blurb: "An oryx moves through the sandy Namib landscape." },
-      { name: "Deadvlei Tree and Dune", image: "NAMIBIA DEADVLEI TREE 2", blurb: "A lone dead tree stands against the pale pan and red dunes." },
-      { name: "Namib Dune Walk", image: "NAMIB DUNE WALK 286864", blurb: "A walk along the dunes opens up sweeping views across the Namib Desert." },
+    categories: [{ title: "Desert", icon: "TreePine", items: [
+      { name: "Sesriem Canyon", image: null, blurb: "Explore the narrow, river-carved gorge in Namibia’s Namib-Naukluft region." },
+      { name: "Deadvlei", image: "NAMIBIA DEADVLEI TREE 1", blurb: "See ancient camel thorn trees rising from a pale clay pan beneath the red dunes." },
+      { name: "Sossusvlei", image: "NAMIBIA DEADVLEI TREE 2", blurb: "Visit the salt and clay pan surrounded by some of the Namib’s tallest dunes." },
+      { name: "Big Daddy", image: "NAMIB DUNE WALK 286864", blurb: "Climb one of the Namib’s tallest dunes for sweeping views over the desert." },
+      { name: "Dune 45", image: "NAMIBIA DEADVLEI TREE 1", blurb: "Walk the famous red dune and take in the shifting colors of the Namib Desert." },
     ] }],
-    gallery: ["NAMIBIA ELEPHANT AND ANTELOPE", "NAMIBIA ANTELOPE PAIR", "NAMIBIA DEADVLEI TREE 1", "NAMIBIA ORYX IN DUNES", "NAMIBIA DEADVLEI TREE 2", "NAMIB DUNE WALK 286864"],
+    gallery: ["NAMIBIA DEADVLEI TREE 1", "NAMIBIA DEADVLEI TREE 2", "NAMIB DUNE WALK 286864"],
   },
   {
     id: "chobe-national-park", name: "Chobe National Park", country: "Botswana", region: "Northern Botswana",
