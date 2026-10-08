@@ -243,7 +243,7 @@ export function BookingModal({ item, onClose }) {
         {step === "confirmed" && (
           <div className="booking-confirmed">
             <span className="confirm-icon"><Check size={26} /></span>
-            <h3 className="modal-title">Request sent</h3>
+            <h3 id="booking-title" className="modal-title">Request sent</h3>
             <p>
               Thanks{name ? `, ${name.split(" ")[0]}` : ""}. We've received your request for{" "}
               <strong>{selectedDestination?.name || country}</strong>{country ? `, ${country}` : ""}.
