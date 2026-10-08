@@ -50,7 +50,7 @@ export const DESTINATIONS = [
         items: [
           { name: "Mombasa", image: "MOMBASA CLIENT BEACH PHOTO", blurb: "Kenya's historic harbour city, with beaches lined by dhows — covered in full on its own page.", linksTo: "mombasa", linksToLabel: "Mombasa" },
           { name: "Diani Beach", image: "DIANI BEACH — SHORELINE IMAGE", blurb: "Ten kilometres of white sand on the south coast — covered in full on its own page.", linksTo: "diani", linksToLabel: "Diani" },
-          { name: "Watamu", image: "MOMBASA — COASTLINE IMAGE", blurb: "A quiet beach town near Malindi, known for its marine national park and reef diving." },
+          { name: "Kilifi", image: "MOMBASA — COASTLINE IMAGE", blurb: "A quiet beach town near Malindi, known for its marine national park and reef diving." },
           { name: "Wasini Island", hideImage: true, blurb: "An island off Shimoni on Kenya's south coast, known for dolphin tours and marine park excursions." },
           { name: "Chale Island", hideImage: true, blurb: "A small island off Diani, ringed by coral reef and beach." },
           { name: "Shimoni", hideImage: true, blurb: "A coastal village near Wasini Island and a departure point for dolphin watching and reef excursions." },

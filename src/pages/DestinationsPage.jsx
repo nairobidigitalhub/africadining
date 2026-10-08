@@ -23,6 +23,7 @@ const CULTURE_FILTER_EXCLUDED_CARDS = new Set([
   "maasai cultural experiences",
   "cape town",
 ]);
+const COASTAL_FILTER_EXCLUDED_ITEMS = new Set(["mombasa marine park"]);
 const CITY_FILTER_EXCLUDED_ITEMS = new Set([
   "watamu",
   "bamburi",
@@ -164,6 +165,7 @@ function makeCategoryCards(category) {
           const entry = { country, page, category: group, item };
           if (!item.name || !matchesCategory(entry, category)) continue;
           if (category === "Culture" && CULTURE_FILTER_EXCLUDED_CARDS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
+          if (category === "Coastal" && COASTAL_FILTER_EXCLUDED_ITEMS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
           if (category === "City" && CITY_FILTER_EXCLUDED_ITEMS.has((item.linksToLabel || item.name).toLowerCase().trim())) continue;
 
           const uniqueName = (item.linksTo || item.name).toLowerCase().trim();
