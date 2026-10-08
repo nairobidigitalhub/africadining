@@ -50,6 +50,16 @@ const CITY_FILTER_EXCLUDED_ITEMS = new Set([
 const COUNTRY_DESTINATIONS = COUNTRY_ORDER
   .map((name) => VISIBLE_DESTINATIONS.find((destination) => destination.name === name))
   .filter(Boolean);
+const NAMIBIA_DESTINATION = DESTINATIONS.find((destination) => destination.id === "namibia");
+const ALL_DESTINATIONS = [
+  ...COUNTRY_DESTINATIONS,
+  ...(NAMIBIA_DESTINATION ? [{
+    ...NAMIBIA_DESTINATION,
+    listingKey: `all:${NAMIBIA_DESTINATION.id}`,
+    targetPage: "destination",
+    targetParam: NAMIBIA_DESTINATION.id,
+  }] : []),
+];
 
 function matchesCategory(entry, category) {
   const name = entry.item.name || "";
@@ -194,24 +204,6 @@ function makeCategoryCards(category) {
     }
   }
 
-  if (category === "Adventure") {
-    const namibia = DESTINATIONS.find((destination) => destination.id === "namibia");
-    if (namibia) {
-      cards.push({
-        id: namibia.id,
-        targetPage: "destination",
-        targetParam: namibia.id,
-        listingKey: `adventure:${namibia.id}`,
-        name: namibia.name,
-        country: namibia.country,
-        coordinates: namibia.coordinates,
-        accent: namibia.accent,
-        cardImage: namibia.cardImage,
-        tagline: namibia.tagline,
-      });
-    }
-  }
-
   if (category === "City") {
     for (const cityDestination of [
       { id: "lake-nakuru", name: "Nakuru", tagline: "Discover Nakuru, a lively Rift Valley city and gateway to Lake Nakuru National Park." },
@@ -241,7 +233,7 @@ function makeCategoryCards(category) {
 export default function DestinationsPage({ navigate }) {
   const [filter, setFilter] = useState("All");
   const categoryCards = useMemo(() => makeCategoryCards(filter), [filter]);
-  const filtered = filter === "All" ? COUNTRY_DESTINATIONS : categoryCards;
+  const filtered = filter === "All" ? ALL_DESTINATIONS : categoryCards;
 
   return (
     <div className="page-shell">
@@ -257,7 +249,7 @@ export default function DestinationsPage({ navigate }) {
           </div>
           <p className="section-note" aria-live="polite">
             {filter === "All"
-              ? "Showing all six destinations"
+              ? `Showing all ${filtered.length} destinations`
               : `Showing ${filtered.length} ${filter.toLowerCase()} destinations across all countries`}
           </p>
           <div className="listing-grid listing-grid-3" aria-live="polite">
