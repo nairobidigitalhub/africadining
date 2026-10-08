@@ -231,7 +231,7 @@ export const EXPERIENCES = [
       "Ride the rotating cable car to Table Mountain's summit for views over both oceans, then drive inland to Stellenbosch for a seated lunch paired with estate wines, finishing with a walk through the vines before sunset.",
     highlights: ["Cable car tickets included", "Stellenbosch estate lunch", "Guided wine pairing", "Small group vehicle"],
     included: ["Cable car return ticket", "Estate lunch", "Wine tasting/pairing", "Private transport"],
-    gallery: ["CABLE CAR ASCENT", "VINEYARD ROWS", "ESTATE LUNCH TABLE"],
+    gallery: ["TABLE MOUNTAIN WINELANDS IMAGE", "CABLE CAR ASCENT", "VINEYARD ROWS", "ESTATE LUNCH TABLE"],
   },
   {
     id: "botswana-okavango-mokoro-ride",
