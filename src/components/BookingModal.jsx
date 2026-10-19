@@ -130,14 +130,13 @@ export function BookingModal({ item, onClose }) {
             price: item.price || item.priceRange || "Not specified",
             notes: String(formData.get("notes") || "").trim() || "None",
             website: String(formData.get("website") || "").trim(),
-            cc_email: SITE_CONFIG.contact.secondaryEmail,
           },
         }),
       });
       if (!response.ok) throw new Error("Booking request could not be sent.");
       setStep("confirmed");
     } catch {
-      setSubmitError(`We couldn't send your request. Please try again or email ${SITE_CONFIG.contact.email} / ${SITE_CONFIG.contact.secondaryEmail}.`);
+      setSubmitError(`We couldn't send your request. Please try again or email ${SITE_CONFIG.contact.email}.`);
     } finally {
       setIsSending(false);
     }

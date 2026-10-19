@@ -153,8 +153,7 @@ export function LegalPage({ title }) {
           <h3>Who may receive information</h3>
           <p>
             Booking requests submitted through the website are transmitted to EmailJS, the service used to deliver the
-            request to our configured business inbox. For direct enquiries, contact us at {SITE_CONFIG.contact.email}{" / "}
-            {SITE_CONFIG.contact.secondaryEmail}. Our website hosting and service providers may also process limited
+            request to our configured business inbox. For direct enquiries, contact us at {SITE_CONFIG.contact.email}. Our website hosting and service providers may also process limited
             technical information needed to operate and protect the site. These providers are expected to use information
             only to provide their services to us.
           </p>
@@ -202,8 +201,7 @@ export function LegalPage({ title }) {
           <h3>Contact us</h3>
           <p>
             For a privacy question or request, contact <strong>{SITE_CONFIG.business.name}</strong> at{" "}
-            <a href={mailHref(SITE_CONFIG.contact.email, SITE_CONFIG.contact.secondaryEmail)}>{SITE_CONFIG.contact.email}</a>{" / "}
-            <a href={mailHref(SITE_CONFIG.contact.secondaryEmail, SITE_CONFIG.contact.email)}>{SITE_CONFIG.contact.secondaryEmail}</a>. If you are not satisfied
+            <a href={mailHref(SITE_CONFIG.contact.email)}>{SITE_CONFIG.contact.email}</a>. If you are not satisfied
             with our response, you may contact Kenya's Office of the Data Protection Commissioner.
           </p>
         </div>

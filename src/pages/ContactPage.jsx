@@ -53,22 +53,20 @@ export default function ContactPage() {
             subject: values.subject,
             message: values.message.trim(),
             time: new Date().toLocaleString("en-KE", { dateStyle: "medium", timeStyle: "short" }),
-            cc_email: SITE_CONFIG.contact.secondaryEmail,
           },
         }),
       });
       if (!response.ok) throw new Error("Contact request could not be sent.");
       setSubmitted(true);
     } catch {
-      setSubmitError(`We couldn't send your message. Please try again or email ${SITE_CONFIG.contact.email} / ${SITE_CONFIG.contact.secondaryEmail}.`);
+      setSubmitError(`We couldn't send your message. Please try again or email ${SITE_CONFIG.contact.email}.`);
     } finally {
       setIsSending(false);
     }
   };
 
   const phoneHref = telHref(SITE_CONFIG.contact.phone);
-  const emailHref = mailHref(SITE_CONFIG.contact.email, SITE_CONFIG.contact.secondaryEmail);
-  const secondaryEmailHref = mailHref(SITE_CONFIG.contact.secondaryEmail, SITE_CONFIG.contact.email);
+  const emailHref = mailHref(SITE_CONFIG.contact.email);
   const wa = waHref(SITE_CONFIG.contact.whatsappNumber);
 
   return (
@@ -132,7 +130,7 @@ export default function ContactPage() {
             {emailHref && (
               <div className="contact-info-block">
                 <h3><Mail size={16} /> Email</h3>
-                <p><a href={emailHref}>{SITE_CONFIG.contact.email}</a> / <a href={secondaryEmailHref}>{SITE_CONFIG.contact.secondaryEmail}</a></p>
+                <p><a href={emailHref}>{SITE_CONFIG.contact.email}</a></p>
               </div>
             )}
             {SITE_CONFIG.contact.address && (
