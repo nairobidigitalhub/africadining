@@ -49,13 +49,14 @@ export function DestinationCard({ destination, navigate, featured = false, linkT
 
 export function ExperienceCard({ experience, navigate, onBook }) {
   const destination = DESTINATIONS.find((d) => d.id === experience.destinationSlug);
+  const portraitPhoto = ["SUNRISE BALLOON SAFARI", "MAASAI MARA COMMUNITY VISIT"].includes(experience.image);
   return (
     <Reveal className="exp-card">
       <button className="exp-card-media-btn" onClick={() => navigate("experience", experience.id)} aria-label={`View ${experience.title}`}>
         <PlaceholderImage
           label={experience.image}
           tone={destination?.accent || "sand"}
-          ratio="4 / 3"
+          ratio={portraitPhoto ? "3 / 5" : "4 / 3"}
           className={`exp-card-media ${experience.image === "MARA BALLOON SAFARI IMAGE" ? "exp-card-media-fill" : ""} ${experience.image === "BWINDI GORILLA TREKKING" ? "exp-card-media-cover" : ""}`}
         />
         <span className="exp-card-tag">{experience.category}</span>
