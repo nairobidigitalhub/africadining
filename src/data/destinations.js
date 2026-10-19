@@ -454,7 +454,7 @@ export const DESTINATIONS = [
         ],
       },
     ],
-    gallery: ["KRUGER GAME DRIVE", "TABLE MOUNTAIN AERIAL", "BOULDERS BEACH PENGUINS", "BO-KAAP HOUSES", "ATLANTIC COASTLINE"],
+    gallery: ["TABLE MOUNTAIN AERIAL", "TABLE MOUNTAIN WINELANDS IMAGE"],
   },
   {
     id: "tanzania",
