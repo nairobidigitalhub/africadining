@@ -34,7 +34,6 @@ export const GALLERY = [
   { id: "g57", label: "HERON BY WATER", tall: true },
   { id: "g58", label: "BLACK AND WHITE BIRD", tall: true },
   { id: "g59", label: "TRAVEL GUIDE FEATURE IMAGE" },
-  { id: "g60", label: "GIRAFFE AMONG GRASS", tall: true },
   { id: "g61", label: "RHINO GRAZING" },
   { id: "g62", label: "SHOREBIRDS ON SAND" },
   { id: "g63", label: "GIRAFFES UNDER ACACIA" },
