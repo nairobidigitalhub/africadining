@@ -57,7 +57,7 @@ export function ExperienceCard({ experience, navigate, onBook }) {
           label={experience.image}
           tone={destination?.accent || "sand"}
           ratio="4 / 3"
-          className={`exp-card-media ${stretchPhoto ? "exp-card-media-stretch" : ""} ${experience.image === "MARA BALLOON SAFARI IMAGE" ? "exp-card-media-fill" : ""} ${experience.image === "BWINDI GORILLA TREKKING" ? "exp-card-media-cover" : ""}`}
+          className={`exp-card-media ${stretchPhoto ? "exp-card-media-stretch" : ""} ${experience.image === "MAASAI MARA COMMUNITY VISIT" ? "exp-card-media-full" : ""} ${experience.image === "MARA BALLOON SAFARI IMAGE" ? "exp-card-media-fill" : ""} ${experience.image === "BWINDI GORILLA TREKKING" ? "exp-card-media-cover" : ""}`}
         />
         <span className="exp-card-tag">{experience.category}</span>
       </button>

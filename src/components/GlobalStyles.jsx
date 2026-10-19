@@ -243,6 +243,8 @@ export function GlobalStyles() {
       .exp-card-media, .dine-card-media { border-radius: 0; }
       .ph-media-real.exp-card-media img { object-fit: cover; }
       .ph-media-real.exp-card-media-stretch img { object-fit: fill; }
+      .ph-media-real.exp-card-media-full::before { content: ""; position: absolute; inset: -8px; background: url("/photos/maasai-mara-community-visit-287868.jpg") center / cover; filter: blur(10px) brightness(0.72); transform: scale(1.04); }
+      .ph-media-real.exp-card-media-full img { position: relative; z-index: 1; object-fit: contain; }
       .exp-card-media-fill.ph-media-real-contain img,
       .ph-media-real.exp-card-media-cover img { object-fit: cover; }
       .accommodation-card { transition: box-shadow .3s ease; }
