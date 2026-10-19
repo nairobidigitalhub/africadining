@@ -460,6 +460,8 @@ export const IMAGE_LIBRARY = {
   "CHOBE NATIONAL PARK PHOTO 15": "/photos/attachment31-chobe-15.jpg",
   "CHOBE NATIONAL PARK PHOTO 16": "/photos/attachment31-chobe-16.jpg",
   "CHOBE NATIONAL PARK PHOTO 17": "/photos/attachment31-chobe-17.jpg",
+  "AFRICA DINING TEAM GROUP": "/photos/africa-dining-team-301107.jpg",
+  "AFRICA DINING TRAVEL GUIDE VEHICLE": "/photos/africa-dining-vehicle-301111.jpg",
 };
 
 

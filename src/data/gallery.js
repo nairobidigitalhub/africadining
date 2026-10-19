@@ -161,6 +161,8 @@ export const GALLERY = [
   { id: "g240", label: "ZIMBABWE ANTELOPES AT WATERHOLE", destinationSlug: "zimbabwe" },
   { id: "g241", label: "KARIBA FISHERMANS COVE LODGE", destinationSlug: "zimbabwe" },
   { id: "g242", label: "ZIMBABWE ELEPHANT HERD", destinationSlug: "zimbabwe" },
+  { id: "g243", label: "AFRICA DINING TEAM GROUP" },
+  { id: "g244", label: "AFRICA DINING TRAVEL GUIDE VEHICLE" },
 ];
 
 // ── DEMO CONTENT ─────────────────────────────────────────────────────────
