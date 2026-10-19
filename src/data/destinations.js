@@ -25,7 +25,7 @@ export const DESTINATIONS = [
         title: "Wildlife & Safari",
         icon: "PawPrint",
         items: [
-          { name: "Maasai Mara", image: "MAASAI MARA CLIENT PHOTO", blurb: "Kenya's best known safari reserve and home to the Great Migration. Explore its full guide on the Maasai Mara page.", linksTo: "maasai-mara", linksToLabel: "Maasai Mara" },
+          { name: "Maasai Mara", image: "MAASAI MARA CLIENT PHOTO", blurb: "Kenya's best-known safari reserve and home to the Great Migration. Explore its full guide on the Maasai Mara page.", linksTo: "maasai-mara", linksToLabel: "Maasai Mara" },
           { name: "Amboseli National Park", image: "AMBOSELI ELEPHANTS", blurb: "Famous for its large elephant herds and spectacular views of Mount Kilimanjaro.", linksTo: "amboseli", linksToLabel: "Amboseli" },
           { name: "Samburu Game Reserve", image: "SAMBURU ZEBRA", blurb: "Discover rugged northern landscapes and unique wildlife, including species rarely found elsewhere in Kenya.", linksTo: "samburu", linksToLabel: "Samburu" },
           { name: "Lake Nakuru National Park", image: "LAKE NAKURU RHINO", blurb: "Explore a scenic Rift Valley park known for rhinos, flamingos, diverse birdlife and beautiful lake views.", linksTo: "lake-nakuru", linksToLabel: "Lake Nakuru" },
@@ -39,7 +39,7 @@ export const DESTINATIONS = [
         title: "Mountains & Adventure",
         icon: "Compass",
         items: [
-          { name: "Mount Kenya", image: "MOUNT KENYA ANTELOPE IMAGE 266834", blurb: "Trek through high altitude forests and alpine landscapes on routes around Africa's second highest mountain.", activities: ["Guided trekking", "Mountain scenery"] },
+          { name: "Mount Kenya", image: "MOUNT KENYA ANTELOPE IMAGE 266834", blurb: "Trek through high-altitude forests and alpine landscapes on routes around Africa's second-highest mountain.", activities: ["Guided trekking", "Mountain scenery"] },
           { name: "Hell's Gate National Park", image: "HELL'S GATE NATIONAL PARK EXCURSION", blurb: "Explore dramatic cliffs, gorges and geothermal landscapes on foot or by bicycle.", activities: ["Hiking", "Cycling", "Wildlife viewing"] },
           { name: "Shaba Reserve Adventure", image: "SHABA ADVENTURE CLIENT PHOTO", blurb: "Explore Shaba's rocky river landscapes and northern Kenya wilderness.", activities: ["Scenic exploration", "Wildlife viewing"] },
         ],
@@ -60,7 +60,7 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Fort Jesus & Mombasa Old Town", image: null, blurb: "Visit the 16th century Portuguese fort and explore the surrounding coral stone lanes and carved Swahili doors." },
+          { name: "Fort Jesus & Mombasa Old Town", image: null, blurb: "Visit the 16th-century Portuguese fort and explore the surrounding coral stone lanes and carved Swahili doors." },
           { name: "Maasai Cultural Visits", image: null, blurb: "Meet local hosts and learn about Maasai beadwork, traditions and community life through respectful, hosted visits." },
           { name: "Nairobi City Tour", image: "NAIROBI CITY TOUR", blurb: "Discover Nairobi with stops at the National Museum, Jamia Mosque, City Market and the Kenyatta International Convention Centre." },
         ],
@@ -146,7 +146,7 @@ export const DESTINATIONS = [
     bestTime: "June – March",
     highlights: [
       "Old Town's carved doors and coral stone alleys",
-      "Fort Jesus, a 16th century Portuguese garrison",
+      "Fort Jesus, a 16th-century Portuguese garrison",
       "Beaches protected by reefs from Nyali to Diani",
       "Dhow sails at sunset off Tudor Creek",
     ],
@@ -199,7 +199,7 @@ export const DESTINATIONS = [
     heroImage: "NAIROBI — SKYLINE HERO IMAGE",
     cardImage: "NAIROBI — SKYLINE IMAGE",
     description:
-      "Nairobi moves between two identities without friction. It's a fast, design led East African capital where giraffes graze against a backdrop of glass towers, and a natural first or last stop on an East African itinerary.",
+      "Nairobi moves between two identities without friction. It's a fast, design-led East African capital where giraffes graze against a backdrop of glass towers, and a natural first or last stop on an East African itinerary.",
     bestTime: "Throughout the year; driest Jun–Oct",
     highlights: [
       "Nairobi National Park, wildlife within city limits",
@@ -220,14 +220,14 @@ export const DESTINATIONS = [
         title: "Culture & History",
         icon: "Landmark",
         items: [
-          { name: "Maasai Market", blurb: "A rotating open air market for beadwork, textiles and carvings, sold directly by makers." },
+          { name: "Maasai Market", blurb: "A rotating open-air market for beadwork, textiles and carvings, sold directly by makers." },
         ],
       },
       {
         title: "Dining",
         icon: "UtensilsCrossed",
         items: [
-          { name: "Chef Led Tasting Rooms", blurb: "A new generation of Nairobi kitchens reworking Kenyan staples with technique and provenance." },
+          { name: "Chef-Led Tasting Rooms", blurb: "A new generation of Nairobi kitchens reworking Kenyan staples with technique and provenance." },
           { name: "Nyama Choma Gardens", blurb: "Grilling over open fires, best eaten outdoors and shared late into the evening." },
         ],
       },
@@ -336,7 +336,7 @@ export const DESTINATIONS = [
     heroImage: "ZANZIBAR — HERO IMAGE",
     cardImage: "ZANZIBAR — TURQUOISE WATER IMAGE",
     description:
-      "Zanzibar pairs Stone Town's dense old quarter, recognized by UNESCO, with a ring of turquoise coastline. Clove and cardamom farms sit inland; further out, sandbanks appear and vanish with the tide.",
+      "Zanzibar pairs Stone Town's dense old quarter, recognised by UNESCO, with a ring of turquoise coastline. Clove and cardamom farms sit inland; further out, sandbanks appear and vanish with the tide.",
     bestTime: "June – October",
     highlights: [
       "Stone Town's alleyways, markets and rooftop cafés",
@@ -468,13 +468,13 @@ export const DESTINATIONS = [
     heroImage: "TANZANIA — HERO IMAGE",
     cardImage: "TANZANIA — SERENGETI IMAGE",
     description:
-      "Tanzania spans the classic northern safari circuit of the Serengeti and Ngorongoro Crater, the peak of Mount Kilimanjaro, and the spice scented lanes of Zanzibar across the channel. Few countries hold this much variety together without feeling stretched thin.",
+      "Tanzania spans the classic northern safari circuit of the Serengeti and Ngorongoro Crater, the peak of Mount Kilimanjaro, and the spice-scented lanes of Zanzibar across the channel. Few countries hold this much variety together without feeling stretched thin.",
     bestTime: "June – October (dry season); late January – March for the calving season",
     highlights: [
       "The Great Migration crossing the Serengeti's plains",
       "Ngorongoro Crater's dense and distinctive ecosystem",
       "Mount Kilimanjaro, Africa's highest peak",
-      "Stone Town and the spice scented shores of Zanzibar",
+      "Stone Town and the spice-scented shores of Zanzibar",
     ],
     quote: "Tanzania doesn't ask you to choose between mountain, plain and coastline. It gives you all three.",
     categories: [
@@ -499,7 +499,7 @@ export const DESTINATIONS = [
         title: "Coast & Islands",
         icon: "Waves",
         items: [
-          { name: "Zanzibar & Stone Town", image: "ZANZIBAR STONE TOWN CLIENT PHOTO", blurb: "Tanzania's spice island and its old quarter, recognized by UNESCO. Explore its full guide on the Zanzibar page.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
+          { name: "Zanzibar & Stone Town", image: "ZANZIBAR STONE TOWN CLIENT PHOTO", blurb: "Tanzania's spice island and its old quarter, recognised by UNESCO. Explore its full guide on the Zanzibar page.", linksTo: "zanzibar", linksToLabel: "Zanzibar" },
         ],
       },
       {
@@ -672,7 +672,7 @@ export const DESTINATIONS = [
       { name: "Deadvlei", image: "NAMIBIA DEADVLEI TREE 1", blurb: "See ancient camel thorn trees rising from a pale clay pan beneath the red dunes." },
       { name: "Sossusvlei", image: "NAMIBIA DEADVLEI TREE 2", blurb: "Visit the salt and clay pan surrounded by some of the Namib’s tallest dunes." },
       { name: "Big Daddy", image: "NAMIB DUNE WALK 286864", blurb: "Climb one of the Namib’s tallest dunes for sweeping views over the desert." },
-      { name: "Dune 45", image: "NAMIBIA DEADVLEI TREE 1", blurb: "Walk the famous red dune and take in the shifting colors of the Namib Desert." },
+      { name: "Dune 45", image: "NAMIBIA DEADVLEI TREE 1", blurb: "Walk the famous red dune and take in the shifting colours of the Namib Desert." },
       { name: "Etosha National Park", image: "NAMIBIA ELEPHANT AND ANTELOPE", blurb: "Spot elephants and other wildlife around Etosha’s salt pan and waterholes.", gallery: ["ETOSHA NATIONAL PARK PHOTO 1", "ETOSHA NATIONAL PARK PHOTO 2", "ETOSHA NATIONAL PARK PHOTO 3", "ETOSHA NATIONAL PARK PHOTO 4"] },
     ] }],
     gallery: ["NAMIBIA DEADVLEI TREE 1", "NAMIBIA DEADVLEI TREE 2", "NAMIB DUNE WALK 286864", "NAMIBIA DESERT PHOTO 1", "NAMIBIA DESERT PHOTO 2", "NAMIBIA DESERT PHOTO 3"],

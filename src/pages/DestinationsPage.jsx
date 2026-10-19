@@ -35,7 +35,7 @@ const CITY_FILTER_EXCLUDED_ITEMS = new Set([
   "old town",
   "mombasa marine park",
   "maasai market",
-  "chef led tasting rooms",
+  "chef-led tasting rooms",
   "stone town",
   "zanzibar",
   "zanzibar & stone town",

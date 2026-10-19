@@ -26,7 +26,7 @@ export const SERVICES = [
   },
   {
     slug: "specialized-guides",
-    name: "Specialized Guides",
+    name: "Specialised Guides",
     blurb: "Guides for specific interests such as birdwatching, photography and other specialised activities.",
     image: "SPECIALIZED GUIDES IMAGE",
   },
