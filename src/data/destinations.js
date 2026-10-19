@@ -79,7 +79,7 @@ export const DESTINATIONS = [
     quote: "In Amboseli, elephants move across the plain beneath one of Africa’s most recognisable mountain silhouettes.",
     categories: [{ title: "Wildlife & Scenery", icon: "PawPrint", items: [
       { name: "Elephants of Amboseli", image: "AMBOSELI ELEPHANTS", blurb: "See Amboseli’s elephant herds moving beneath Kilimanjaro." },
-      { name: "Amboseli Birdlife", image: "AMBOSELI WETLAND BIRD CLIENT", gallery: ["AMBOSELI WETLAND BIRD CLIENT", "AMBOSELI GRASSLAND BIRD CLIENT"], blurb: "Look for birds across Amboseli’s wetlands and open plains, from waterbirds among the reeds to ground birds in the grasslands." },
+      { name: "Amboseli Birdlife", image: "AMBOSELI GRASSLAND BIRD CLIENT", gallery: ["AMBOSELI WETLAND BIRD CLIENT", "AMBOSELI GRASSLAND BIRD CLIENT"], blurb: "Look for birds across Amboseli’s wetlands and open plains, from waterbirds among the reeds to ground birds in the grasslands." },
     ] }],
     gallery: ["AMBOSELI ELEPHANTS", "AMBOSELI WETLAND BIRD CLIENT", "AMBOSELI GRASSLAND BIRD CLIENT"],
   },
