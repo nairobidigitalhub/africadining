@@ -84,6 +84,22 @@ export const EXPERIENCES = [
     gallery: ["SAMBURU SHABA GALLERY 1", "SAMBURU SHABA GALLERY 2", "SAMBURU SHABA GALLERY 3"],
   },
   {
+    id: "buffalo-springs-safari",
+    title: "Buffalo Springs Reserve Safari",
+    destinationSlug: "kenya",
+    locationLabel: "Buffalo Springs, Kenya",
+    category: "Wildlife",
+    duration: "Full day",
+    groupSize: "2 – 8 guests",
+    price: "Custom quote",
+    shortDesc: "Explore northern Kenya’s open landscapes and riverine wildlife on a guided reserve visit.",
+    description:
+      "Spend a day exploring Buffalo Springs National Reserve, following its open plains and riverine woodland with a local guide. Plan the route around your interests, with time to look for wildlife and take in the reserve’s changing landscapes.",
+    highlights: ["Guided wildlife viewing", "Open plains and riverine scenery", "A tailored northern Kenya itinerary"],
+    included: ["Route and transport details confirmed when booking"],
+    gallery: [],
+  },
+  {
     id: "bwindi-gorilla-trekking",
     title: "Bwindi Gorilla Trekking",
     destinationSlug: "uganda",
