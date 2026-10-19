@@ -242,8 +242,7 @@ export function GlobalStyles() {
       .exp-card-media-btn, .dine-card-media-btn { position: relative; border: none; background: none; padding: 0; display: block; width: 100%; }
       .exp-card-media, .dine-card-media { border-radius: 0; }
       .ph-media-real.exp-card-media img { object-fit: cover; }
-      .ph-media-real.exp-card-media-contain { background: var(--sand); }
-      .ph-media-real.exp-card-media-contain img { object-fit: contain; }
+      .ph-media-real.exp-card-media-stretch img { object-fit: fill; }
       .exp-card-media-fill.ph-media-real-contain img,
       .ph-media-real.exp-card-media-cover img { object-fit: cover; }
       .accommodation-card { transition: box-shadow .3s ease; }
