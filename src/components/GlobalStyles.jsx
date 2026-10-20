@@ -391,6 +391,9 @@ export function GlobalStyles() {
       .booking-form { margin-top: 24px; display: flex; flex-direction: column; gap: 16px; }
       .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
       .field { display: flex; flex-direction: column; gap: 6px; }
+      .booking-visitor-list { border: 0; padding: 0; margin: 0; min-width: 0; }
+      .booking-visitor-list legend { padding: 0; font-size: 0.78rem; font-weight: 600; color: var(--forest); }
+      .booking-visitor-list .field-hint { margin: 2px 0 4px; }
       .field label { font-size: 0.78rem; font-weight: 600; color: var(--forest); }
       .field input, .field select, .field textarea { border: 1.5px solid rgba(20,37,31,0.18); border-radius: var(--radius-sm); padding: 11px 14px; font-family: inherit; font-size: 0.92rem; background: var(--white); color: var(--dark); }
       .field select:disabled { background: var(--sand); color: #9aa39c; cursor: not-allowed; }

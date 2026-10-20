@@ -125,8 +125,9 @@ export function LegalPage({ title }) {
           <p>
             If you send a booking request, we receive the details in that form: your name, email address, phone or
             WhatsApp number, country and destination, preferred travel date, party size, selected experience, and any
-            special requests you choose to include. Special requests may reveal dietary or health information, so please
-            share only what is needed to help us plan your trip.
+            names of other visitors and special requests you choose to include. Other visitor names are optional and
+            can be provided later. Special requests may reveal dietary or health information, so please share only what
+            is needed to help us plan your trip.
           </p>
           <p>
             The booking form is a request for information, not a payment or confirmed reservation. It does not ask for

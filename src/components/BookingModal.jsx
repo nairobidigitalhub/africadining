@@ -14,6 +14,7 @@ export function BookingModal({ item, onClose }) {
   const [destinationId, setDestinationId] = useState("");
   const [travelDate, setTravelDate] = useState("");
   const [name, setName] = useState("");
+  const [visitorNames, setVisitorNames] = useState([]);
   const [isSending, setIsSending] = useState(false);
   const [submitError, setSubmitError] = useState("");
   const dialogRef = useRef(null);
@@ -77,6 +78,7 @@ export function BookingModal({ item, onClose }) {
     setChildren(0);
     setTravelDate("");
     setName("");
+    setVisitorNames([]);
     setIsSending(false);
     setSubmitError("");
     const destName = item.destinationName || DESTINATIONS.find((d) => d.id === item.destinationSlug)?.name;
@@ -95,7 +97,14 @@ export function BookingModal({ item, onClose }) {
   const destName = item.destinationName || DESTINATIONS.find((d) => d.id === item.destinationSlug)?.name;
   const destinationsForCountry = BOOKABLE_DESTINATIONS.filter((b) => b.country === country);
   const selectedDestination = BOOKABLE_DESTINATIONS.find((b) => b.id === destinationId);
+  const additionalVisitorCount = Math.max(0, adults + children - 1);
   const minTravelDate = new Date(Date.now() - new Date().getTimezoneOffset() * 60_000).toISOString().slice(0, 10);
+
+  const updateGroupSize = (nextAdults, nextChildren) => {
+    setAdults(nextAdults);
+    setChildren(nextChildren);
+    setVisitorNames((current) => current.slice(0, Math.max(0, nextAdults + nextChildren - 1)));
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -120,6 +129,10 @@ export function BookingModal({ item, onClose }) {
         travel_date: travelDate,
         adults,
         children,
+        visitor_names: visitorNames
+          .slice(0, additionalVisitorCount)
+          .map((visitorName) => visitorName.trim())
+          .filter(Boolean),
         experience: item.title || item.name || "Travel request",
         price: item.price || item.priceRange || "Not specified",
         notes: String(formData.get("notes") || "").trim() || null,
@@ -145,6 +158,7 @@ export function BookingModal({ item, onClose }) {
               travel_date: booking.travel_date,
               adults: booking.adults,
               children: booking.children,
+              visitor_names: booking.visitor_names.join(", ") || "Not provided",
               experience: booking.experience,
               price: booking.price,
               notes: booking.notes || "None",
@@ -217,17 +231,17 @@ export function BookingModal({ item, onClose }) {
                 <div className="field">
                   <label htmlFor="bk-adults">Adults</label>
                   <div className="stepper">
-                    <button type="button" aria-label="Decrease adults" onClick={() => setAdults((g) => Math.max(1, g - 1))}>−</button>
+                    <button type="button" aria-label="Decrease adults" onClick={() => updateGroupSize(Math.max(1, adults - 1), children)}>−</button>
                     <span id="bk-adults" aria-live="polite">{adults}</span>
-                    <button type="button" aria-label="Increase adults" onClick={() => setAdults((g) => Math.min(16, g + 1))}>+</button>
+                    <button type="button" aria-label="Increase adults" onClick={() => updateGroupSize(Math.min(16, adults + 1), children)}>+</button>
                   </div>
                 </div>
                 <div className="field">
                   <label htmlFor="bk-children">Children</label>
                   <div className="stepper">
-                    <button type="button" aria-label="Decrease children" onClick={() => setChildren((g) => Math.max(0, g - 1))}>−</button>
+                    <button type="button" aria-label="Decrease children" onClick={() => updateGroupSize(adults, Math.max(0, children - 1))}>−</button>
                     <span id="bk-children" aria-live="polite">{children}</span>
-                    <button type="button" aria-label="Increase children" onClick={() => setChildren((g) => Math.min(16, g + 1))}>+</button>
+                    <button type="button" aria-label="Increase children" onClick={() => updateGroupSize(adults, Math.min(16, children + 1))}>+</button>
                   </div>
                 </div>
               </div>
@@ -237,6 +251,31 @@ export function BookingModal({ item, onClose }) {
                 <label htmlFor="bk-name">Full name</label>
                 <input id="bk-name" name="name" type="text" required placeholder="Jane Traveller" value={name} onChange={(e) => setName(e.target.value)} />
               </div>
+              {additionalVisitorCount > 0 && (
+                <fieldset className="field booking-visitor-list">
+                  <legend>Other visitors (optional)</legend>
+                  <p className="field-hint">Add names for the other people travelling with you. You can provide them later.</p>
+                  {Array.from({ length: additionalVisitorCount }, (_, index) => (
+                    <div className="field" key={index}>
+                      <label htmlFor={`bk-visitor-${index}`}>Visitor {index + 2} full name</label>
+                      <input
+                        id={`bk-visitor-${index}`}
+                        name="visitorNames[]"
+                        type="text"
+                        maxLength={120}
+                        autoComplete="off"
+                        placeholder={`Visitor ${index + 2} name`}
+                        value={visitorNames[index] || ""}
+                        onChange={(e) => setVisitorNames((current) => {
+                          const next = current.slice(0, additionalVisitorCount);
+                          next[index] = e.target.value;
+                          return next;
+                        })}
+                      />
+                    </div>
+                  ))}
+                </fieldset>
+              )}
               <div className="field">
                 <label htmlFor="bk-email">Email</label>
                 <input id="bk-email" name="email" type="email" required placeholder="you@email.com" />
