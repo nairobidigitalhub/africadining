@@ -135,8 +135,9 @@ export function LegalPage({ title }) {
             our team will explain why and agree on an appropriate way to provide them.
           </p>
           <p>
-            The contact form sends the details you enter to our business inbox through EmailJS. The newsletter box is a
-            demonstration and does not subscribe your email address. If you contact us by email, phone, or WhatsApp, we
+            Booking and contact form submissions are stored in our Supabase database and sent to our business inbox
+            through EmailJS. The newsletter box is a demonstration and does not subscribe your email address. If you
+            contact us by email, phone, or WhatsApp, we
             receive the information you include in that conversation.
           </p>
 
@@ -152,8 +153,9 @@ export function LegalPage({ title }) {
 
           <h3>Who may receive information</h3>
           <p>
-            Booking requests submitted through the website are transmitted to EmailJS, the service used to deliver the
-            request to our configured business inbox. For direct enquiries, contact us at {SITE_CONFIG.contact.email}. Our website hosting and service providers may also process limited
+            Booking and contact form submissions are stored in Supabase, which hosts our database, and are sent through
+            EmailJS to our configured business inbox. For direct enquiries, contact us at {SITE_CONFIG.contact.email}.
+            Our website hosting and service providers may also process limited
             technical information needed to operate and protect the site. These providers are expected to use information
             only to provide their services to us.
           </p>
@@ -178,7 +180,7 @@ export function LegalPage({ title }) {
           <h3>How we protect it</h3>
           <p>
             We use reasonable administrative and technical safeguards to protect information from loss, misuse, or
-            unauthorised access. Booking requests are sent to the delivery service over HTTPS. No website or online
+            unauthorised access. Form submissions are sent to Supabase and EmailJS over HTTPS. No website or online
             transmission can be guaranteed completely secure, so please share only the details needed for your request
             and contact us promptly if you have a concern.
           </p>

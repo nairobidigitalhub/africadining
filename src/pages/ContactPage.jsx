@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState, useCallback } from "react";
 import { SITE_CONFIG, telHref, mailHref, waHref } from "../config/site.js";
 import { EMAILJS_CONFIG } from "../config/emailjs.js";
+import { insertSupabaseRow } from "../config/supabase.js";
 import { Menu, X, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, MapPin, Compass, UtensilsCrossed, Clock, Users, Phone, Mail, MessageCircle, Instagram, Facebook, Waves, Landmark, TreePine, Building2, ShoppingBag, Moon, Sparkles, Quote, Check, Download, Send, ImageIcon, Globe, PawPrint, AlertTriangle } from "lucide-react";
 import { DESTINATIONS, VISIBLE_DESTINATIONS, BOOKABLE_COUNTRIES, BOOKABLE_DESTINATIONS, findBookableByName, EXPERIENCES, DINING, GALLERY, TESTIMONIALS_IS_DEMO, TESTIMONIALS, TRAVEL_GUIDES, SERVICES, TEAM_IS_DEMO, TEAM, PARTNERS, placeholderPartnerLogo, IMAGE_LIBRARY } from "../data/index.js";
 import { Reveal, PlaceholderImage, CoordStamp, Eyebrow, ContourDivider, Button, A, SectionIntro, DemoContentNote, DestinationCard, ExperienceCard, DiningCard, Navbar, Footer, WhatsAppFloat, BookingModal, PageHero, Lightbox } from "../components/index.js";
@@ -30,33 +31,48 @@ export default function ContactPage() {
     setSubmitError("");
 
     try {
-      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          service_id: EMAILJS_CONFIG.serviceId,
-          template_id: EMAILJS_CONFIG.contactTemplateId,
-          user_id: EMAILJS_CONFIG.publicKey,
-          template_params: {
-            name: values.name.trim(),
-            email: values.email.trim(),
-            phone: values.phone.trim() || "Not provided",
-            country: "Website enquiry",
-            destination: "Not specified",
-            travel_date: "Not specified",
-            adults: 0,
-            children: 0,
-            experience: values.subject,
-            price: "Not applicable",
-            notes: values.message.trim(),
-            title: values.subject,
-            subject: values.subject,
-            message: values.message.trim(),
-            time: new Date().toLocaleString("en-KE", { dateStyle: "medium", timeStyle: "short" }),
-          },
-        }),
-      });
-      if (!response.ok) throw new Error("Contact request could not be sent.");
+      const enquiry = {
+        name: values.name.trim(),
+        email: values.email.trim(),
+        phone: values.phone.trim() || null,
+        subject: values.subject.trim() || "General enquiry",
+        message: values.message.trim(),
+      };
+      await insertSupabaseRow("contact_enquiries", enquiry);
+
+      // Keep the email notification best-effort; Supabase is the submission
+      // record, so a mail outage should not lead visitors to submit twice.
+      try {
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            service_id: EMAILJS_CONFIG.serviceId,
+            template_id: EMAILJS_CONFIG.contactTemplateId,
+            user_id: EMAILJS_CONFIG.publicKey,
+            template_params: {
+              name: enquiry.name,
+              email: enquiry.email,
+              phone: enquiry.phone || "Not provided",
+              country: "Website enquiry",
+              destination: "Not specified",
+              travel_date: "Not specified",
+              adults: 0,
+              children: 0,
+              experience: enquiry.subject,
+              price: "Not applicable",
+              notes: enquiry.message,
+              title: enquiry.subject,
+              subject: enquiry.subject,
+              message: enquiry.message,
+              time: new Date().toLocaleString("en-KE", { dateStyle: "medium", timeStyle: "short" }),
+            },
+          }),
+        });
+        if (!response.ok) console.warn("Contact notification email could not be sent.");
+      } catch {
+        console.warn("Contact notification email could not be sent.");
+      }
       setSubmitted(true);
     } catch {
       setSubmitError(`We couldn't send your message. Please try again or email ${SITE_CONFIG.contact.email}.`);

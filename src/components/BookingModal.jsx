@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Check, ChevronLeft, ChevronRight, X, Send, Phone, MessageCircle } from "lucide-react";
 import { DESTINATIONS, BOOKABLE_COUNTRIES, BOOKABLE_DESTINATIONS, findBookableByName } from "../data/destinations.js";
 import { EMAILJS_CONFIG } from "../config/emailjs.js";
+import { insertSupabaseRow } from "../config/supabase.js";
 import { SITE_CONFIG } from "../config/site.js";
 import { Button, Eyebrow } from "./primitives.jsx";
 
@@ -110,30 +111,51 @@ export function BookingModal({ item, onClose }) {
         return;
       }
 
-      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          service_id: EMAILJS_CONFIG.serviceId,
-          template_id: EMAILJS_CONFIG.templateId,
-          user_id: EMAILJS_CONFIG.publicKey,
-          template_params: {
-            name: name.trim(),
-            email: String(formData.get("email") || "").trim(),
-            phone: String(formData.get("phone") || "").trim(),
-            country,
-            destination: selectedDestination?.name || "",
-            travel_date: travelDate,
-            adults,
-            children,
-            experience: item.title || item.name || "Travel request",
-            price: item.price || item.priceRange || "Not specified",
-            notes: String(formData.get("notes") || "").trim() || "None",
-            website: String(formData.get("website") || "").trim(),
-          },
-        }),
-      });
-      if (!response.ok) throw new Error("Booking request could not be sent.");
+      const booking = {
+        customer_name: name.trim(),
+        email: String(formData.get("email") || "").trim(),
+        phone: String(formData.get("phone") || "").trim(),
+        country,
+        destination: selectedDestination?.name || "",
+        travel_date: travelDate,
+        adults,
+        children,
+        experience: item.title || item.name || "Travel request",
+        price: item.price || item.priceRange || "Not specified",
+        notes: String(formData.get("notes") || "").trim() || null,
+      };
+      await insertSupabaseRow("booking_requests", booking);
+
+      // EmailJS remains a notification channel; a mail delivery issue should
+      // not make a successfully stored booking appear to have failed.
+      try {
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            service_id: EMAILJS_CONFIG.serviceId,
+            template_id: EMAILJS_CONFIG.templateId,
+            user_id: EMAILJS_CONFIG.publicKey,
+            template_params: {
+              name: booking.customer_name,
+              email: booking.email,
+              phone: booking.phone,
+              country: booking.country,
+              destination: booking.destination,
+              travel_date: booking.travel_date,
+              adults: booking.adults,
+              children: booking.children,
+              experience: booking.experience,
+              price: booking.price,
+              notes: booking.notes || "None",
+              website: "",
+            },
+          }),
+        });
+        if (!response.ok) console.warn("Booking notification email could not be sent.");
+      } catch {
+        console.warn("Booking notification email could not be sent.");
+      }
       setStep("confirmed");
     } catch {
       setSubmitError(`We couldn't send your request. Please try again or email ${SITE_CONFIG.contact.email}.`);
