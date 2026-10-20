@@ -81,11 +81,19 @@ export function BookingModal({ item, onClose }) {
     setVisitorNames([]);
     setIsSending(false);
     setSubmitError("");
-    const destName = item.destinationName || DESTINATIONS.find((d) => d.id === item.destinationSlug)?.name;
-    const resolved = findBookableByName(destName);
+    const destination = DESTINATIONS.find((d) => d.id === item.destinationSlug);
+    const destinationNames = [
+      item.destinationName,
+      item.locationLabel,
+      destination?.name,
+    ].filter(Boolean);
+    const resolved = destinationNames.map(findBookableByName).find(Boolean);
     if (resolved) {
       setCountry(resolved.country);
       setDestinationId(resolved.id);
+    } else if (destinationNames.length && (item.destinationCountry || destination?.country)) {
+      setCountry(item.destinationCountry || destination.country);
+      setDestinationId("__requested_destination__");
     } else {
       setCountry("");
       setDestinationId("");
@@ -94,9 +102,18 @@ export function BookingModal({ item, onClose }) {
 
   if (!item) return null;
 
-  const destName = item.destinationName || DESTINATIONS.find((d) => d.id === item.destinationSlug)?.name;
-  const destinationsForCountry = BOOKABLE_DESTINATIONS.filter((b) => b.country === country);
-  const selectedDestination = BOOKABLE_DESTINATIONS.find((b) => b.id === destinationId);
+  const destName = item.destinationName || item.locationLabel || DESTINATIONS.find((d) => d.id === item.destinationSlug)?.name;
+  const destination = DESTINATIONS.find((d) => d.id === item.destinationSlug);
+  const requestedCountry = item.destinationCountry || destination?.country;
+  const requestedDestination = destName && requestedCountry === country && !findBookableByName(destName)
+    ? { id: "__requested_destination__", name: destName, country: requestedCountry }
+    : null;
+  const destinationsForCountry = [
+    ...BOOKABLE_DESTINATIONS.filter((b) => b.country === country),
+    ...(requestedDestination ? [requestedDestination] : []),
+  ];
+  const selectedDestination = BOOKABLE_DESTINATIONS.find((b) => b.id === destinationId)
+    || (destinationId === requestedDestination?.id ? requestedDestination : null);
   const additionalVisitorCount = Math.max(0, adults + children - 1);
   const minTravelDate = new Date(Date.now() - new Date().getTimezoneOffset() * 60_000).toISOString().slice(0, 10);
 

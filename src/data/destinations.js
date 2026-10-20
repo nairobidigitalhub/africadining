@@ -741,16 +741,19 @@ export const VISIBLE_DESTINATIONS = DESTINATIONS
 export const BOOKABLE_COUNTRIES = VISIBLE_DESTINATIONS.map((d) => d.name);
 
 export const BOOKABLE_DESTINATIONS = VISIBLE_DESTINATIONS.flatMap((country) =>
-  country.categories.flatMap((cat) =>
-    cat.items.map((item) => {
-      const name = item.linksToLabel || item.name;
-      return {
-        id: `${country.id}__${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
-        name,
-        country: country.name,
-      };
-    })
-  )
+  [
+    { id: `${country.id}__country`, name: country.name, country: country.name },
+    ...country.categories.flatMap((cat) =>
+      cat.items.map((item) => {
+        const name = item.linksToLabel || item.name;
+        return {
+          id: `${country.id}__${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+          name,
+          country: country.name,
+        };
+      })
+    ),
+  ]
 );
 
 // Given a plain destination/place name (as already resolved from an
@@ -761,9 +764,10 @@ export const BOOKABLE_DESTINATIONS = VISIBLE_DESTINATIONS.flatMap((country) =>
 
 export function findBookableByName(name) {
   if (!name) return null;
-  const match = BOOKABLE_DESTINATIONS.find((b) => b.name.toLowerCase() === name.toLowerCase());
+  const normalizedName = name.trim().toLowerCase();
+  const match = BOOKABLE_DESTINATIONS.find((b) => b.name.trim().toLowerCase() === normalizedName);
   if (match) return match;
-  const countryMatch = BOOKABLE_COUNTRIES.find((c) => c.toLowerCase() === name.toLowerCase());
-  if (countryMatch) return { id: "", name: "", country: countryMatch };
+  const countryMatch = BOOKABLE_COUNTRIES.find((c) => c.toLowerCase() === normalizedName);
+  if (countryMatch) return BOOKABLE_DESTINATIONS.find((b) => b.id === `${VISIBLE_DESTINATIONS.find((d) => d.name === countryMatch)?.id}__country`) || null;
   return null;
 }

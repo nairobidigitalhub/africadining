@@ -53,7 +53,7 @@ export default function DestinationItemPage({ id, navigate, onBook }) {
           <Reveal className="booking-sidebar">
             <h2>{item.name}</h2>
             <p>{country.name}, {country.country}</p>
-            <Button variant="primary" className="booking-sidebar-cta" onClick={() => onBook({ title: item.name, destinationName: item.name, price: "Custom quote" })}>Book This Destination</Button>
+            <Button variant="primary" className="booking-sidebar-cta" onClick={() => onBook({ title: item.name, destinationName: item.name, destinationCountry: country.country, price: "Custom quote" })}>Book This Destination</Button>
             <A page="destination" param={country.id} navigate={navigate} className="card-link offer-link"><ArrowLeft size={14} /> Back to {country.name}</A>
           </Reveal>
         </div>

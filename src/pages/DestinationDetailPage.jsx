@@ -63,7 +63,7 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
                 <li key={h}><Check size={14} aria-hidden="true" /> {h}</li>
               ))}
             </ul>
-            <Button variant="primary" className="fact-panel-cta" onClick={() => onBook({ title: `${destination.name} Itinerary`, destinationName: destination.name, price: "Custom quote" })}>
+            <Button variant="primary" className="fact-panel-cta" onClick={() => onBook({ title: `${destination.name} Itinerary`, destinationName: destination.name, destinationCountry: destination.country, price: "Custom quote" })}>
               Plan a Trip Here
             </Button>
           </Reveal>
@@ -115,7 +115,7 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
                   <Button
                     variant="secondary"
                     className="btn-sm offer-book-btn"
-                    onClick={() => onBook({ title: item.linksToLabel || item.name, destinationName: item.linksToLabel || item.name, price: "Custom quote" })}
+                    onClick={() => onBook({ title: item.linksToLabel || item.name, destinationName: item.linksToLabel || item.name, destinationCountry: destination.country, price: "Custom quote" })}
                   >
                     Book This Destination
                   </Button>
@@ -205,7 +205,7 @@ export default function DestinationDetailPage({ id, navigate, onBook }) {
             <h2 className="section-title">Ready to experience {destination.name}?</h2>
             <p>We'll shape the dates, pace and dining around how you like to travel.</p>
             <div className="hero-ctas">
-              <Button variant="primary" icon={ArrowRight} onClick={() => onBook({ title: `${destination.name} Itinerary`, destinationName: destination.name, price: "Custom quote" })}>Book Now</Button>
+              <Button variant="primary" icon={ArrowRight} onClick={() => onBook({ title: `${destination.name} Itinerary`, destinationName: destination.name, destinationCountry: destination.country, price: "Custom quote" })}>Book Now</Button>
               <Button variant="ghost" onClick={() => navigate("contact")}>Talk to Us</Button>
             </div>
           </Reveal>
